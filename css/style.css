@@ -2,8 +2,72 @@
   font-family: "Yellowtail", cursive;
 }
 
-h1 {
+#logo {
+  display: none;
   color: #F7F5E6;
-  background-color: #52658F;
   font-family: "Yellowtail", cursive;
+  font-weight: 500;
+}
+@media only screen and (min-width: 768px) {
+  #logo {
+    display: block;
+    width: 10rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #logo {
+    width: 30rem;
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+}
+
+#logo-xs {
+  color: #F7F5E6;
+  font-family: "Yellowtail", cursive;
+  font-weight: 500;
+}
+@media only screen and (min-width: 768px) {
+  #logo-xs {
+    display: none;
+  }
+}
+
+#header-content {
+  border: 1px red solid;
+  background-color: #52658F;
+  height: 100px;
+  padding-left: 5rem;
+}
+
+#ul-header {
+  position: relative;
+  top: -8.5rem;
+  left: 23rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #F7F5E6;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+#li-header {
+  margin: 2rem;
+}
+
+#li-header:hover {
+  border-bottom: 4px #F78731 solid;
+}
+
+.fa-phone {
+  border-radius: 50%;
+  padding: 0.5em 0.6em;
+  color: #F78731;
+  background-color: #333A56;
+  margin: -1.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
