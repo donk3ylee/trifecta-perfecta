@@ -1,13 +1,9 @@
-/* Error: Undefined mixin.
- *    ,
- * 14 | /     @include MQ('0','and-wider'){
- * 15 | |         width:100%;
- * 16 | \     }
- *    '
- *   css\style.scss 14:5  root stylesheet */
+.company-name {
+  font-family: "Yellowtail", cursive;
+}
 
 h1 {
-  color: #F7F5E6;
+  color: red;
   background-color: #52658F;
   font-family: "Yellowtail", cursive;
 }/*# sourceMappingURL=style.css.map */
