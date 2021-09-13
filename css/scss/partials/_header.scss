@@ -1,6 +1,6 @@
-@use "scss/abstracts/variables";
+@use '../abstracts/index' as *;
 
-#logo {
-  color: $brand-color-light;
+h1 {
+  color: red;
   background-color: $brand-color-dark;
 }

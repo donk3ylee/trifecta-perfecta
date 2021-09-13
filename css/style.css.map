@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["scss/partials/_hero-image.scss","scss/abstracts/_variables.scss"],"names":[],"mappings":"AAEA;EACI,aCFQ","file":"style.css"}
+{
+    "version": 3,
+    "mappings": "AACA,IAAI,CAAJ,0BAAI;AACJ,IAAI,CAAJ,sBAAI",
+    "sources": [
+        "style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
