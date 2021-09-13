@@ -1,28 +1,12 @@
 
 @use "scss/partials/hero-image";
 @use "scss/partials/header";
+@use "scss/partials/mixin";
+
 
 
 // body{
 //     display:flex;
-// }
-
-// #main-containter{
-//     justify-content: center;
-//     background-color: white;
-//     border:solid 3px red; // temp just for seeing the div
-//     @include MQ('0','and-wider'){
-//         width:100%;
-//     }
-//     @include MQ('1','and-wider'){
-//         width: 750px;
-//     }
-//     @include MQ('2','and-wider'){
-//         width: 970px;
-//     }
-//     @include MQ('3','and-wider'){
-//         width: 1200px;
-//     }
 // }
 
 // #main-containter{
