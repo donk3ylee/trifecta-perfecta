@@ -1,0 +1,66 @@
+
+@mixin place-awesome-icon($glyph, $size: null, $orientation: 'before'){
+    $awesome_icon_map:(
+        'telephone':'\f2a0',
+    );
+    @if map-has-key($awesome_icon_map,$glyph){
+        font-size: $size;
+        line-height: normal;
+        overflow: visible;
+        &::#{$orientation}{
+            @include flex;
+            justify-content: center;
+            font-family: FontAwesome!important;
+            content: map-get($awesome_icon_map,$glyph);
+            @content;
+        }
+    }@else{
+        @error "Your trying to call the font name '#{$name}' which does not exist in the awesome_icon_map used in the @mixin place-awesome-icon().";
+    }
+}
+
+
+@mixin MQ($bp, $func){
+    $MQ_func_map:(
+    'and-wider':'min-width',
+    'and-smaller':'max-width',
+    );
+    $MQ_breakpoints_map:(
+        '0':'0px',
+        '1':'767px',
+        '2':'992px',
+        '3':'1260px',
+        '4':'1400px',
+    );
+    @if not map-has-key($MQ_breakpoints_map,$bp){
+        @error "Your trying to call a 'break point' that does not exist in the MQ_breakpoints_map map used in the @mixin MQ().";
+    }@else if not map-has-key($MQ_func_map, $func){
+        @error "Your trying to use a $func that does not exist in the $MQ_func_map map used in the @mixin MQ().";
+    }@else{
+        @media(map-get($MQ_func_map,$func): map-get($MQ_breakpoints_map,$bp)){
+            @content;
+        }
+    }   
+}
+
+// Angel the awsome icon fonts dont contain a slanted phone icon use the upright one and use this mixin to rotate it. 
+@mixin rotate-phone-icon($deg: -45deg){
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+
+@mixin targetIEonly{
+    @media screen\0 {  // targets IE 8 9 & 10
+        // Internet Explorer doesn’t support “woff2”. so adding “eot” as a fallback.
+    @content;
+    }
+    
+    _:-ms-fullscreen, :root {  // Targets IE 11+
+        // Internet Explorer doesn’t support “woff2”. so adding “eot” as a fallback.
+    @content;
+    }
+}
