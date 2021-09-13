@@ -1,4 +1,6 @@
-#logo {
-  color: $brand-color-dark;
+@use '../abstracts/index' as *;
+
+h1 {
+  color: $brand-color-light;
   background-color: $brand-color-dark;
 }
