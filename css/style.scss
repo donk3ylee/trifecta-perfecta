@@ -1,4 +1,5 @@
 @use "scss/partials/hero-image";
+@use "scss/abstracts/variables";
 @use "scss/partials/mixin";
 
 body{
@@ -22,4 +23,5 @@ body{
         width: 1200px;
     }
 }
+
 
