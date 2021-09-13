@@ -1,10 +1,10 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     font-family: $main-title;
- *   |                  ^^^^^^^^^^^
- *   '
- *   css\scss\partials\_hero-image.scss 4:18  @use
- *   css\style.scss 2:1                       root stylesheet */
+/* Error: Undefined mixin.
+ *    ,
+ * 14 | /     @include MQ('0','and-wider'){
+ * 15 | |         width:100%;
+ * 16 | \     }
+ *    '
+ *   css\style.scss 14:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      font-family: $main-title;\d\a   \2502                   ^^^^^^^^^^^\a   \2575 \a   css\\scss\\partials\\_hero-image.scss 4:18  @use\a   css\\style.scss 2:1                       root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502  \250c      @include MQ('0','and-wider'){\a 15 \2502  \2502          width:100%;\a 16 \2502  \2514      }\a    \2575 \a   css\\style.scss 14:5  root stylesheet";
 }
