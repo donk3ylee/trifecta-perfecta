@@ -1,19 +1,7 @@
-/* Error: @use rules must be written before any other rules.
- *   ,
- * 4 | @use "scss/partials/footer";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   css\style.scss 4:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: @use rules must be written before any other rules.\a   \2577 \a 4 \2502  @use "scss/partials/footer";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   css\\style.scss 4:1  root stylesheet';
+@charset "UTF-8";
+#hero-image--container {
+  height: 400px;
+  overflow-y: hidden;
 }
 
 #hero-image-text-area {
@@ -63,14 +51,7 @@ body::before {
   font-size: 28px;
   width: 5rem;
 }
-@media only screen and (min-width: 576px) {
-  #logo {
-    font-size: 42px;
-    width: 10rem;
-    margin: 0;
-  }
-}
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   #logo {
     width: 30rem;
     font-size: 4rem;
@@ -85,7 +66,7 @@ body::before {
   height: 100px;
   padding-left: 5rem;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   #header-content {
     text-align: center;
   }
@@ -104,7 +85,7 @@ body::before {
   right: -262px;
   top: -18px;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   #ul-header {
     top: -8.5rem;
     left: 8rem;
@@ -138,7 +119,7 @@ body::before {
   top: -291px;
   left: -4rem;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .fa-phone {
     top: inherit;
     left: inherit;
@@ -160,7 +141,7 @@ a {
   left: 24rem;
   top: -5rem;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .btn-menu-xs {
     display: none;
   }
@@ -227,6 +208,8 @@ footer li {
 #copyright {
   margin-left: 20px;
   padding-bottom: 20px;
+  text-align: center;
+  border: springgreen 5px solid;
 }
 
 .li-arrow::before {
@@ -235,4 +218,39 @@ footer li {
 
 * {
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-container {
+  justify-content: space-between;
+  align-self: center;
+  flex: 1;
+  height: 100%;
+  min-height: 100vh;
+  background-color: white;
+  border: solid 3px red;
+}
+@media (min-width: 0px) {
+  #main-container {
+    width: 100%;
+  }
+}
+@media (min-width: 767px) {
+  #main-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #main-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  #main-container {
+    width: 1200px;
+  }
 }/*# sourceMappingURL=style.css.map */
