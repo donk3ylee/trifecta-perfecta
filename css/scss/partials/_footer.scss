@@ -12,7 +12,7 @@ footer {
   flex-direction: column;
 
 
-  @media only screen and (min-width: $break-s) {
+  @media only screen and (min-width: $break-m) {
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -35,12 +35,6 @@ footer li {
   padding-bottom: 20px;
   text-align: center;
 }
-
-// .li-arrow::before {
-//   content: "\203A \0020";
-//   font-weight: 600;
-//   //font-size: 10px;
-// }
 
 .arrow {
   border: solid $brand-color-light;
