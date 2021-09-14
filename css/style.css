@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #hero-image--container {
   height: 400px;
   overflow-y: hidden;
@@ -67,10 +66,17 @@
 }
 @media only screen and (min-width: 768px) {
   #logo {
+    font-size: 3rem;
     width: 30rem;
+    margin-left: -11rem;
+    margin-top: 18px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #logo {
     font-size: 4rem;
     margin-top: 1rem;
-    margin-left: -4rem;
+    margin-left: -8rem;
   }
 }
 
@@ -98,26 +104,46 @@
   position: relative;
   right: -262px;
   top: -18px;
+  display: none;
 }
 @media only screen and (min-width: 768px) {
   #ul-header {
-    top: -8.5rem;
-    left: 8rem;
+    top: -134px;
+    left: -34px;
     display: inline-flex;
     align-items: flex-start;
     background-color: initial;
-    margin-top: 3rem;
+    margin-top: 58px;
   }
 }
 @media only screen and (min-width: 992px) {
   #ul-header {
+    top: -162px;
+    margin-top: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  #ul-header {
+    top: -174px;
     margin-top: 3.5rem;
   }
 }
 
-#li-header {
-  margin: 2rem;
-  padding-bottom: 3px;
+@media only screen and (min-width: 768px) {
+  #li-header {
+    margin: 10px;
+    padding-bottom: 3px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #li-header {
+    margin: 1rem;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  #li-header {
+    margin: 2rem;
+  }
 }
 
 #li-header:hover {
@@ -129,15 +155,27 @@
   padding: 0.5em 0.6em;
   color: #F7F5E6;
   background-color: #333a56;
-  position: relative;
-  top: -291px;
-  left: -4rem;
+  position: absolute;
+  top: 25px;
+  left: 30rem;
 }
 @media only screen and (min-width: 768px) {
   .fa-phone {
-    top: inherit;
-    left: inherit;
+    position: relative;
+    top: -24rem;
+    left: 20rem;
     color: #F78731;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fa-phone {
+    top: -410px;
+    left: 24rem;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  .fa-phone {
+    left: 32rem;
   }
 }
 
@@ -202,7 +240,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   #footer-container {
     flex-direction: row;
     justify-content: space-evenly;
@@ -217,17 +255,26 @@ footer h4 {
 footer li {
   list-style-type: none;
   margin-left: -20px;
+  font-weight: 100;
+  line-height: 20px !important;
 }
 
 #copyright {
   margin-left: 20px;
   padding-bottom: 20px;
   text-align: center;
-  border: springgreen 5px solid;
 }
 
-.li-arrow::before {
-  content: "› ";
+.arrow {
+  border: solid #F7F5E6;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 * {
