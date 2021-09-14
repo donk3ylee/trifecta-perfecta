@@ -1,28 +1,33 @@
-@use "scss/partials/mixin";
 @use "scss/partials/hero-image";
 @use "scss/partials/header";
+@import "./scss/partials/mixin";
 
 
 
 
-// body{
-//     display:flex;
-// }
+body{
+    display:flex;
+    flex-direction: column;
+}
 
-// #main-containter{
-//     justify-content: center;
-//     background-color: white;
-//     border:solid 3px red; // temp just for seeing the div
-//     @include MQ('0','and-wider'){
-//         width:100%;
-//     }
-//     @include MQ('1','and-wider'){
-//         width: 750px;
-//     }
-//     @include MQ('2','and-wider'){
-//         width: 970px;
-//     }
-//     @include MQ('3','and-wider'){
-//         width: 1200px;
-//     }
-// }
+#main-container{
+    justify-content: space-between;
+    align-self: center;
+    flex: 1;
+    height: 100%;
+    min-height: 100vh;
+    background-color: white;
+    border:solid 3px red; // temp just for seeing the div
+    @include MQ('0','and-wider'){
+        width:100%;
+    }
+    @include MQ('1','and-wider'){
+        width: 750px;
+    }
+    @include MQ('2','and-wider'){
+        width: 970px;
+    }
+    @include MQ('3','and-wider'){
+        width: 1200px;
+    }
+}

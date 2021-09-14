@@ -167,4 +167,41 @@ a {
   text-align: center;
   margin-top: -1px;
   color: #F7F5E6;
-}/*# sourceMappingURL=style.css.map */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-container {
+  justify-content: space-between;
+  align-self: center;
+  flex: 1;
+  height: 100%;
+  min-height: 100vh;
+  background-color: white;
+  border: solid 3px red;
+}
+@media (min-width: 0px) {
+  #main-container {
+    width: 100%;
+  }
+}
+@media (min-width: 767px) {
+  #main-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #main-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  #main-container {
+    width: 1200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
