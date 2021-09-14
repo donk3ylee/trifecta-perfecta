@@ -2,6 +2,7 @@
 @use "scss/partials/header";
 @use "scss/partials/footer";
 @import "./scss/partials/mixin";
+@import "./scss/abstracts/variables";
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -16,37 +17,74 @@ body{
     justify-content: space-between;
     align-self: center;
     flex: 1;
+    width:100%;
+    max-width: 1200px;
     height: 100%;
     min-height: 100vh;
     background-color: white;
     border:solid 3px red; // temp just for seeing the div
-    @include MQ('0','and-wider'){
-        width:100%;
-    }
-    @include MQ('1','and-wider'){
-        width: 750px;
-    }
-    @include MQ('2','and-wider'){
-        width: 970px;
-    }
-    @include MQ('3','and-wider'){
-        width: 1200px;
-    }
+    // @include MQ('0','and-wider'){
+    //     width:100%;
+    // }
+    // @include MQ('1','and-wider'){
+    //     width: 750px;
+    // }
+    // @include MQ('2','and-wider'){
+    //     width: 970px;
+    // }
+    // @include MQ('3','and-wider'){
+    //     width: 1200px;
+    // }
 }
 
 #icon-headlines{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    text-transform: uppercase;
     .icon-headline-item{
-        padding: 50px;
-        height:auto;
-        width: fit-content;
-        border: solid pink 3px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex: 0 0 12%;
+        width: max-content;
+        height: 100px;
+        padding: 40px;
+        color: $brand-color-dark;
+        text-align: center;
+        .icon-headline-text{
+            display: block;
+            @include MQ('0','and-wider'){
+                font-size: 0.8rem;
+                font-weight: 600;
+                padding: 5px 0;
+            }
+            @include MQ('1','and-wider'){
+                font-size: 0.9rem;
+                font-weight: 600;
+                padding: 10px 0;
+            }
+            @include MQ('2','and-wider'){
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 15px 0;
+            }
+            @include MQ('3','and-wider'){
+                font-size: 1.1rem;
+                font-weight: 600;
+                padding: 20px 0;
+            }
+        }
+        .icon{
+            font-size: 50px;
+        }
     }
 }
 
 // Horizontal rule <hr>.
 .rule{
-    color: blue;
+    height: 0px;
+    width: 25%;
+    border: solid 2px $brand-color-dark;
+    margin: 30px auto;
 }

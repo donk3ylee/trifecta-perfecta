@@ -2,14 +2,16 @@
 
 @mixin place-awesome-icon($glyph, $size: null, $orientation: 'before'){
     $awesome_icon_map:(
-        'telephone':'\f2a0',
+        'toast':'\f7ec',
+        'cookie':'\f564',
+        'cake':'\1f382',
     );
     @if map-has-key($awesome_icon_map,$glyph){
         font-size: $size;
         line-height: normal;
         overflow: visible;
         &::#{$orientation}{
-            @include flex;
+            display: flex;
             justify-content: center;
             font-family: FontAwesome!important;
             content: map-get($awesome_icon_map,$glyph);
@@ -43,16 +45,6 @@
         }
     }   
 }
-
-// Angel the awsome icon fonts dont contain a slanted phone icon use the upright one and use this mixin to rotate it. 
-@mixin rotate-phone-icon($deg: -45deg){
-    -webkit-transform: rotate($deg);
-    -moz-transform: rotate($deg);
-    -ms-transform: rotate($deg);
-    -o-transform: rotate($deg);
-    transform: rotate($deg);
-}
-
 
 @mixin targetIEonly{
     @media screen\0 {  // targets IE 8 9 & 10
