@@ -1,0 +1,38 @@
+@use '../abstracts/index' as *;
+
+footer {
+  background-color: $brand-color-dark;
+  color: $brand-color-light;
+
+}
+
+#footer-container {
+  border: 2px red solid;
+  display: flex;
+  flex-direction: column;
+
+
+  @media only screen and (min-width: $break-s) {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+}
+
+footer h4 {
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+footer li {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+#copyright {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.li-arrow::before {
+  content: "\203A \0020";
+}
