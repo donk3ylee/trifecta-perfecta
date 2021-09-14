@@ -10,13 +10,13 @@
 
 #hero-image-text-area {
   background-color: #F7F5E6;
-  padding: 15px 5px;
-  height: 500px;
+  padding: 8% 5px 0;
+  height: 350px;
   width: 100%;
 }
 @media screen and (min-width: 576px) {
   #hero-image-text-area {
-    border-radius: 0 25% 25% 0;
+    border-radius: 0 70% 70% 0;
     width: 65%;
   }
 }
@@ -39,7 +39,6 @@
   font-size: 15px;
   font-weight: 700;
   color: #343B55;
-  letter-spacing: 0.05rem;
   width: 250px;
 }
 @media screen and (min-width: 768px) {
@@ -58,10 +57,9 @@
   line-height: 25px;
   font-size: 15px;
   font-weight: 500;
-  padding: 3px 15px;
+  padding: 10px 15px;
   color: #F7F5E6;
   cursor: pointer;
-  letter-spacing: 0.05rem;
 }
 @media screen and (min-width: 768px) {
   #call-to-action {
@@ -304,6 +302,7 @@ footer li {
 
 * {
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 body {
