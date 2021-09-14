@@ -12,10 +12,15 @@
 
 #hero-title {
   font-family: "Yellowtail", cursive;
-  font-size: 64px;
+  font-size: 45px;
   margin: 0 0 20px;
   color: #343B55;
   font-weight: 500;
+}
+@media screen and (min-width: 575px) {
+  #hero-title {
+    font-size: 64px;
+  }
 }
 
 #hero-text {

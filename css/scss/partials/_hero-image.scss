@@ -13,10 +13,15 @@
 
 #hero-title {
     font-family: $main-title;
-    font-size: 64px;
+    font-size: 45px;
     margin: 0 0 20px;
     color: $text-colour-dark;
     font-weight: 500;
+    
+    @media screen and (min-width: $break-xs) {
+        font-size: 64px;
+    }
+    
 }
 
 #hero-text {
