@@ -1,5 +1,31 @@
 @use '../abstracts/index' as *;
 
-.company-name {
+#hero-image-text-area {
+    background-color: $brand-color-light;
+}
+
+#hero-title {
     font-family: $main-title;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+#hero-text {
+    font-family: $text;
+    text-transform: uppercase;
+}
+
+#call-to-action {
+    background-color: $orange-header;
+    border-radius: 25px;
+    width: 130px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: $text;
+    padding: 3px 15px;
+    color: $brand-color-light;
+    cursor: pointer;
 }
