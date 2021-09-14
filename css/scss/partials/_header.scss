@@ -11,17 +11,16 @@
   font-weight: 500;
   font-size: 28px;
   width: 5rem;
-  //padding-left: 10rem;
-  // @media only screen and (min-width: $break-m) {
-  //   font-size: 42px;
-  //   width: 10rem;
-  //   margin: 0;
-  // }
   @media only screen and (min-width: $break-m) {
+    font-size: 3rem;
     width: 30rem;
+    margin-left: -11rem;
+    margin-top: 18px;
+  }
+  @media only screen and (min-width: $break-l) {
     font-size: 4rem;
     margin-top: 1rem;
-    margin-left: -4rem;
+    margin-left: -8rem;
   }
 }
 
@@ -49,24 +48,40 @@
   position: relative;
   right: -262px;
   top: -18px;
-
+  display: none;
   @media only screen and (min-width: $break-m) {
-  top: -8.5rem;
-  left: 8rem;
+  top: -134px;
+  left: -34px;
   display: inline-flex;
   align-items: flex-start;
   background-color: initial;
-  margin-top: 3rem;
+  margin-top: 58px;
   }
   @media only screen and (min-width: $break-l) {
+    top: -162px;
     margin-top: 3.5rem;
   }
+  @media only screen and (min-width: $break-xl) {
+    top: -174px;
+    margin-top: 3.5rem;
+  }
+
 }
 
 #li-header {
-  margin: 2rem;
-  padding-bottom: 3px;
+  @media only screen and (min-width: $break-m) {
 
+  margin: 10px;
+  padding-bottom: 3px;
+  }
+  @media only screen and (min-width: $break-l) {
+    margin: 1rem;
+
+  }
+  @media only screen and (min-width: $break-xl) {
+    margin: 2rem;
+
+  }
 }
 
 #li-header:hover {
@@ -78,15 +93,24 @@
   padding: 0.5em 0.6em;
   color: $brand-color-light;
   background-color: #333a56;
-  position: relative;
-  top: -291px;
-  left: -4rem;
-  
+  position: absolute;
+  top: 25px;
+  left: 30rem;
   @media only screen and (min-width: $break-m) {
-    top: inherit;
-    left: inherit;
+    position:relative;
+    top: -24rem;
+    left: 20rem;
     color: $orange-header;
 
+}
+
+@media only screen and (min-width: $break-l) {
+  top: -410px;
+  left: 24rem;
+}
+
+@media only screen and (min-width: $break-xl) {
+  left: 32rem;
 }
 }
 

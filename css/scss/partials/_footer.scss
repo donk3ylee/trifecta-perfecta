@@ -12,7 +12,7 @@ footer {
   flex-direction: column;
 
 
-  @media only screen and (min-width: $break-s) {
+  @media only screen and (min-width: $break-m) {
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -26,15 +26,24 @@ footer h4 {
 footer li {
   list-style-type: none;
   margin-left: -20px;
+  font-weight: 100;
+  line-height: 20px !important;
 }
 
 #copyright {
   margin-left: 20px;
   padding-bottom: 20px;
   text-align: center;
-  border: springgreen 5px solid;
 }
 
-.li-arrow::before {
-  content: "\203A \0020";
+.arrow {
+  border: solid $brand-color-light;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
