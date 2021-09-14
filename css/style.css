@@ -12,10 +12,15 @@
 
 #hero-title {
   font-family: "Yellowtail", cursive;
-  font-size: 64px;
+  font-size: 45px;
   margin: 0 0 20px;
   color: #343B55;
   font-weight: 500;
+}
+@media screen and (min-width: 575px) {
+  #hero-title {
+    font-size: 64px;
+  }
 }
 
 #hero-text {
@@ -23,6 +28,7 @@
   font-size: 15px;
   font-weight: 700;
   color: #343B55;
+  border-bottom: hidden;
 }
 
 #call-to-action {
@@ -46,14 +52,7 @@
   font-size: 28px;
   width: 5rem;
 }
-@media only screen and (min-width: 576px) {
-  #logo {
-    font-size: 42px;
-    width: 10rem;
-    margin: 0;
-  }
-}
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   #logo {
     width: 30rem;
     font-size: 4rem;
@@ -68,7 +67,7 @@
   height: 100px;
   padding-left: 5rem;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   #header-content {
     text-align: center;
   }
@@ -87,7 +86,7 @@
   right: -262px;
   top: -18px;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   #ul-header {
     top: -8.5rem;
     left: 8rem;
@@ -121,7 +120,7 @@
   top: -291px;
   left: -4rem;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .fa-phone {
     top: inherit;
     left: inherit;
@@ -143,7 +142,7 @@ a {
   left: 24rem;
   top: -5rem;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .btn-menu-xs {
     display: none;
   }
@@ -210,6 +209,8 @@ footer li {
 #copyright {
   margin-left: 20px;
   padding-bottom: 20px;
+  text-align: center;
+  border: springgreen 5px solid;
 }
 
 .li-arrow::before {
