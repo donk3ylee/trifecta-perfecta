@@ -1,6 +1,29 @@
 @charset "UTF-8";
 .company-name {
   font-family: "Yellowtail", cursive;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+#hero-text {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+#call-to-action {
+  background-color: #F78731;
+  border-radius: 25px;
+  width: 130px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding: 3px 15px;
+  color: #F7F5E6;
+  cursor: pointer;
 }
 
 #logo {
