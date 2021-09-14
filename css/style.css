@@ -81,6 +81,10 @@
   }
 }
 
+#logo a {
+  font-family: "Yellowtail", cursive;
+}
+
 #header-content {
   border: 2px red solid;
   background-color: #52658F;
@@ -131,23 +135,23 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #li-header {
+  .li-header {
     margin: 10px;
     padding-bottom: 3px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #li-header {
+  .li-header {
     margin: 1rem;
   }
 }
 @media only screen and (min-width: 1260px) {
-  #li-header {
+  .li-header {
     margin: 2rem;
   }
 }
 
-#li-header:hover {
+.li-header:hover {
   border-bottom: 4px #F78731 solid;
 }
 
@@ -156,9 +160,9 @@
   padding: 0.5em 0.6em;
   color: #F7F5E6;
   background-color: #333a56;
-  position: absolute;
-  top: 25px;
-  left: 30rem;
+  float: right;
+  margin-top: -83px;
+  margin-right: 95px;
 }
 @media only screen and (min-width: 768px) {
   .fa-phone {
@@ -166,6 +170,9 @@
     top: -24rem;
     left: 20rem;
     color: #F78731;
+    margin-right: 0;
+    margin-top: 0;
+    float: initial;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -190,9 +197,9 @@ a {
   height: 55px;
   width: 65px;
   border-radius: 4px;
-  position: relative;
-  left: 24rem;
-  top: -5rem;
+  float: right;
+  margin-top: -77px;
+  margin-right: 10px;
 }
 @media only screen and (min-width: 768px) {
   .btn-menu-xs {
@@ -258,6 +265,12 @@ footer li {
   margin-left: -20px;
   font-weight: 100;
   line-height: 20px !important;
+}
+
+#footer-3 li:hover,
+.li-footer-hover:hover {
+  text-decoration: underline;
+  color: #F78731;
 }
 
 #copyright {

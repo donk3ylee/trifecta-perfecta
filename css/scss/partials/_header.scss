@@ -24,6 +24,12 @@
   }
 }
 
+#logo a {
+  font-family: "Yellowtail", cursive;
+}
+
+
+
 #header-content {
   border: 2px red solid;
   background-color: $brand-color-dark;
@@ -68,7 +74,7 @@
 
 }
 
-#li-header {
+.li-header {
   @media only screen and (min-width: $break-m) {
 
   margin: 10px;
@@ -84,7 +90,7 @@
   }
 }
 
-#li-header:hover {
+.li-header:hover {
   border-bottom: 4px $orange-header solid;
 }
 
@@ -93,25 +99,30 @@
   padding: 0.5em 0.6em;
   color: $brand-color-light;
   background-color: #333a56;
-  position: absolute;
-  top: 25px;
-  left: 30rem;
+  // position: absolute;
+  // top: 25px;
+  // left: 30rem;
+  float: right;
+  margin-top: -83px;
+  margin-right: 95px;
   @media only screen and (min-width: $break-m) {
     position:relative;
     top: -24rem;
     left: 20rem;
     color: $orange-header;
-
+    margin-right: 0;
+    margin-top: 0;
+    float: initial;
 }
 
-@media only screen and (min-width: $break-l) {
-  top: -410px;
-  left: 24rem;
-}
+  @media only screen and (min-width: $break-l) {
+    top: -410px;
+    left: 24rem;
+  }
 
-@media only screen and (min-width: $break-xl) {
-  left: 32rem;
-}
+  @media only screen and (min-width: $break-xl) {
+    left: 32rem;
+  }
 }
 
 #phone-icon:hover{
@@ -129,9 +140,12 @@ a {
   height: 55px;
   width: 65px;
   border-radius: 4px;
-  position: relative;
-  left: 24rem;
-  top: -5rem;  
+  // position: relative;
+  // left: 24rem;
+  // top: -5rem;  
+  float: right;
+  margin-top: -77px;
+  margin-right: 10px;
   @media only screen and (min-width: $break-m) {
     display: none;
 }
