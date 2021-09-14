@@ -2,8 +2,9 @@
 @use "scss/partials/hero-image";
 @use "scss/partials/header";
 
-
-
+* {
+    font-family: 'Roboto', sans-serif;
+}
 
 // body{
 //     display:flex;
