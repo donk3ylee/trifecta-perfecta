@@ -17,6 +17,7 @@
     margin: 0 0 20px;
     color: $text-colour-dark;
     font-weight: 500;
+    border-bottom: hidden;
     
     @media screen and (min-width: $break-m) {
         font-size: 64px;
