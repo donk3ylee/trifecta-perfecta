@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #hero-image--container {
   height: 400px;
   overflow-y: hidden;
@@ -47,8 +48,9 @@
 }
 @media only screen and (min-width: 576px) {
   #logo {
-    font-size: 2rem;
+    font-size: 42px;
     width: 10rem;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -88,16 +90,16 @@
 @media only screen and (min-width: 576px) {
   #ul-header {
     top: -8.5rem;
-    left: 13rem;
+    left: 8rem;
     display: inline-flex;
     align-items: flex-start;
     background-color: initial;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 @media only screen and (min-width: 992px) {
   #ul-header {
-    margin-top: 1rem;
+    margin-top: 3.5rem;
   }
 }
 
@@ -176,6 +178,42 @@ a {
   text-align: center;
   margin-top: -1px;
   color: #F7F5E6;
+}
+
+footer {
+  background-color: #52658F;
+  color: #F7F5E6;
+}
+
+#footer-container {
+  border: 2px red solid;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 576px) {
+  #footer-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+footer h4 {
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+footer li {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+#copyright {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.li-arrow::before {
+  content: "› ";
 }
 
 * {
