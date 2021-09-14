@@ -18,7 +18,7 @@
     color: $text-colour-dark;
     font-weight: 500;
     
-    @media screen and (min-width: $break-xs) {
+    @media screen and (min-width: $break-m) {
         font-size: 64px;
     }
     
@@ -29,6 +29,13 @@
     font-size: 15px;
     font-weight: 700;
     color: $text-colour-dark;
+    letter-spacing: 0.05rem;
+    width: 250px;
+
+    @media screen and (min-width: $break-m) {
+        width: 390px;
+        font-size: 18px;
+    }
 }
 
 #call-to-action {
@@ -43,4 +50,9 @@
     padding: 3px 15px;
     color: $brand-color-light;
     cursor: pointer;
+    letter-spacing: 0.05rem;
+
+    @media screen and (min-width: $break-m) {
+        font-size: 20px;
+    }
 }
