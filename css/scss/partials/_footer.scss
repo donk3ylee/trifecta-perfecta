@@ -28,7 +28,16 @@ footer li {
   margin-left: -20px;
   font-weight: 100;
   line-height: 20px !important;
+  
 }
+
+#footer-3 li:hover,
+.li-footer-hover:hover {
+  text-decoration: underline;
+  color: $orange-header;
+
+}
+
 
 #copyright {
   margin-left: 20px;

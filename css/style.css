@@ -1,12 +1,23 @@
 #hero-image--container {
   height: 400px;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../assets/images/bakery_hero_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #hero-image-text-area {
   background-color: #F7F5E6;
-  padding: 15px 5px;
-  height: 500px;
+  padding: 8% 5px 0;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  #hero-image-text-area {
+    border-radius: 0 70% 70% 0;
+    width: 65%;
+  }
 }
 
 #hero-title {
@@ -15,7 +26,6 @@
   margin: 0 0 20px;
   color: #343B55;
   font-weight: 500;
-  border-bottom: hidden;
 }
 @media screen and (min-width: 768px) {
   #hero-title {
@@ -28,7 +38,6 @@
   font-size: 15px;
   font-weight: 700;
   color: #343B55;
-  letter-spacing: 0.05rem;
   width: 250px;
 }
 @media screen and (min-width: 768px) {
@@ -47,10 +56,9 @@
   line-height: 25px;
   font-size: 15px;
   font-weight: 500;
-  padding: 3px 15px;
+  padding: 10px 15px;
   color: #F7F5E6;
   cursor: pointer;
-  letter-spacing: 0.05rem;
 }
 @media screen and (min-width: 768px) {
   #call-to-action {
@@ -79,6 +87,10 @@
     margin-top: 1rem;
     margin-left: -8rem;
   }
+}
+
+#logo a {
+  font-family: "Yellowtail", cursive;
 }
 
 #header-content {
@@ -131,23 +143,23 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #li-header {
+  .li-header {
     margin: 10px;
     padding-bottom: 3px;
   }
 }
 @media only screen and (min-width: 992px) {
-  #li-header {
+  .li-header {
     margin: 1rem;
   }
 }
 @media only screen and (min-width: 1260px) {
-  #li-header {
+  .li-header {
     margin: 2rem;
   }
 }
 
-#li-header:hover {
+.li-header:hover {
   border-bottom: 4px #F78731 solid;
 }
 
@@ -156,9 +168,9 @@
   padding: 0.5em 0.6em;
   color: #F7F5E6;
   background-color: #333a56;
-  position: absolute;
-  top: 25px;
-  left: 30rem;
+  float: right;
+  margin-top: -83px;
+  margin-right: 95px;
 }
 @media only screen and (min-width: 768px) {
   .fa-phone {
@@ -166,6 +178,9 @@
     top: -24rem;
     left: 20rem;
     color: #F78731;
+    margin-right: 0;
+    margin-top: 0;
+    float: initial;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -190,9 +205,9 @@ a {
   height: 55px;
   width: 65px;
   border-radius: 4px;
-  position: relative;
-  left: 24rem;
-  top: -5rem;
+  float: right;
+  margin-top: -77px;
+  margin-right: 10px;
 }
 @media only screen and (min-width: 768px) {
   .btn-menu-xs {
@@ -260,6 +275,12 @@ footer li {
   line-height: 20px !important;
 }
 
+#footer-3 li:hover,
+.li-footer-hover:hover {
+  text-decoration: underline;
+  color: #F78731;
+}
+
 #copyright {
   margin-left: 20px;
   padding-bottom: 20px;
@@ -280,6 +301,7 @@ footer li {
 
 * {
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 body {
@@ -325,12 +347,12 @@ body {
 #icon-headlines .icon-headline-item {
   padding: 50px;
   height: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   border: solid pink 3px;
 }
 
 .rule {
   color: blue;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

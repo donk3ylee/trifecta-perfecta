@@ -3,12 +3,23 @@
 #hero-image--container {
     height: 400px;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/images/bakery_hero_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #hero-image-text-area {
     background-color: $brand-color-light;
-    padding: 15px 5px;
-    height: 500px;
+    padding: 8% 5px 0;
+    width: 100%;
+    
+
+    @media screen and (min-width: $break-s) {
+        border-radius: 0 70% 70% 0;
+        width: 65%;
+    }
 }
 
 #hero-title {
@@ -17,7 +28,7 @@
     margin: 0 0 20px;
     color: $text-colour-dark;
     font-weight: 500;
-    border-bottom: hidden;
+    
     
     @media screen and (min-width: $break-m) {
         font-size: 64px;
@@ -30,7 +41,6 @@
     font-size: 15px;
     font-weight: 700;
     color: $text-colour-dark;
-    letter-spacing: 0.05rem;
     width: 250px;
 
     @media screen and (min-width: $break-m) {
@@ -48,12 +58,15 @@
     line-height: 25px;
     font-size: 15px;
     font-weight: 500;
-    padding: 3px 15px;
+    padding: 10px 15px;
     color: $brand-color-light;
     cursor: pointer;
-    letter-spacing: 0.05rem;
 
     @media screen and (min-width: $break-m) {
         font-size: 20px;
     }
 }
+
+// #hero-image {
+//     display: inline;
+// }
