@@ -328,4 +328,22 @@ body {
   #main-container {
     width: 1200px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+#icon-headlines {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#icon-headlines .icon-headline-item {
+  padding: 50px;
+  height: auto;
+  width: fit-content;
+  border: solid pink 3px;
+}
+
+.rule {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
