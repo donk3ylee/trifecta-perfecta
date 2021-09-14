@@ -1,12 +1,24 @@
 #hero-image--container {
   height: 400px;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../assets/images/bakery_hero_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #hero-image-text-area {
   background-color: #F7F5E6;
   padding: 15px 5px;
   height: 500px;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  #hero-image-text-area {
+    border-radius: 0 25% 25% 0;
+    width: 65%;
+  }
 }
 
 #hero-title {
@@ -15,7 +27,6 @@
   margin: 0 0 20px;
   color: #343B55;
   font-weight: 500;
-  border-bottom: hidden;
 }
 @media screen and (min-width: 768px) {
   #hero-title {
