@@ -12,6 +12,7 @@
 body{
     display:flex;
     flex-direction: column;
+    background-color: black;
 }
 
 h2{
@@ -22,13 +23,28 @@ h2{
     text-align: center;
 }
 
+p{
+    color: $text-colour-dark;
+    line-height: 1.4rem;
+}
+
 // Horizontal rule <hr>.
 .rule{
     height: 0px;
     width: 25%;
-    border: solid 2px $brand-color-dark;
-    margin: 30px auto;
+    border: solid 1.7px $brand-color-dark;
+    background-color: $brand-color-dark;
+    margin: 10px auto 50px;
 }
+
+.clearfix{
+    overflow: auto;
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+  }
 
 #main-container{
     justify-content: space-between;
@@ -39,7 +55,6 @@ h2{
     height: 100%;
     min-height: 100vh;
     background-color: white;
-    border:solid 3px red; // temp just for seeing the div
 }
 
 #icon-headlines{
@@ -54,7 +69,7 @@ h2{
         flex: 0 0 14%;
         width: max-content;
         height: 100px;
-        padding: 40px;
+        padding: 80px 40px;
         color: $brand-color-dark;
         text-align: center;
         .icon-headline-text{
@@ -87,20 +102,28 @@ h2{
 }
 
 #article{
-    // display: flex;
-    justify-content: center;
     width: 100%;
-    // max-width: 1200px;
-    // padding: 5%;
-    border: solid 3px aqua;
+    max-width: 1200px;
+    h2{
+        margin: 0 10%;
+    }
+    p{
+        margin: 35px 80px;
+    }
     .circle-splash{
         position: relative;
-        float: left;
-        padding: 50px;
+        @include MQ('0','and-wider'){
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include MQ('1','and-wider'){
+            float: left;
+            margin-right: 50px;
+        }
+        padding: 65px 65px 25px;
         width: 300px;
-        height: 400px;
-        // z-index: -4;
-        border: solid 3px blue;
+        height: 300px;
         .circle-splash-1{ // cream circle bottom stacked
             @include build-circle($dia: 170px, $backC: $brand-color-light, $borderW: 4px, $borderC: white){
                 z-index: 1;
@@ -124,6 +147,64 @@ h2{
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+        }
+    }
+}
+
+#products-carousel{
+    // display:flex;
+    width: 100%;
+    background-color: $brand-color-light;
+    .owl-carousel{
+        //need to center somehow
+        .title{
+            display: block;
+            color: orange;
+        }
+        .owl-1{
+            background-image: url("../assets/images/products/breads.jpg");
+            height:200px;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid 6px $brand-color-dark;
+            border-radius: 50%;
+        }
+        .owl-2{
+            background-image: url("../assets/images/products/pastires.jpg");
+            height:200px;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid 6px $brand-color-dark;
+            border-radius: 50%;
+        }
+        .owl-3{
+            background-image: url("../assets/images/products/cakes.jpg");
+            height:200px;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid 6px $brand-color-dark;
+            border-radius: 50%;
+        }
+        .owl-4{
+            background-image: url("../assets/images/products/wedding-cake.jpg");
+            height:200px;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid 6px $brand-color-dark;
+            border-radius: 50%;
+        }
+        .owl-5{
+            background-image: url("../assets/images/products/speciality-cake.jpg");
+            height:200px;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: solid 6px $brand-color-dark;
+            border-radius: 50%;
         }
     }
 }
