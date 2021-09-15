@@ -1,9 +1,5 @@
 @use '../abstracts/index' as *;
 
-#header-container {
-  // margin-left: auto;
-  // margin-right: auto;
-}
 
 #logo {
   color: $brand-color-light;
@@ -11,6 +7,7 @@
   font-weight: 500;
   font-size: 28px;
   width: 5rem;
+  margin-left: -55px;
   @media only screen and (min-width: $break-m) {
     font-size: 3rem;
     width: 30rem;
@@ -27,7 +24,11 @@
 #logo a {
   font-family: "Yellowtail", cursive;
 }
-
+ 
+#logo:hover {
+  color: $orange-header;
+  transform: scale(1.2);
+  }
 
 
 #header-content {
@@ -45,8 +46,6 @@
   text-transform: uppercase;
   color: $brand-color-light;
   font-weight: 600;
-  // margin-left: auto;
-  // margin-right: auto;
   background-color: $brand-color-dark;
   width: 171px;
   padding-left: 12px;
@@ -57,7 +56,7 @@
   display: none;
   @media only screen and (min-width: $break-m) {
   top: -134px;
-  left: -34px;
+  left: -66px;
   display: inline-flex;
   align-items: flex-start;
   background-color: initial;
@@ -72,6 +71,25 @@
     margin-top: 3.5rem;
   }
 
+}
+
+#header-small {
+  width: 100%;
+  text-transform: uppercase;
+  color: $brand-color-light;
+  font-weight: 600;
+  background-color: $brand-color-dark;
+  position: absolute;
+  display: none;
+  @media only screen and (min-width: $break-m) {
+    display: none;
+  }
+}
+
+#header-small ul {
+  list-style-type: none;
+  text-align: end;
+  padding-right: 10px;
 }
 
 .li-header {
@@ -94,6 +112,10 @@
   border-bottom: 4px $orange-header solid;
 }
 
+.li-header-small {
+  line-height: 45px;
+}
+
 .fa-phone {
   border-radius: 50%;
   padding: 0.5em 0.6em;
@@ -108,7 +130,7 @@
   @media only screen and (min-width: $break-m) {
     position:relative;
     top: -24rem;
-    left: 20rem;
+    left: 19rem;
     color: $orange-header;
     margin-right: 0;
     margin-top: 0;
@@ -125,10 +147,21 @@
   }
 }
 
-#phone-icon:hover{
-  //border-bottom: none;
+.fa-phone:hover {
+  background-color: darken($color: $brand-color-dark, $amount: 10%)
 
 }
+
+.phone-icon-small-screen {
+  position: absolute;
+  top: 26px;
+  left: 36rem;
+  float: initial;
+  margin-top: initial;
+  margin-right: initial;
+}
+
+
 
 a {
   color: inherit;
@@ -152,7 +185,7 @@ a {
 }
 
 .btn-menu-xs:hover {
-	background-color: darken($color: #333645, $amount: 10%)
+	background-color: darken($color: $brand-color-dark, $amount: 10%)
 }
 .menu-lines {
   padding: 10px 0 4px 16px;
@@ -165,12 +198,24 @@ a {
 }
 }
 
+
+
+.menu-x {
+  display: none;
+  color: $brand-color-light;
+  font-size: 33px;
+  margin-top: -1px;
+  margin-left: 24px;
+}
+
 .menu-line {
   width: 33px;
   height: 3px;
   background-color:$brand-color-light;
   margin-bottom: 5px;
+  //display: none;
 }
+
 
 .menu-title {
   font-size: 12px;
