@@ -11,7 +11,7 @@
 }
 
 // This is the area in wich the title, text and call to action are contained
-#hero-image-text-area {
+.hero-image-text-area {
     background-color: $brand-color-light;
     padding: 0px 20px 0;
     width: 100%;
@@ -19,7 +19,7 @@
 }
 
 // the title styling
-#hero-title {
+.hero-title {
     font-family: $main-title;
     font-size: 45px;
     margin: 0 0 20px -3px;
@@ -28,7 +28,7 @@
 }
 
 // the main body of text
-#hero-text {
+.hero-text {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
@@ -37,7 +37,7 @@
 }
 
 // Button styling
-#call-to-action {
+.call-to-action {
     background-color: $orange-header;
     border-radius: 25px;
     width: 130px;
@@ -52,16 +52,16 @@
 }
 
 //Keeping the text together
-#hero-title,
-#hero-text,
-#call-to-action {
+.hero-title,
+.hero-text,
+.call-to-action {
     transform: translate(0px, 40px);
 }
 
 // Media queries
 @media screen and (min-width: $break-s) {
 
-    #hero-image-text-area {
+    .hero-image-text-area {
         border-radius: 0 50% 50% 0;
         width: 600px;
         height: 600px;
@@ -69,50 +69,50 @@
         transform: translate(-250px, -140px);
     }
 
-    #hero-title,
-    #hero-text,
-    #call-to-action {
+    .hero-title,
+    .hero-text,
+    .call-to-action {
         transform: translate(250px, 180px);
     }
 }
 
 @media screen and (min-width: $break-m) {
 
-    #hero-image-text-area {
+    .hero-image-text-area {
         transform: translate(-0px, -155px);
     }
 
-    #hero-title {
+    .hero-title {
         font-size: 64px;
     }
 
-    #hero-text {
+    .hero-text {
         width: 390px;
         font-size: 18px; 
     }
 
-    #call-to-action {
+    .call-to-action {
         font-size: 20px;
     }
     
-    #hero-title,
-    #hero-text,
-    #call-to-action {
+    .hero-title,
+    .hero-text,
+    .call-to-action {
         transform: translate(100px, 180px);
     }
 }
 
 @media screen and (min-width: $break-l) {
 
-    #hero-image-text-area {
+    .hero-image-text-area {
         width: 800px;
         height: 800px;
         transform: translate(-20px, -275px);
     }
 
-    #hero-title,
-    #hero-text,
-    #call-to-action {
+    .hero-title,
+    .hero-text,
+    .call-to-action {
         transform: translate(150px, 300px);
     }
 }

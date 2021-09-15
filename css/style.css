@@ -7,14 +7,14 @@
   background-size: cover;
 }
 
-#hero-image-text-area {
+.hero-image-text-area {
   background-color: #F7F5E6;
   padding: 0px 20px 0;
   width: 100%;
   height: 100%;
 }
 
-#hero-title {
+.hero-title {
   font-family: "Yellowtail", cursive;
   font-size: 45px;
   margin: 0 0 20px -3px;
@@ -22,7 +22,7 @@
   font-weight: 500;
 }
 
-#hero-text {
+.hero-text {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
@@ -30,7 +30,7 @@
   width: 250px;
 }
 
-#call-to-action {
+.call-to-action {
   background-color: #F78731;
   border-radius: 25px;
   width: 130px;
@@ -44,14 +44,14 @@
   cursor: pointer;
 }
 
-#hero-title,
-#hero-text,
-#call-to-action {
+.hero-title,
+.hero-text,
+.call-to-action {
   transform: translate(0px, 40px);
 }
 
 @media screen and (min-width: 576px) {
-  #hero-image-text-area {
+  .hero-image-text-area {
     border-radius: 0 50% 50% 0;
     width: 600px;
     height: 600px;
@@ -59,46 +59,46 @@
     transform: translate(-250px, -140px);
   }
 
-  #hero-title,
-#hero-text,
-#call-to-action {
+  .hero-title,
+.hero-text,
+.call-to-action {
     transform: translate(250px, 180px);
   }
 }
 @media screen and (min-width: 768px) {
-  #hero-image-text-area {
+  .hero-image-text-area {
     transform: translate(0px, -155px);
   }
 
-  #hero-title {
+  .hero-title {
     font-size: 64px;
   }
 
-  #hero-text {
+  .hero-text {
     width: 390px;
     font-size: 18px;
   }
 
-  #call-to-action {
+  .call-to-action {
     font-size: 20px;
   }
 
-  #hero-title,
-#hero-text,
-#call-to-action {
+  .hero-title,
+.hero-text,
+.call-to-action {
     transform: translate(100px, 180px);
   }
 }
 @media screen and (min-width: 992px) {
-  #hero-image-text-area {
+  .hero-image-text-area {
     width: 800px;
     height: 800px;
     transform: translate(-20px, -275px);
   }
 
-  #hero-title,
-#hero-text,
-#call-to-action {
+  .hero-title,
+.hero-text,
+.call-to-action {
     transform: translate(150px, 300px);
   }
 }
@@ -393,19 +393,29 @@ footer li {
 
 #form-container {
   background-color: #52658F;
+  padding-top: 50px;
 }
 
+#order-form {
+  align-items: center;
+  justify-content: center;
+}
 #order-form input {
   background-color: #F7F5E6;
-  width: 200px;
+  width: 260px;
   height: 40px;
+  outline: none;
+  border: none;
+  color: #343B55;
+  margin: 20px 10px 15px 8px;
 }
 
 #order-message {
   resize: none;
-  width: 250px;
+  width: 260px;
   height: 250px;
   background-color: #F7F5E6;
+  margin-left: 8px;
 }
 
 * {
