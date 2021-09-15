@@ -130,11 +130,6 @@
   font-family: "Yellowtail", cursive;
 }
 
-#logo:hover {
-  color: #F78731;
-  transform: scale(1.2);
-}
-
 #header-content {
   border: 2px #52658F solid;
   background-color: #52658F;
@@ -187,7 +182,7 @@
   text-transform: uppercase;
   color: #F7F5E6;
   font-weight: 600;
-  background-color: #52658F;
+  background-color: rgba(82, 101, 143, 0.8);
   position: absolute;
   display: none;
   z-index: 2;
@@ -268,15 +263,6 @@
 
 .fa-phone:hover {
   background-color: #3f4e6f;
-}
-
-.phone-icon-small-screen {
-  position: absolute;
-  top: 26px;
-  left: 36rem;
-  float: initial;
-  margin-top: initial;
-  margin-right: initial;
 }
 
 a {

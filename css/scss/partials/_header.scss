@@ -13,12 +13,12 @@
     width: 30rem;
     margin-left: -11rem;
     margin-top: 18px;
-  }
+}
   @media only screen and (min-width: $break-l) {
     font-size: 4rem;
     margin-top: 1rem;
     margin-left: -8rem;
-  }
+}
 }
 
 //Font for the logo
@@ -26,11 +26,6 @@
   font-family: "Yellowtail", cursive;
 }
  
-//Effect on hover on the logo
-#logo:hover {
-  color: $orange-header;
-  transform: scale(1.2);
-  }
 
 //Header container
 #header-content {
@@ -46,7 +41,6 @@
 //Styling the header
 #ul-header {
   display: none;
-
   list-style-type: none;
   text-transform: uppercase;
   color: $brand-color-light;
@@ -60,77 +54,74 @@
   left: -66px;
   align-items: flex-start;
   background-color: initial;
-  margin-top: 58px;
-
+  margin-top: 58px; 
   @media only screen and (min-width: $break-m) {
-  display: inline-flex;
-  }
+    display: inline-flex;
+}
   @media only screen and (min-width: $break-l) {
     top: -162px;
     margin-top: 3.5rem;
-  }
+}
   @media only screen and (min-width: $break-xl) {
     top: -174px;
     margin-top: 3.5rem;
-  }
+}
 }
 
+//I added an extra html for the header for small screens because the main one kept misplacing other elements. This one works only on small screens and change to display:none for bigger
 #header-small {
   width: 100%;
   text-transform: uppercase;
   color: $brand-color-light;
   font-weight: 600;
-  background-color: $brand-color-dark;
+  background-color: rgba($brand-color-dark, 0.8);
   position: absolute;
-  //z-index: 2;
   display: none;
   z-index: 2;
   @media screen and (min-width: $break-s) {
     z-index: 0;
-  }
+}
   @media only screen and (min-width: $break-m) {
     display: none;
-  }
+}
 }
 
+//Some styling that could not go in the #header-small
 #header-small ul {
   list-style-type: none;
   text-align: end;
   padding-right: 10px;
 }
 
+//Styling for the li elements on big screens
 .li-header {
   @media only screen and (min-width: $break-m) {
-
   margin: 10px;
   padding-bottom: 3px;
-  }
+}
   @media only screen and (min-width: $break-l) {
     margin: 1rem;
-
-  }
+}
   @media only screen and (min-width: $break-xl) {
     margin: 2rem;
-
-  }
+}
 }
 
 .li-header:hover {
   border-bottom: 4px $orange-header solid;
 }
 
+//Separating the li elements on small screen (the drop down)
 .li-header-small {
   line-height: 45px;
 }
 
+//Styling for the phone icon
 .fa-phone {
   border-radius: 50%;
   padding: 0.5em 0.6em;
   color: $brand-color-light;
   background-color: #333a56;
-  // position: absolute;
-  // top: 25px;
-  // left: 30rem;
   float: right;
   margin-top: -83px;
   margin-right: 95px;
@@ -143,46 +134,32 @@
     margin-top: 0;
     float: initial;
 }
-
   @media only screen and (min-width: $break-l) {
     top: -410px;
     left: 24rem;
-  }
-
+}
   @media only screen and (min-width: $break-xl) {
     left: 32rem;
-  }
+}
 }
 
+//Added some hover effect for the phone-icon
 .fa-phone:hover {
   background-color: darken($color: $brand-color-dark, $amount: 10%)
-
 }
 
-.phone-icon-small-screen {
-  position: absolute;
-  top: 26px;
-  left: 36rem;
-  float: initial;
-  margin-top: initial;
-  margin-right: initial;
-}
-
-
-
+//Changing the default a tag settings
 a {
   color: inherit;
   text-decoration: none;
 }
 
+//Hamburger styling
 .btn-menu-xs {
   background-color: #333a56;
   height: 55px;
   width: 65px;
   border-radius: 4px;
-  // position: relative;
-  // left: 24rem;
-  // top: -5rem;  
   float: right;
   margin-top: -77px;
   margin-right: 10px;
@@ -194,6 +171,8 @@ a {
 .btn-menu-xs:hover {
 	background-color: darken($color: $brand-color-dark, $amount: 10%)
 }
+
+// The next few properties are for the hamburger
 .menu-lines {
   padding: 10px 0 4px 16px;
   @media only screen and (min-width: $break-m) {
@@ -204,8 +183,6 @@ a {
   margin: 10px auto 5px;
 }
 }
-
-
 
 .menu-x {
   display: none;
@@ -220,9 +197,7 @@ a {
   height: 3px;
   background-color:$brand-color-light;
   margin-bottom: 5px;
-  //display: none;
 }
-
 
 .menu-title {
   font-size: 12px;
