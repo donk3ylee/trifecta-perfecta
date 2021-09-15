@@ -15,8 +15,10 @@ footer {
   @media only screen and (min-width: $break-m) {
     flex-direction: row;
     justify-content: space-evenly;
+
+  }
 }
-}
+
 
 footer h4 {
   text-transform: uppercase;
