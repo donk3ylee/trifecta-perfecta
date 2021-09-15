@@ -1,5 +1,5 @@
 #hero-image--container {
-  height: 250px;
+  height: 300px;
   overflow-y: hidden;
   overflow-x: hidden;
   background-image: url("../assets/images/bakery_hero_image.jpg");
@@ -56,18 +56,18 @@
     width: 600px;
     height: 600px;
     border-right: 4px #343B55 solid;
-    transform: translate(-150px, -100px);
+    transform: translate(-250px, -140px);
   }
 
   #hero-title,
 #hero-text,
 #call-to-action {
-    transform: translate(190px, 180px);
+    transform: translate(250px, 180px);
   }
 }
 @media screen and (min-width: 768px) {
   #hero-image-text-area {
-    transform: translate(0px, -150px);
+    transform: translate(0px, -155px);
   }
 
   #hero-title {
@@ -93,7 +93,7 @@
   #hero-image-text-area {
     width: 800px;
     height: 800px;
-    transform: translate(-20px, -210px);
+    transform: translate(-20px, -275px);
   }
 
   #hero-title,
