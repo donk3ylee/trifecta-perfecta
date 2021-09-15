@@ -1,6 +1,6 @@
 @use '../abstracts/index' as *;
 
-
+//Code for the logo
 #logo {
   color: $brand-color-light;
   font-family: $main-title;
@@ -21,14 +21,20 @@
   }
 }
 
+//Font for the logo
 #logo a {
   font-family: "Yellowtail", cursive;
 }
+ 
+//Effect on hover on the logo
+#logo:hover {
+  color: $orange-header;
+  transform: scale(1.2);
+  }
 
-
-
+//Header container
 #header-content {
-  border: 2px red solid;
+  border: 2px $brand-color-dark solid;
   background-color: $brand-color-dark;
   height: 100px;
   padding-left: 5rem;
@@ -37,7 +43,10 @@
 }
 }
 
+//Styling the header
 #ul-header {
+  display: none;
+
   list-style-type: none;
   text-transform: uppercase;
   color: $brand-color-light;
@@ -47,16 +56,14 @@
   padding-left: 12px;
   height: 207px;
   position: relative;
-  right: -262px;
-  top: -18px;
-  display: none;
-  @media only screen and (min-width: $break-m) {
   top: -134px;
   left: -66px;
-  display: inline-flex;
   align-items: flex-start;
   background-color: initial;
   margin-top: 58px;
+
+  @media only screen and (min-width: $break-m) {
+  display: inline-flex;
   }
   @media only screen and (min-width: $break-l) {
     top: -162px;
@@ -143,6 +150,11 @@
   }
 }
 
+.fa-phone:hover {
+  background-color: darken($color: $brand-color-dark, $amount: 10%)
+
+}
+
 .phone-icon-small-screen {
   position: absolute;
   top: 26px;
@@ -151,6 +163,8 @@
   margin-top: initial;
   margin-right: initial;
 }
+
+
 
 a {
   color: inherit;
@@ -174,7 +188,7 @@ a {
 }
 
 .btn-menu-xs:hover {
-	background-color: darken($color: #333645, $amount: 10%)
+	background-color: darken($color: $brand-color-dark, $amount: 10%)
 }
 .menu-lines {
   padding: 10px 0 4px 16px;
@@ -187,12 +201,24 @@ a {
 }
 }
 
+
+
+.menu-x {
+  display: none;
+  color: $brand-color-light;
+  font-size: 33px;
+  margin-top: -1px;
+  margin-left: 24px;
+}
+
 .menu-line {
   width: 33px;
   height: 3px;
   background-color:$brand-color-light;
   margin-bottom: 5px;
+  //display: none;
 }
+
 
 .menu-title {
   font-size: 12px;
