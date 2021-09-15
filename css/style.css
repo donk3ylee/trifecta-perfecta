@@ -9,18 +9,9 @@
 
 #hero-image-text-area {
   background-color: #F7F5E6;
-  padding: 8% 5px 0;
+  padding: 60px 5px 0;
   width: 100%;
   height: 100%;
-}
-@media screen and (min-width: 576px) {
-  #hero-image-text-area {
-    border-radius: 50%;
-    width: 600px;
-    height: 600px;
-    border-right: 4px #343B55 solid;
-    transform: translate(-150px, -150px);
-  }
 }
 
 #hero-title {
@@ -30,16 +21,6 @@
   color: #343B55;
   font-weight: 500;
 }
-@media screen and (min-width: 576px) {
-  #hero-title {
-    transform: translate(150px, 150px);
-  }
-}
-@media screen and (min-width: 768px) {
-  #hero-title {
-    font-size: 64px;
-  }
-}
 
 #hero-text {
   text-transform: uppercase;
@@ -47,17 +28,6 @@
   font-weight: 700;
   color: #343B55;
   width: 250px;
-}
-@media screen and (min-width: 576px) {
-  #hero-text {
-    transform: translate(150px, 150px);
-  }
-}
-@media screen and (min-width: 768px) {
-  #hero-text {
-    width: 390px;
-    font-size: 18px;
-  }
 }
 
 #call-to-action {
@@ -73,17 +43,53 @@
   color: #F7F5E6;
   cursor: pointer;
 }
+
 @media screen and (min-width: 576px) {
-  #call-to-action {
+  #hero-image-text-area {
+    border-radius: 0 50% 50% 0;
+    width: 600px;
+    height: 600px;
+    border-right: 4px #343B55 solid;
+    transform: translate(-150px, -150px);
+  }
+
+  #hero-title,
+#hero-text,
+#call-to-action {
     transform: translate(150px, 150px);
   }
 }
 @media screen and (min-width: 768px) {
+  #hero-image-text-area {
+    transform: translate(0px, -150px);
+  }
+
+  #hero-title {
+    font-size: 64px;
+  }
+
+  #hero-text {
+    width: 390px;
+    font-size: 18px;
+  }
+
   #call-to-action {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 992px) {
+  #hero-image-text-area {
+    width: 800px;
+    height: 800px;
+    transform: translate(-20px, -210px);
+  }
 
+  #hero-title,
+#hero-text,
+#call-to-action {
+    transform: translate(150px, 240px);
+  }
+}
 #logo {
   color: #F7F5E6;
   font-family: "Yellowtail", cursive;
