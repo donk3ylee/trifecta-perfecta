@@ -1,4 +1,18 @@
 
+// Creates a circle in the center of the relatively positioned parent element. Use the content to transition the element where you wish from there
+@mixin build-circle($dia: 100px, $backC: null, $borderW: null, $borderC: null){
+    position: absolute;
+    left: calc(50% - (#{$dia} / 2));
+    top: calc(50% - (#{$dia} / 2));
+    width: $dia;
+    height: $dia;
+    border-radius: 50%;
+    border: solid #{$borderW} #{$borderC};
+    background-color: $backC;
+    
+    @content
+}
+
 
 @mixin place-awesome-icon($glyph, $size: null, $orientation: 'before'){
     $awesome_icon_map:(
