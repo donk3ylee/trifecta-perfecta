@@ -6,8 +6,17 @@
 
 // The form styles
 #order-form {
-    input,
-    textarea {
+    input {
         background-color: $brand-color-light;
+        width: 200px;
+        height: 40px;
     }
+
+}
+
+#order-message {
+    resize: none;
+    width: 250px;
+    height: 250px;
+    background-color: $brand-color-light;
 }
