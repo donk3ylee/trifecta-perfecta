@@ -1,5 +1,5 @@
 #hero-image--container {
-  height: 400px;
+  height: 300px;
   overflow-y: hidden;
   overflow-x: hidden;
   background-image: url("../assets/images/bakery_hero_image.jpg");
@@ -7,60 +7,30 @@
   background-size: cover;
 }
 
-#hero-image-text-area {
+.hero-image-text-area {
   background-color: #F7F5E6;
-  padding: 8% 5px 0;
+  padding: 0px 20px 0;
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 576px) {
-  #hero-image-text-area {
-    border-radius: 50%;
-    width: 600px;
-    height: 600px;
-    border-right: 4px #343B55 solid;
-    transform: translate(-150px, -150px);
-  }
-}
 
-#hero-title {
+.hero-title {
   font-family: "Yellowtail", cursive;
   font-size: 45px;
-  margin: 0 0 20px;
+  margin: 0 0 20px -3px;
   color: #343B55;
   font-weight: 500;
 }
-@media screen and (min-width: 576px) {
-  #hero-title {
-    transform: translate(150px, 150px);
-  }
-}
-@media screen and (min-width: 768px) {
-  #hero-title {
-    font-size: 64px;
-  }
-}
 
-#hero-text {
+.hero-text {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
   color: #343B55;
   width: 250px;
 }
-@media screen and (min-width: 576px) {
-  #hero-text {
-    transform: translate(150px, 150px);
-  }
-}
-@media screen and (min-width: 768px) {
-  #hero-text {
-    width: 390px;
-    font-size: 18px;
-  }
-}
 
-#call-to-action {
+.call-to-action {
   background-color: #F78731;
   border-radius: 25px;
   width: 130px;
@@ -73,23 +43,72 @@
   color: #F7F5E6;
   cursor: pointer;
 }
+
+.hero-title,
+.hero-text,
+.call-to-action {
+  transform: translate(0px, 40px);
+}
+
 @media screen and (min-width: 576px) {
-  #call-to-action {
-    transform: translate(150px, 150px);
+  .hero-image-text-area {
+    border-radius: 0 50% 50% 0;
+    width: 600px;
+    height: 600px;
+    border-right: 4px #343B55 solid;
+    transform: translate(-250px, -140px);
+  }
+
+  .hero-title,
+.hero-text,
+.call-to-action {
+    transform: translate(250px, 180px);
   }
 }
 @media screen and (min-width: 768px) {
-  #call-to-action {
+  .hero-image-text-area {
+    transform: translate(0px, -155px);
+  }
+
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .hero-text {
+    width: 390px;
+    font-size: 18px;
+  }
+
+  .call-to-action {
     font-size: 20px;
   }
-}
 
+  .hero-title,
+.hero-text,
+.call-to-action {
+    transform: translate(100px, 180px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-image-text-area {
+    width: 800px;
+    height: 800px;
+    transform: translate(-20px, -275px);
+  }
+
+  .hero-title,
+.hero-text,
+.call-to-action {
+    transform: translate(150px, 300px);
+  }
+}
 #logo {
   color: #F7F5E6;
   font-family: "Yellowtail", cursive;
   font-weight: 500;
   font-size: 28px;
   width: 5rem;
+  margin-left: -55px;
 }
 @media only screen and (min-width: 768px) {
   #logo {
@@ -112,7 +131,7 @@
 }
 
 #header-content {
-  border: 2px red solid;
+  border: 2px #52658F solid;
   background-color: #52658F;
   height: 100px;
   padding-left: 5rem;
@@ -124,6 +143,7 @@
 }
 
 #ul-header {
+  display: none;
   list-style-type: none;
   text-transform: uppercase;
   color: #F7F5E6;
@@ -133,18 +153,15 @@
   padding-left: 12px;
   height: 207px;
   position: relative;
-  right: -262px;
-  top: -18px;
-  display: none;
+  top: -134px;
+  left: -66px;
+  align-items: flex-start;
+  background-color: initial;
+  margin-top: 58px;
 }
 @media only screen and (min-width: 768px) {
   #ul-header {
-    top: -134px;
-    left: -34px;
     display: inline-flex;
-    align-items: flex-start;
-    background-color: initial;
-    margin-top: 58px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -158,6 +175,33 @@
     top: -174px;
     margin-top: 3.5rem;
   }
+}
+
+#header-small {
+  width: 100%;
+  text-transform: uppercase;
+  color: #F7F5E6;
+  font-weight: 600;
+  background-color: rgba(82, 101, 143, 0.8);
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+@media screen and (min-width: 576px) {
+  #header-small {
+    z-index: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #header-small {
+    display: none;
+  }
+}
+
+#header-small ul {
+  list-style-type: none;
+  text-align: end;
+  padding-right: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -181,6 +225,10 @@
   border-bottom: 4px #F78731 solid;
 }
 
+.li-header-small {
+  line-height: 45px;
+}
+
 .fa-phone {
   border-radius: 50%;
   padding: 0.5em 0.6em;
@@ -194,7 +242,7 @@
   .fa-phone {
     position: relative;
     top: -24rem;
-    left: 20rem;
+    left: 19rem;
     color: #F78731;
     margin-right: 0;
     margin-top: 0;
@@ -211,6 +259,10 @@
   .fa-phone {
     left: 32rem;
   }
+}
+
+.fa-phone:hover {
+  background-color: #3f4e6f;
 }
 
 a {
@@ -234,7 +286,7 @@ a {
 }
 
 .btn-menu-xs:hover {
-  background-color: #1d1f28;
+  background-color: #3f4e6f;
 }
 
 .menu-lines {
@@ -248,6 +300,14 @@ a {
     width: 33px;
     margin: 10px auto 5px;
   }
+}
+
+.menu-x {
+  display: none;
+  color: #F7F5E6;
+  font-size: 33px;
+  margin-top: -1px;
+  margin-left: 24px;
 }
 
 .menu-line {
@@ -270,7 +330,6 @@ footer {
 }
 
 #footer-container {
-  border: 2px red solid;
   display: flex;
   flex-direction: column;
 }
@@ -315,6 +374,24 @@ footer li {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+#form-container {
+  background-color: #52658F;
+}
+
+#order-form input,
+#order-form textarea {
+  background-color: #F7F5E6;
+}
+
+#hero-image-container-about-us {
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url("/assets/images/about-us-baguette.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
@@ -365,6 +442,8 @@ h2 {
   align-items: center;
   flex-wrap: nowrap;
   flex: 0 0 14%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 100px;
   padding: 40px;
@@ -459,6 +538,4 @@ h2 {
   background-image: url(../assets/images/cupcakes-640.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
