@@ -2,8 +2,21 @@
   height: 300px;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-image: url('/assets/images/about-us-baguette.jpg');
+  background-image: url('../assets/images/about-us-baguette.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+
+.staff-content {
+  border: 1px red solid;
+  display: flex;
+}
+
+
+.images-about-us {
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
 
 }
