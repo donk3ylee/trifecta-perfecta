@@ -1,6 +1,6 @@
 @use '../abstracts/index' as *;
 
-
+//Code for the logo
 #logo {
   color: $brand-color-light;
   font-family: $main-title;
@@ -21,18 +21,20 @@
   }
 }
 
+//Font for the logo
 #logo a {
   font-family: "Yellowtail", cursive;
 }
  
+//Effect on hover on the logo
 #logo:hover {
   color: $orange-header;
   transform: scale(1.2);
   }
 
-
+//Header container
 #header-content {
-  border: 2px red solid;
+  border: 2px $brand-color-dark solid;
   background-color: $brand-color-dark;
   height: 100px;
   padding-left: 5rem;
@@ -41,7 +43,10 @@
 }
 }
 
+//Styling the header
 #ul-header {
+  display: none;
+
   list-style-type: none;
   text-transform: uppercase;
   color: $brand-color-light;
@@ -51,16 +56,14 @@
   padding-left: 12px;
   height: 207px;
   position: relative;
-  right: -262px;
-  top: -18px;
-  display: none;
-  @media only screen and (min-width: $break-m) {
   top: -134px;
   left: -66px;
-  display: inline-flex;
   align-items: flex-start;
   background-color: initial;
   margin-top: 58px;
+
+  @media only screen and (min-width: $break-m) {
+  display: inline-flex;
   }
   @media only screen and (min-width: $break-l) {
     top: -162px;

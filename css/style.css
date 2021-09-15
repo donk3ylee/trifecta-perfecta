@@ -136,7 +136,7 @@
 }
 
 #header-content {
-  border: 2px red solid;
+  border: 2px #52658F solid;
   background-color: #52658F;
   height: 100px;
   padding-left: 5rem;
@@ -148,6 +148,7 @@
 }
 
 #ul-header {
+  display: none;
   list-style-type: none;
   text-transform: uppercase;
   color: #F7F5E6;
@@ -157,18 +158,15 @@
   padding-left: 12px;
   height: 207px;
   position: relative;
-  right: -262px;
-  top: -18px;
-  display: none;
+  top: -134px;
+  left: -66px;
+  align-items: flex-start;
+  background-color: initial;
+  margin-top: 58px;
 }
 @media only screen and (min-width: 768px) {
   #ul-header {
-    top: -134px;
-    left: -66px;
     display: inline-flex;
-    align-items: flex-start;
-    background-color: initial;
-    margin-top: 58px;
   }
 }
 @media only screen and (min-width: 992px) {
