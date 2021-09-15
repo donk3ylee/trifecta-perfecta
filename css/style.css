@@ -330,7 +330,6 @@ footer {
 }
 
 #footer-container {
-  border: 2px red solid;
   display: flex;
   flex-direction: column;
 }
@@ -384,6 +383,15 @@ footer li {
 #order-form input,
 #order-form textarea {
   background-color: #F7F5E6;
+}
+
+#hero-image-container-about-us {
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url("/assets/images/about-us-baguette.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
