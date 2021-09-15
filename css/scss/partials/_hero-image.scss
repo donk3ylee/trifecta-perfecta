@@ -22,7 +22,7 @@
 #hero-title {
     font-family: $main-title;
     font-size: 45px;
-    margin: 0 0 20px;
+    margin: 0 0 20px -3px;
     color: $text-colour-dark;
     font-weight: 500;    
 }
@@ -51,7 +51,14 @@
     cursor: pointer;
 }
 
+//Keeping the text together
+#hero-title,
+#hero-text,
+#call-to-action {
+    transform: translate(0px, 40px);
+}
 
+// Media queries
 @media screen and (min-width: $break-s) {
 
     #hero-image-text-area {
@@ -65,7 +72,7 @@
     #hero-title,
     #hero-text,
     #call-to-action {
-        transform: translate(150px, 150px);
+        transform: translate(190px, 180px);
     }
 }
 
@@ -88,6 +95,11 @@
         font-size: 20px;
     }
     
+    #hero-title,
+    #hero-text,
+    #call-to-action {
+        transform: translate(100px, 180px);
+    }
 }
 
 @media screen and (min-width: $break-l) {
