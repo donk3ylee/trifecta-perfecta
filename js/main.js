@@ -22,8 +22,6 @@ function removeNav(x) {
     headerSmall.style.display = "none";
     menuLine.style.display = "block";
     menuX.style.display = 'none';
-
-
 } else {
   headerSmall.style.display = "none";
 }

@@ -73,7 +73,6 @@
     top: -174px;
     margin-top: 3.5rem;
   }
-
 }
 
 #header-small {
@@ -83,6 +82,7 @@
   font-weight: 600;
   background-color: $brand-color-dark;
   position: absolute;
+  //z-index: 2;
   display: none;
   z-index: 2;
   @media screen and (min-width: $break-s) {
