@@ -385,6 +385,15 @@ footer li {
   -webkit-transform: rotate(-45deg);
 }
 
+#form-container {
+  background-color: #52658F;
+}
+
+#order-form input,
+#order-form textarea {
+  background-color: #F7F5E6;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05rem;

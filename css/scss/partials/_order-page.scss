@@ -1,0 +1,13 @@
+@use '../abstracts/index' as *;
+
+#form-container {
+    background-color: $brand-color-dark;
+}
+
+// The form styles
+#order-form {
+    input,
+    textarea {
+        background-color: $brand-color-light;
+    }
+}
