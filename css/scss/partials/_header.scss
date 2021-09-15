@@ -84,9 +84,9 @@
   position: absolute;
   //z-index: 2;
   display: none;
-  @media only screen and (min-width: $break-s) {
-    //z-index: 1;
-
+  z-index: 2;
+  @media screen and (min-width: $break-s) {
+    z-index: 0;
   }
   @media only screen and (min-width: $break-m) {
     display: none;

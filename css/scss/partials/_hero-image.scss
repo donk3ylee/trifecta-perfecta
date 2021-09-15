@@ -13,7 +13,7 @@
 // This is the area in wich the title, text and call to action are contained
 #hero-image-text-area {
     background-color: $brand-color-light;
-    padding: 60px 5px 0;
+    padding: 0px 30px 0;
     width: 100%;
     height: 100%;
 }
@@ -66,7 +66,7 @@
         width: 600px;
         height: 600px;
         border-right: 4px $text-colour-dark solid;
-        transform: translate(-150px, -150px);
+        transform: translate(-150px, -100px);
     }
 
     #hero-title,
