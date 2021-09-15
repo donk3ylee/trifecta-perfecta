@@ -81,8 +81,9 @@
   text-transform: uppercase;
   color: $brand-color-light;
   font-weight: 600;
-  background-color: $brand-color-dark;
+  background-color: red;
   position: absolute;
+  z-index: 1;
   display: none;
   @media only screen and (min-width: $break-m) {
     display: none;
