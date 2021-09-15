@@ -17,7 +17,7 @@
 #hero-title {
   font-family: "Yellowtail", cursive;
   font-size: 45px;
-  margin: 0 0 20px;
+  margin: 0 0 20px -3px;
   color: #343B55;
   font-weight: 500;
 }
