@@ -327,6 +327,21 @@ body {
   flex-direction: column;
 }
 
+h2 {
+  color: #52658F;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rule {
+  height: 0px;
+  width: 25%;
+  border: solid 2px #52658F;
+  margin: 30px auto;
+}
+
 #main-container {
   justify-content: space-between;
   align-self: center;
@@ -349,9 +364,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  flex: 0 0 12%;
-  width: -webkit-max-content;
-  width: -moz-max-content;
+  flex: 0 0 14%;
   width: max-content;
   height: 100px;
   padding: 40px;
@@ -363,39 +376,89 @@ body {
 }
 @media (min-width: 0px) {
   #icon-headlines .icon-headline-item .icon-headline-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
-    padding: 5px 0;
+    padding: 5px 0 0;
   }
 }
 @media (min-width: 767px) {
   #icon-headlines .icon-headline-item .icon-headline-text {
     font-size: 0.9rem;
     font-weight: 600;
-    padding: 10px 0;
+    padding: 10px 0 0;
   }
 }
 @media (min-width: 992px) {
   #icon-headlines .icon-headline-item .icon-headline-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    padding: 15px 0;
+    padding: 15px 0 0;
   }
 }
 @media (min-width: 1260px) {
   #icon-headlines .icon-headline-item .icon-headline-text {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    padding: 20px 0;
+    padding: 20px 0 0;
   }
 }
 #icon-headlines .icon-headline-item .icon {
   font-size: 50px;
 }
 
-.rule {
-  height: 0px;
-  width: 25%;
-  border: solid 2px #52658F;
-  margin: 30px auto;
-}/*# sourceMappingURL=style.css.map */
+#article {
+  justify-content: center;
+  width: 100%;
+  border: solid 3px aqua;
+}
+#article .circle-splash {
+  position: relative;
+  float: left;
+  padding: 50px;
+  width: 300px;
+  height: 400px;
+  border: solid 3px blue;
+}
+#article .circle-splash .circle-splash-1 {
+  position: absolute;
+  left: calc(50% - (170px / 2));
+  top: calc(50% - (170px / 2));
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: solid 4px white;
+  background-color: #F7F5E6;
+  z-index: 1;
+  transform-origin: center center;
+  transform: translate(75px, -80px);
+}
+#article .circle-splash .circle-splash-2 {
+  position: absolute;
+  left: calc(50% - (200px / 2));
+  top: calc(50% - (200px / 2));
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 4px white;
+  background-color: #52658F;
+  z-index: 2;
+  transform-origin: center center;
+  transform: translate(80px, 50px);
+}
+#article .circle-splash .circle-splash-3 {
+  position: absolute;
+  left: calc(50% - (280px / 2));
+  top: calc(50% - (280px / 2));
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: solid 4px white;
+  z-index: 3;
+  transform-origin: center center;
+  transform: translate(-30px, -25px);
+  background-image: url(../assets/images/cupcakes-640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

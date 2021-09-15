@@ -93,4 +93,37 @@ h2{
     // max-width: 1200px;
     // padding: 5%;
     border: solid 3px aqua;
+    .circle-splash{
+        position: relative;
+        float: left;
+        padding: 50px;
+        width: 300px;
+        height: 400px;
+        // z-index: -4;
+        border: solid 3px blue;
+        .circle-splash-1{ // cream circle bottom stacked
+            @include build-circle($dia: 170px, $backC: $brand-color-light, $borderW: 4px, $borderC: white){
+                z-index: 1;
+                transform-origin: center center;
+                transform: translate(75px,-80px);
+            }
+        }
+        .circle-splash-2{ // blue circle 2nd stacked
+            @include build-circle($dia: 200px, $backC: $brand-color-dark, $borderW: 4px, $borderC: white){
+                z-index: 2;
+                transform-origin: center center;
+                transform: translate(80px,50px);
+            }
+        }
+        .circle-splash-3{ // image circle
+            @include build-circle($dia: 280px, $borderW: 4px, $borderC: white){
+                z-index: 3;
+                transform-origin: center center;
+                transform: translate(-30px,-25px);
+                background-image: url(../assets/images/cupcakes-640.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
 }
