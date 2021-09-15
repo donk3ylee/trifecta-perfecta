@@ -84,6 +84,10 @@
   background-color: $brand-color-dark;
   position: absolute;
   display: none;
+  z-index: 2;
+  @media screen and (min-width: $break-s) {
+    z-index: 0;
+  }
   @media only screen and (min-width: $break-m) {
     display: none;
   }
