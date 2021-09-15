@@ -108,6 +108,7 @@
   font-weight: 500;
   font-size: 28px;
   width: 5rem;
+  margin-left: -55px;
 }
 @media only screen and (min-width: 768px) {
   #logo {
@@ -158,7 +159,7 @@
 @media only screen and (min-width: 768px) {
   #ul-header {
     top: -134px;
-    left: -34px;
+    left: -66px;
     display: inline-flex;
     align-items: flex-start;
     background-color: initial;
@@ -176,6 +177,27 @@
     top: -174px;
     margin-top: 3.5rem;
   }
+}
+
+#header-small {
+  width: 100%;
+  text-transform: uppercase;
+  color: #F7F5E6;
+  font-weight: 600;
+  background-color: #52658F;
+  position: absolute;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  #header-small {
+    display: none;
+  }
+}
+
+#header-small ul {
+  list-style-type: none;
+  text-align: end;
+  padding-right: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -199,6 +221,10 @@
   border-bottom: 4px #F78731 solid;
 }
 
+.li-header-small {
+  line-height: 45px;
+}
+
 .fa-phone {
   border-radius: 50%;
   padding: 0.5em 0.6em;
@@ -212,7 +238,7 @@
   .fa-phone {
     position: relative;
     top: -24rem;
-    left: 20rem;
+    left: 19rem;
     color: #F78731;
     margin-right: 0;
     margin-top: 0;
@@ -229,6 +255,15 @@
   .fa-phone {
     left: 32rem;
   }
+}
+
+.phone-icon-small-screen {
+  position: absolute;
+  top: 26px;
+  left: 36rem;
+  float: initial;
+  margin-top: initial;
+  margin-right: initial;
 }
 
 a {

@@ -51,13 +51,14 @@
     cursor: pointer;
 }
 
+//Keeping the text together
 #hero-title,
 #hero-text,
 #call-to-action {
     transform: translate(0px, 40px);
 }
 
-
+// Media queries
 @media screen and (min-width: $break-s) {
 
     #hero-image-text-area {
