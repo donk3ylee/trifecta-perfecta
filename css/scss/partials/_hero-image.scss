@@ -51,6 +51,12 @@
     cursor: pointer;
 }
 
+#hero-title,
+#hero-text,
+#call-to-action {
+    transform: translate(0px, 40px);
+}
+
 
 @media screen and (min-width: $break-s) {
 
@@ -65,7 +71,7 @@
     #hero-title,
     #hero-text,
     #call-to-action {
-        transform: translate(150px, 150px);
+        transform: translate(190px, 180px);
     }
 }
 
@@ -88,6 +94,11 @@
         font-size: 20px;
     }
     
+    #hero-title,
+    #hero-text,
+    #call-to-action {
+        transform: translate(100px, 180px);
+    }
 }
 
 @media screen and (min-width: $break-l) {
