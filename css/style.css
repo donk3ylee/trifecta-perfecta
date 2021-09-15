@@ -118,6 +118,11 @@
   font-family: "Yellowtail", cursive;
 }
 
+#logo:hover {
+  color: #F78731;
+  transform: scale(1.2);
+}
+
 #header-content {
   border: 2px red solid;
   background-color: #52658F;
@@ -245,6 +250,10 @@
   }
 }
 
+.fa-phone:hover {
+  background-color: #3f4e6f;
+}
+
 .phone-icon-small-screen {
   position: absolute;
   top: 26px;
@@ -275,7 +284,7 @@ a {
 }
 
 .btn-menu-xs:hover {
-  background-color: #1d1f28;
+  background-color: #3f4e6f;
 }
 
 .menu-lines {
@@ -289,6 +298,14 @@ a {
     width: 33px;
     margin: 10px auto 5px;
   }
+}
+
+.menu-x {
+  display: none;
+  color: #F7F5E6;
+  font-size: 33px;
+  margin-top: -1px;
+  margin-left: 24px;
 }
 
 .menu-line {

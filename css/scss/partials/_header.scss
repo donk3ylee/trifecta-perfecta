@@ -25,6 +25,10 @@
   font-family: "Yellowtail", cursive;
 }
 
+#logo:hover {
+  color: $orange-header;
+  transform: scale(1.2);
+  }
 
 
 #header-content {
@@ -143,6 +147,11 @@
   }
 }
 
+.fa-phone:hover {
+  background-color: darken($color: $brand-color-dark, $amount: 10%)
+
+}
+
 .phone-icon-small-screen {
   position: absolute;
   top: 26px;
@@ -151,6 +160,8 @@
   margin-top: initial;
   margin-right: initial;
 }
+
+
 
 a {
   color: inherit;
@@ -174,7 +185,7 @@ a {
 }
 
 .btn-menu-xs:hover {
-	background-color: darken($color: #333645, $amount: 10%)
+	background-color: darken($color: $brand-color-dark, $amount: 10%)
 }
 .menu-lines {
   padding: 10px 0 4px 16px;
@@ -187,12 +198,24 @@ a {
 }
 }
 
+
+
+.menu-x {
+  display: none;
+  color: $brand-color-light;
+  font-size: 33px;
+  margin-top: -1px;
+  margin-left: 24px;
+}
+
 .menu-line {
   width: 33px;
   height: 3px;
   background-color:$brand-color-light;
   margin-bottom: 5px;
+  //display: none;
 }
+
 
 .menu-title {
   font-size: 12px;
