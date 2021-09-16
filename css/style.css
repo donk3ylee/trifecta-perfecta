@@ -387,6 +387,7 @@ footer li {
   justify-content: center;
   flex-direction: column;
   text-align: left;
+  padding-bottom: 75px;
 }
 #order-form label {
   display: block;
@@ -433,7 +434,7 @@ footer li {
 
 #order-message {
   resize: none;
-  width: 260px;
+  width: 220px;
   height: 250px;
   background-color: #F7F5E6;
   margin-left: 8px;
@@ -445,26 +446,45 @@ footer li {
   height: 20px;
 }
 
-.order-label {
-  transform: translate(-93px, 0px);
+#GDPR-label {
+  width: 200px;
 }
 
-#client-email-label {
-  transform: translate(-80px, 0);
-}
+@media screen and (min-width: 576px) {
+  #order-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-#client-telephone-label {
-  transform: translate(-60px, 0);
-}
+  .contact-form-input {
+    width: 230px;
+  }
 
-#subject-label {
-  transform: translate(-105px, 0);
+  #order-subject,
+#order-message {
+    width: 520px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .contact-form-input {
+    width: 300px;
+  }
 
-#message-label {
-  transform: translate(-97px, 0);
+  #order-subject,
+#order-message {
+    width: 660px;
+  }
 }
+@media screen and (min-width: 992px) {
+  .contact-form-input {
+    width: 450px;
+  }
 
+  #order-subject,
+#order-message {
+    width: 960px;
+  }
+}
 #hero-image-container-about-us {
   height: 300px;
   overflow-y: hidden;

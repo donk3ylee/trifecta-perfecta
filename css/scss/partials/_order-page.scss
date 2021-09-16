@@ -12,6 +12,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: left;
+    padding-bottom: 75px;
 
     label {
         display: block;
@@ -22,6 +23,7 @@
 
 }
 
+// Inputs styling
 .contact-form-input {
     border: none;
     border-radius: 3px;
@@ -53,7 +55,7 @@
 
 #order-message {
     resize: none;
-    width: 260px;
+    width: 220px;
     height: 250px;
     background-color: $brand-color-light;
     margin-left: 8px;
@@ -65,23 +67,44 @@
     height: 20px;
 }
 
-// positioning the labels
-.order-label {
-    transform: translate(-93px, 0px);
+#GDPR-label {
+    width: 200px;
 }
 
-#client-email-label {
-    transform: translate(-80px, 0);
+@media screen and (min-width: $break-s) {
+    #order-form {
+       flex-direction: row; 
+       flex-wrap: wrap;
+    }
+
+    .contact-form-input {
+        width: 230px;
+    }
+    
+    #order-subject,
+    #order-message {
+        width: 520px;
+    }
 }
 
-#client-telephone-label {
-    transform: translate(-60px, 0);
+@media screen and (min-width: $break-m) {
+    .contact-form-input {
+        width: 300px;
+    }
+
+    #order-subject,
+    #order-message {
+        width: 660px;
+    }
 }
 
-#subject-label {
-    transform: translate(-105px, 0);
-}
+@media screen and (min-width: $break-l) {
+    .contact-form-input {
+        width: 450px;
+    }
 
-#message-label {
-    transform: translate(-97px, 0);
+    #order-subject,
+    #order-message {
+        width: 960px;
+    }
 }
