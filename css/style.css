@@ -387,6 +387,7 @@ footer li {
   justify-content: center;
   flex-direction: column;
   text-align: left;
+  padding-bottom: 75px;
 }
 #order-form label {
   display: block;
@@ -445,6 +446,45 @@ footer li {
   height: 20px;
 }
 
+#GDPR-label {
+  width: 200px;
+}
+
+@media screen and (min-width: 576px) {
+  #order-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact-form-input {
+    width: 230px;
+  }
+
+  #order-subject,
+#order-message {
+    width: 520px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-form-input {
+    width: 300px;
+  }
+
+  #order-subject,
+#order-message {
+    width: 660px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-form-input {
+    width: 450px;
+  }
+
+  #order-subject,
+#order-message {
+    width: 960px;
+  }
+}
 #hero-image-container-about-us {
   height: 300px;
   overflow-y: hidden;
