@@ -9,7 +9,8 @@
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>
-        
+        <!-- Jquery liabrary link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,15 +24,18 @@
         <div id="form-container">
 
             <form id="order-form" action="">
-                <input type="text" id="order-first-name" required>
-                <input type="text" id="order-last-name" required>
-                <input type="email" id="order-client-email" required>
-                <input type="text" id="order-subject" required>
-                <textarea id="order-message"></textarea>
+                <input type="text" id="order-first-name" class="contact-form-input" required> <label for="order-first-name">First Name</label>             
+                <input type="text" id="order-last-name" class="contact-form-input" required> <label for="order-last-name">Last Name</label>
+                <input type="email" id="order-client-email" class="contact-form-input" required> <label for="order-client-email">Email Address</label>
+                <input type="tel" id="order-client-telephone" class="contact-form-input" required> <label for="order-client-telephone">Telephone Number</label>
+                <input type="text" id="order-subject" class="contact-form-input" required> <label for="order-subject">Subject</label>
+                <textarea id="order-message" class="contact-form-input"></textarea> <label for="order-message">Message</label>
+                <input type="checkbox" id="GDPR-check"> <label for="GDPR-check"> </label>
             </form> 
 
         </div>
     </div>
     
+    <script src="js/regex.js"></script>
 </body>
 </html>

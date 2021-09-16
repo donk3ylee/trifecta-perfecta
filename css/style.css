@@ -378,11 +378,46 @@ footer li {
 
 #form-container {
   background-color: #52658F;
+  padding-top: 50px;
 }
 
-#order-form input,
-#order-form textarea {
+#order-form {
+  align-items: center;
+  justify-content: center;
+}
+#order-form input {
   background-color: #F7F5E6;
+  width: 260px;
+  height: 40px;
+  outline: none;
+  color: #343B55;
+  margin: 20px 10px 15px 8px;
+}
+
+.contact-form-input {
+  border: none;
+  border-radius: 3px;
+}
+
+.Form-focused {
+  border: #F78731 solid 3px;
+}
+
+.Form-valid {
+  border: green solid 3px;
+}
+
+.Form-invalid {
+  border: red solid 3px;
+}
+
+#order-message {
+  resize: none;
+  width: 260px;
+  height: 250px;
+  background-color: #F7F5E6;
+  margin-left: 8px;
+  outline: none;
 }
 
 #hero-image-container-about-us {
