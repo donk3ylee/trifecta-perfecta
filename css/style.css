@@ -388,15 +388,6 @@ footer li {
   flex-direction: column;
   text-align: left;
 }
-#order-form input {
-  background-color: #F7F5E6;
-  width: 220px;
-  height: 40px;
-  outline: none;
-  color: #343B55;
-  margin: 0px 10px 15px 8px;
-  padding: 5px 20px;
-}
 #order-form label {
   display: block;
   color: #F78731;
@@ -407,6 +398,13 @@ footer li {
 .contact-form-input {
   border: none;
   border-radius: 3px;
+  background-color: #F7F5E6;
+  width: 220px;
+  height: 40px;
+  outline: none;
+  color: #343B55;
+  margin: 0px 10px 15px 8px;
+  padding: 5px 20px;
 }
 
 .contact-form-input:focus::-moz-placeholder {

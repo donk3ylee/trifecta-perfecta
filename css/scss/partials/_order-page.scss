@@ -13,16 +13,6 @@
     flex-direction: column;
     text-align: left;
 
-    input {
-        background-color: $brand-color-light;
-        width: 220px;
-        height: 40px;
-        outline: none;
-        color: $text-colour-dark;
-        margin: 0px 10px 15px 8px;
-        padding: 5px 20px;
-    }
-
     label {
         display: block;
         color: $orange-header;
@@ -35,6 +25,13 @@
 .contact-form-input {
     border: none;
     border-radius: 3px;
+    background-color: $brand-color-light;
+    width: 220px;
+    height: 40px;
+    outline: none;
+    color: $text-colour-dark;
+    margin: 0px 10px 15px 8px;
+    padding: 5px 20px;
 }
 
 .contact-form-input:focus::placeholder {
