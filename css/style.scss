@@ -154,55 +154,61 @@ p{
 }
 
 #products-carousel{
-    // display:flex;
     width: 100%;
     background-color: $brand-color-light;
     .owl-carousel{
-        //need to center somehow
+        max-width: 900px;
+        margin: 20px auto;
+        border: solid 3px green;
         .title{
-            display: block;
-            color: orange;
+            text-align: center;
+            margin: 20px auto 0;
         }
-        .owl-1{
+        .product-1{
+            height:200px;
+            width: 200px;
+            margin: 20px auto;
             background-image: url("../assets/images/products/breads.jpg");
-            height:200px;
-            width: 200px;
             background-repeat: no-repeat;
             background-size: cover;
             border: solid 6px $brand-color-dark;
             border-radius: 50%;
         }
-        .owl-2{
+        .product-2{
+            height:200px;
+            width: 200px;
+            margin: 20px auto;
             background-image: url("../assets/images/products/pastires.jpg");
-            height:200px;
-            width: 200px;
             background-repeat: no-repeat;
             background-size: cover;
             border: solid 6px $brand-color-dark;
             border-radius: 50%;
         }
-        .owl-3{
+        .product-3{
+            height:200px;
+            width: 200px;
+            margin: 20px auto;
             background-image: url("../assets/images/products/cakes.jpg");
-            height:200px;
-            width: 200px;
             background-repeat: no-repeat;
             background-size: cover;
             border: solid 6px $brand-color-dark;
             border-radius: 50%;
         }
-        .owl-4{
+        .product-4{
+            height:200px;
+            width: 200px;
+            margin: 20px auto;
             background-image: url("../assets/images/products/wedding-cake.jpg");
-            height:200px;
-            width: 200px;
             background-repeat: no-repeat;
             background-size: cover;
             border: solid 6px $brand-color-dark;
             border-radius: 50%;
         }
-        .owl-5{
-            background-image: url("../assets/images/products/speciality-cake.jpg");
+        .product-5{
             height:200px;
             width: 200px;
+            margin: 20px auto;
+            background-image: url("../assets/images/products/speciality-cake.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             border: solid 6px $brand-color-dark;

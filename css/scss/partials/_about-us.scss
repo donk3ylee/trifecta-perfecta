@@ -1,6 +1,6 @@
 @use '../abstracts/index' as *;
 
-
+//Tailoring hero image to this page
 #hero-image-container-about-us {
   height: 300px;
   overflow-y: hidden;
@@ -8,22 +8,22 @@
   background-image: url('../assets/images/about-us-baguette.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
-}
-.staff-container h2 {
-font-family: 'Yellowtail', cursive;
 }
 
+
+//Styling the main story text
 .about-us-text h3 {
   font-weight: 100;
   padding: 0 50px;
   text-align: justify;
 }
 
+//The main image. I made it 80% wide in order to look good on all screen size and at the same time stay centred
 .main-image-about {
   max-width: 80%;
   margin: 0 10%;
 }
+
 
 .staff-content {
   display: flex;
