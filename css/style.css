@@ -378,20 +378,210 @@ footer li {
 
 #form-container {
   background-color: #52658F;
+  padding-top: 50px;
 }
 
-#order-form input,
-#order-form textarea {
+#order-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+#order-form label {
+  display: block;
+  color: #F78731;
+  margin: 0px 0 5px 8px;
+  text-align: left;
+}
+
+.contact-form-input {
+  border: none;
+  border-radius: 3px;
   background-color: #F7F5E6;
+  width: 220px;
+  height: 40px;
+  outline: none;
+  color: #343B55;
+  margin: 0px 10px 15px 8px;
+  padding: 5px 20px;
+}
+
+.contact-form-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.contact-form-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact-form-input:focus::placeholder {
+  color: transparent;
+}
+
+.Form-focused {
+  border: #F78731 solid 3px;
+}
+
+.Form-valid {
+  border: green solid 3px;
+}
+
+.Form-invalid {
+  border: red solid 3px;
+}
+
+#order-message {
+  resize: none;
+  width: 260px;
+  height: 250px;
+  background-color: #F7F5E6;
+  margin-left: 8px;
+  outline: none;
+}
+
+#GDPR-check {
+  width: 20px;
+  height: 20px;
+}
+
+.order-label {
+  transform: translate(-93px, 0px);
+}
+
+#client-email-label {
+  transform: translate(-80px, 0);
+}
+
+#client-telephone-label {
+  transform: translate(-60px, 0);
+}
+
+#subject-label {
+  transform: translate(-105px, 0);
+}
+
+#message-label {
+  transform: translate(-97px, 0);
 }
 
 #hero-image-container-about-us {
   height: 300px;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-image: url("/assets/images/about-us-baguette.jpg");
+  background-image: url("../assets/images/about-us-baguette.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.staff-container h2 {
+  font-family: "Yellowtail", cursive;
+}
+
+.about-us-text h3 {
+  font-weight: 100;
+  padding: 0 50px;
+  text-align: justify;
+}
+
+.main-image-about {
+  max-width: 80%;
+  margin: 0 10%;
+}
+
+.staff-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 576px) {
+  .staff-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.staff-images {
+  margin: 15px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.images-about-us {
+  border-radius: 50%;
+  width: 45%;
+  height: 45%;
+}
+@media only screen and (min-width: 576px) {
+  .images-about-us {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .images-about-us {
+    width: 15vw;
+    height: 15vw;
+    transition-duration: 1s;
+  }
+}
+
+.images-about-us:hover {
+  transform: scale(1.2);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.social-logo {
+  color: #52658F;
+  transform: scale(2.5);
+  margin: 0 20px;
+}
+
+.social-logo:hover {
+  color: #F78731;
+}
+
+#map {
+  height: 300px;
+  width: 95%;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 992px) {
+  #map {
+    height: 400px;
+    width: 40%;
+  }
+}
+
+.contact-us {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .contact-us {
+    align-items: initial;
+    flex-direction: initial;
+    justify-content: space-evenly;
+  }
+}
+
+#streetview {
+  border: 0;
+  width: 95%;
+  height: 300px;
+}
+@media only screen and (min-width: 992px) {
+  #streetview {
+    width: 40%;
+    height: 400px;
+  }
 }
 
 * {
@@ -402,6 +592,7 @@ footer li {
 body {
   display: flex;
   flex-direction: column;
+  background-color: black;
 }
 
 h2 {
@@ -412,11 +603,26 @@ h2 {
   text-align: center;
 }
 
+p {
+  color: #343B55;
+  line-height: 1.4rem;
+}
+
 .rule {
   height: 0px;
   width: 25%;
-  border: solid 2px #52658F;
-  margin: 30px auto;
+  border: solid 1.7px #52658F;
+  background-color: #52658F;
+  margin: 10px auto 50px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #main-container {
@@ -428,7 +634,6 @@ h2 {
   height: 100%;
   min-height: 100vh;
   background-color: white;
-  border: solid 3px red;
 }
 
 #icon-headlines {
@@ -446,7 +651,7 @@ h2 {
   width: -moz-max-content;
   width: max-content;
   height: 100px;
-  padding: 40px;
+  padding: 80px 40px;
   color: #52658F;
   text-align: center;
 }
@@ -486,17 +691,33 @@ h2 {
 }
 
 #article {
-  justify-content: center;
   width: 100%;
-  border: solid 3px aqua;
+  max-width: 1200px;
+}
+#article h2 {
+  margin: 0 10%;
+}
+#article p {
+  margin: 35px 80px;
 }
 #article .circle-splash {
   position: relative;
-  float: left;
-  padding: 50px;
+  padding: 65px 65px 25px;
   width: 300px;
-  height: 400px;
-  border: solid 3px blue;
+  height: 300px;
+}
+@media (min-width: 0px) {
+  #article .circle-splash {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 767px) {
+  #article .circle-splash {
+    float: left;
+    margin-right: 50px;
+  }
 }
 #article .circle-splash .circle-splash-1 {
   position: absolute;
@@ -538,4 +759,58 @@ h2 {
   background-image: url(../assets/images/cupcakes-640.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#products-carousel {
+  width: 100%;
+  background-color: #F7F5E6;
+}
+#products-carousel .owl-carousel .title {
+  display: block;
+  color: orange;
+}
+#products-carousel .owl-carousel .owl-1 {
+  background-image: url("../assets/images/products/breads.jpg");
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 6px #52658F;
+  border-radius: 50%;
+}
+#products-carousel .owl-carousel .owl-2 {
+  background-image: url("../assets/images/products/pastires.jpg");
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 6px #52658F;
+  border-radius: 50%;
+}
+#products-carousel .owl-carousel .owl-3 {
+  background-image: url("../assets/images/products/cakes.jpg");
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 6px #52658F;
+  border-radius: 50%;
+}
+#products-carousel .owl-carousel .owl-4 {
+  background-image: url("../assets/images/products/wedding-cake.jpg");
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 6px #52658F;
+  border-radius: 50%;
+}
+#products-carousel .owl-carousel .owl-5 {
+  background-image: url("../assets/images/products/speciality-cake.jpg");
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 6px #52658F;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

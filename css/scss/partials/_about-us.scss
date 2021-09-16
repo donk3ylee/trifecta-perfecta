@@ -1,9 +1,111 @@
+@use '../abstracts/index' as *;
+
+
 #hero-image-container-about-us {
   height: 300px;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-image: url('/assets/images/about-us-baguette.jpg');
+  background-image: url('../assets/images/about-us-baguette.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+.staff-container h2 {
+font-family: 'Yellowtail', cursive;
+}
+
+.about-us-text h3 {
+  font-weight: 100;
+  padding: 0 50px;
+  text-align: justify;
+}
+
+.main-image-about {
+  max-width: 80%;
+  margin: 0 10%;
+}
+
+.staff-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (min-width: $break-s) {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+}
+
+.staff-images {
+  margin: 15px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.images-about-us {
+  border-radius: 50%;
+  width: 45%;
+  height: 45%;
+  @media only screen and (min-width: $break-s) {
+    width: 20vw;
+    height: 20vw;
+}
+  @media only screen and (min-width: $break-m) {
+    width: 15vw;
+    height: 15vw;
+    transition-duration: 1s;
+}
+}
+.images-about-us:hover {
+  transform: scale(1.2);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.social-logo {
+  color: $brand-color-dark;
+  transform: scale(2.5);
+  margin: 0 20px;
+}
+
+.social-logo:hover {
+  color: $orange-header;
+}
+
+#map {
+  height: 300px;
+  width: 95%;
+  margin-bottom: 15px;
+  @media only screen and (min-width: $break-l) {
+
+  height: 400px;
+  width: 40%;
+}
+}
+
+.contact-us {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: $break-l) {
+    align-items: initial;
+    flex-direction: initial;
+    justify-content: space-evenly;
+}
+}
+
+
+#streetview {
+  border: 0;
+  width: 95%;
+  height: 300px;
+  @media only screen and (min-width: $break-l) {
+    width: 40%;
+    height: 400px;
+}
 }

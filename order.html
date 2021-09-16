@@ -9,7 +9,8 @@
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>
-        
+        <!-- Jquery liabrary link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,15 +24,24 @@
         <div id="form-container">
 
             <form id="order-form" action="">
-                <input type="text" id="order-first-name" required>
-                <input type="text" id="order-last-name" required>
-                <input type="email" id="order-client-email" required>
-                <input type="text" id="order-subject" required>
-                <textarea id="order-message"></textarea>
+                <label for="order-first-name" class="order-label">First Name</label> 
+                <input type="text" id="order-first-name" class="contact-form-input" placeholder="John" required>
+                <label for="order-last-name" class="order-label">Last Name</label>             
+                <input type="text" id="order-last-name" class="contact-form-input" placeholder="Smith" required> 
+                <label for="order-client-email" id="client-email-label" class="order-label">Email Address</label>
+                <input type="email" id="order-client-email" class="contact-form-input"  placeholder="johnsmith@gmail.com" required> 
+                <label for="order-client-telephone" id="client-telephone-label" class="order-label">Telephone Number</label>
+                <input type="tel" id="order-client-telephone" class="contact-form-input"  placeholder="07234523..." required> 
+                <label for="order-subject" id="subject-label" class="order-label">Subject</label>
+                <input type="text" id="order-subject" class="contact-form-input" placeholder="Wedding cake ..." required> 
+                <label for="order-message" id="message-label" class="order-label">Message</label>
+                <textarea id="order-message" class="contact-form-input"></textarea> 
+                <input type="checkbox" id="GDPR-check"> <label for="GDPR-check"> We will store and use data provided in accordance with the laws and statues such as GDPR.</label>
             </form> 
 
         </div>
     </div>
     
+    <script src="js/regex.js"></script>
 </body>
 </html>
