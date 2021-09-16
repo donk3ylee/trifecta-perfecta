@@ -330,7 +330,6 @@ footer {
 }
 
 #footer-container {
-  border: 2px red solid;
   display: flex;
   flex-direction: column;
 }
@@ -419,6 +418,26 @@ footer li {
   background-color: #F7F5E6;
   margin-left: 8px;
   outline: none;
+}
+
+#hero-image-container-about-us {
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url("../assets/images/about-us-baguette.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.staff-content {
+  border: 1px red solid;
+  display: flex;
+}
+
+.images-about-us {
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
 }
 
 * {
