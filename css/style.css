@@ -382,21 +382,43 @@ footer li {
 }
 
 #order-form {
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: left;
 }
 #order-form input {
   background-color: #F7F5E6;
-  width: 260px;
+  width: 220px;
   height: 40px;
   outline: none;
   color: #343B55;
-  margin: 20px 10px 15px 8px;
+  margin: 0px 10px 15px 8px;
+  padding: 5px 20px;
+}
+#order-form label {
+  display: block;
+  color: #F78731;
+  margin: 0px 0 5px 8px;
+  text-align: left;
 }
 
 .contact-form-input {
   border: none;
   border-radius: 3px;
+}
+
+.contact-form-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.contact-form-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact-form-input:focus::placeholder {
+  color: transparent;
 }
 
 .Form-focused {
@@ -418,6 +440,31 @@ footer li {
   background-color: #F7F5E6;
   margin-left: 8px;
   outline: none;
+}
+
+#GDPR-check {
+  width: 20px;
+  height: 20px;
+}
+
+.order-label {
+  transform: translate(-93px, 0px);
+}
+
+#client-email-label {
+  transform: translate(-80px, 0);
+}
+
+#client-telephone-label {
+  transform: translate(-60px, 0);
+}
+
+#subject-label {
+  transform: translate(-105px, 0);
+}
+
+#message-label {
+  transform: translate(-97px, 0);
 }
 
 #hero-image-container-about-us {
