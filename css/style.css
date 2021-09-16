@@ -388,15 +388,6 @@ footer li {
   flex-direction: column;
   text-align: left;
 }
-#order-form input {
-  background-color: #F7F5E6;
-  width: 220px;
-  height: 40px;
-  outline: none;
-  color: #343B55;
-  margin: 0px 10px 15px 8px;
-  padding: 5px 20px;
-}
 #order-form label {
   display: block;
   color: #F78731;
@@ -407,6 +398,13 @@ footer li {
 .contact-form-input {
   border: none;
   border-radius: 3px;
+  background-color: #F7F5E6;
+  width: 220px;
+  height: 40px;
+  outline: none;
+  color: #343B55;
+  margin: 0px 10px 15px 8px;
+  padding: 5px 20px;
 }
 
 .contact-form-input:focus::-moz-placeholder {
@@ -474,10 +472,6 @@ footer li {
   background-image: url("../assets/images/about-us-baguette.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.staff-container h2 {
-  font-family: "Yellowtail", cursive;
 }
 
 .about-us-text h3 {
@@ -767,50 +761,60 @@ p {
   width: 100%;
   background-color: #F7F5E6;
 }
+#products-carousel .owl-carousel {
+  max-width: 900px;
+  margin: 20px auto;
+  border: solid 3px green;
+}
 #products-carousel .owl-carousel .title {
-  display: block;
-  color: orange;
+  text-align: center;
+  margin: 20px auto 0;
 }
-#products-carousel .owl-carousel .owl-1 {
+#products-carousel .owl-carousel .product-1 {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
   background-image: url("../assets/images/products/breads.jpg");
-  height: 200px;
-  width: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   border: solid 6px #52658F;
   border-radius: 50%;
 }
-#products-carousel .owl-carousel .owl-2 {
+#products-carousel .owl-carousel .product-2 {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
   background-image: url("../assets/images/products/pastires.jpg");
-  height: 200px;
-  width: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   border: solid 6px #52658F;
   border-radius: 50%;
 }
-#products-carousel .owl-carousel .owl-3 {
+#products-carousel .owl-carousel .product-3 {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
   background-image: url("../assets/images/products/cakes.jpg");
-  height: 200px;
-  width: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   border: solid 6px #52658F;
   border-radius: 50%;
 }
-#products-carousel .owl-carousel .owl-4 {
+#products-carousel .owl-carousel .product-4 {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
   background-image: url("../assets/images/products/wedding-cake.jpg");
-  height: 200px;
-  width: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   border: solid 6px #52658F;
   border-radius: 50%;
 }
-#products-carousel .owl-carousel .owl-5 {
-  background-image: url("../assets/images/products/speciality-cake.jpg");
+#products-carousel .owl-carousel .product-5 {
   height: 200px;
   width: 200px;
+  margin: 20px auto;
+  background-image: url("../assets/images/products/speciality-cake.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: solid 6px #52658F;
