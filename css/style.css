@@ -433,7 +433,7 @@ footer li {
 
 #order-message {
   resize: none;
-  width: 260px;
+  width: 220px;
   height: 250px;
   background-color: #F7F5E6;
   margin-left: 8px;
@@ -443,26 +443,6 @@ footer li {
 #GDPR-check {
   width: 20px;
   height: 20px;
-}
-
-.order-label {
-  transform: translate(-93px, 0px);
-}
-
-#client-email-label {
-  transform: translate(-80px, 0);
-}
-
-#client-telephone-label {
-  transform: translate(-60px, 0);
-}
-
-#subject-label {
-  transform: translate(-105px, 0);
-}
-
-#message-label {
-  transform: translate(-97px, 0);
 }
 
 #hero-image-container-about-us {
