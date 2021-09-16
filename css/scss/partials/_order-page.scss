@@ -2,12 +2,31 @@
 
 #form-container {
     background-color: $brand-color-dark;
+    padding-top: 50px;
 }
 
 // The form styles
 #order-form {
-    input,
-    textarea {
+
+    align-items: center;
+    justify-content: center;
+
+    input {
         background-color: $brand-color-light;
+        width: 260px;
+        height: 40px;
+        outline: none;
+        border: none;
+        color: $text-colour-dark;
+        margin: 20px 10px 15px 8px;
     }
+
+}
+
+#order-message {
+    resize: none;
+    width: 260px;
+    height: 250px;
+    background-color: $brand-color-light;
+    margin-left: 8px;
 }
