@@ -7,17 +7,27 @@
 
 // The form styles
 #order-form {
-
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: left;
 
     input {
         background-color: $brand-color-light;
-        width: 260px;
+        width: 220px;
         height: 40px;
         outline: none;
         color: $text-colour-dark;
-        margin: 20px 10px 15px 8px;
+        margin: 0px 10px 15px 8px;
+        padding: 5px 20px;
+    }
+
+    label {
+        display: block;
+        color: $orange-header;
+        margin: 0px 0 5px 8px;
+        text-align: left;
     }
 
 }
@@ -26,6 +36,10 @@
     border: none;
     border-radius: 3px;
 }
+
+.contact-form-input:focus::placeholder {
+    color: transparent;
+  }
 
 // Validation showing
 .Form-focused {
@@ -47,4 +61,30 @@
     background-color: $brand-color-light;
     margin-left: 8px;
     outline: none;
+}
+
+#GDPR-check {
+    width: 20px;
+    height: 20px;
+}
+
+// positioning the labels
+.order-label {
+    transform: translate(-93px, 0px);
+}
+
+#client-email-label {
+    transform: translate(-80px, 0);
+}
+
+#client-telephone-label {
+    transform: translate(-60px, 0);
+}
+
+#subject-label {
+    transform: translate(-105px, 0);
+}
+
+#message-label {
+    transform: translate(-97px, 0);
 }
