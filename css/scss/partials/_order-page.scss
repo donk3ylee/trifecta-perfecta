@@ -16,11 +16,27 @@
         width: 260px;
         height: 40px;
         outline: none;
-        border: none;
         color: $text-colour-dark;
         margin: 20px 10px 15px 8px;
     }
 
+}
+
+.contact-form-input {
+    border: none;
+    border-radius: 3px;
+}
+
+.Form-focused {
+    border: $orange-header solid 3px;
+}
+
+.Form-valid {
+    border: green solid 3px;
+}
+
+.Form-invalid {
+    border: red solid 3px;
 }
 
 #order-message {
@@ -29,4 +45,5 @@
     height: 250px;
     background-color: $brand-color-light;
     margin-left: 8px;
+    outline: none;
 }

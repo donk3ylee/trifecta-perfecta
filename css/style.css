@@ -391,9 +391,25 @@ footer li {
   width: 260px;
   height: 40px;
   outline: none;
-  border: none;
   color: #343B55;
   margin: 20px 10px 15px 8px;
+}
+
+.contact-form-input {
+  border: none;
+  border-radius: 3px;
+}
+
+.Form-focused {
+  border: #F78731 solid 3px;
+}
+
+.Form-valid {
+  border: green solid 3px;
+}
+
+.Form-invalid {
+  border: red solid 3px;
 }
 
 #order-message {
@@ -402,6 +418,7 @@ footer li {
   height: 250px;
   background-color: #F7F5E6;
   margin-left: 8px;
+  outline: none;
 }
 
 * {
