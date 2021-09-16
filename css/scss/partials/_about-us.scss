@@ -12,8 +12,8 @@
 
 
 //Styling the main story text
-.about-us-text h3 {
-  font-weight: 100;
+.about-us-text p {
+  //font-weight: 100;
   padding: 0 50px;
   text-align: justify;
 }
@@ -24,7 +24,7 @@
   margin: 0 10%;
 }
 
-
+//The positioning of the staff members content - image, name, position and info
 .staff-content {
   display: flex;
   flex-direction: column;
@@ -35,12 +35,19 @@
 }
 }
 
+//Staff images container
 .staff-images {
   margin: 15px;
   max-width: 300px;
   text-align: center;
 }
 
+//Making the text of the staff cards extends
+.staff-images p {
+  text-align: justify;
+}
+
+//Make the images round and sizing them correctly for different screens
 .images-about-us {
   border-radius: 50%;
   width: 45%;
@@ -55,43 +62,50 @@
     transition-duration: 1s;
 }
 }
+
+//Hover effect to make them a bit bigger on hover
 .images-about-us:hover {
-  transform: scale(1.2);
+  @media only screen and (min-width: $break-s) {
+  transform: scale(1.15);
+  }
 }
 
+//Social media logos container
 .socials {
   display: flex;
   justify-content: center;
   padding: 25px;
 }
 
+//Social media logos - made them bigger and added the brand colour
 .social-logo {
   color: $brand-color-dark;
   transform: scale(2.5);
   margin: 0 20px;
 }
 
+//Changed the colour on hover
 .social-logo:hover {
   color: $orange-header;
 }
 
+//Styling the Google map API
 #map {
   height: 300px;
   width: 95%;
   margin-bottom: 15px;
   @media only screen and (min-width: $break-l) {
-
-  height: 400px;
-  width: 40%;
+    height: 400px;
+    width: 40%;
 }
 }
 
+//Google maps and streetview container - added some positioning for small and big screens
 .contact-us {
   margin: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
-
   @media only screen and (min-width: $break-l) {
     align-items: initial;
     flex-direction: initial;
@@ -100,6 +114,7 @@
 }
 
 
+//Styling of the streetview element 
 #streetview {
   border: 0;
   width: 95%;
