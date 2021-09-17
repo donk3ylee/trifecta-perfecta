@@ -410,6 +410,7 @@ footer li {
   color: #343B55;
   margin: 0px 10px 15px 8px;
   padding: 5px 20px;
+  font-weight: 500;
 }
 
 .contact-form-input:focus::-moz-placeholder {
@@ -477,6 +478,27 @@ footer li {
   float: right;
 }
 
+#creative-partners {
+  align-items: center;
+  text-align: center;
+}
+
+#creative-partners-list {
+  list-style-type: none;
+}
+#creative-partners-list li {
+  padding: 0 0 10px 0;
+}
+
+.partners-list {
+  color: #343B55;
+}
+
+.partners-list:hover {
+  color: #F78731;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 576px) {
   #order-form {
     flex-direction: row;
@@ -490,6 +512,10 @@ footer li {
   #order-subject,
 #order-message {
     width: 500px;
+  }
+
+  #order-submit {
+    width: 400px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -512,16 +538,13 @@ footer li {
   }
 
   #GDPR-label {
-    width: 300px;
+    width: 350px;
+    margin: 0 100px 0 8px;
   }
 
   #order-subject,
 #order-message {
     width: 900px;
-  }
-
-  #order-submit {
-    margin: 0 0 0 15px;
   }
 }
 #hero-image-container-about-us {
