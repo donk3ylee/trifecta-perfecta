@@ -50,7 +50,7 @@
     text-align: left;
 }
 
-//order submission.
+//order submission button.
 #order-submit {
     width: 220px;
     background-color: $orange-header;
@@ -66,7 +66,7 @@
     margin: 10px 0 0 0;
 }
 
-// Validation showing
+// Validation on the form
 .Form-focused {
     border: $orange-header solid 3px;
 }
