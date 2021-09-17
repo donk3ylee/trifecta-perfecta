@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #hero-image--container {
   height: 300px;
   overflow-y: hidden;
@@ -413,14 +414,6 @@ footer li {
   font-weight: 500;
 }
 
-.contact-form-input:focus::-moz-placeholder {
-  color: transparent;
-}
-
-.contact-form-input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
 .contact-form-input:focus::placeholder {
   color: transparent;
 }
@@ -830,8 +823,6 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   flex: 0 0 14%;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   height: 100px;
   padding: 80px 40px;
@@ -959,7 +950,7 @@ p {
 #products-carousel .title:hover {
   color: #3f4e6f;
 }
-#products-carousel .owl-carousel {
+#products-carousel .product-carousel {
   width: 80%;
   margin: 0 auto;
 }
@@ -1045,4 +1036,78 @@ p {
 }
 #products-carousel .button:hover {
   background-color: #3f4e6f;
-}/*# sourceMappingURL=style.css.map */
+}
+
+#reviewsCarousel {
+  width: 100%;
+  color: #343B55;
+  padding: 50px 0;
+}
+#reviewsCarousel .review-carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+#reviewsCarousel .owl-item {
+  position: relative;
+}
+#reviewsCarousel .review {
+  width: 90%;
+  text-align: center;
+  margin: 30px auto;
+}
+#reviewsCarousel .review::before {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  color: black;
+  font-family: FontAwesome !important;
+  font-size: 25px;
+  content: "";
+}
+#reviewsCarousel .review::after {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  color: black;
+  font-family: FontAwesome !important;
+  font-size: 25px;
+  content: "";
+}
+#reviewsCarousel .author {
+  display: block;
+  text-align: right;
+  margin: 20px 45px 0;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 500;
+}
+#reviewsCarousel .owl-dot {
+  margin: 30px 18px;
+}
+#reviewsCarousel .button-container {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+#reviewsCarousel .button {
+  align-items: center;
+  color: white;
+  width: 20rem;
+  height: 25px;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #F78731;
+  border-radius: 25px;
+}
+#reviewsCarousel .button:hover {
+  background-color: #ec6c09;
+}
+#reviewsCarousel h2 {
+  padding: 0 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
