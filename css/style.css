@@ -307,7 +307,7 @@ a {
   display: none;
   color: #F7F5E6;
   font-size: 33px;
-  margin-top: -1px;
+  margin-top: 1px;
   margin-left: 24px;
 }
 
@@ -321,7 +321,7 @@ a {
 .menu-title {
   font-size: 12px;
   text-align: center;
-  margin-top: -1px;
+  margin-top: -7px;
   color: #F7F5E6;
 }
 
@@ -747,6 +747,24 @@ footer li {
     margin-top: -61px;
     margin-right: 5px;
   }
+}
+
+#privacy-policy h1,
+#privacy-policy h5 {
+  text-align: center;
+}
+
+#privacy-policy {
+  padding: 15px;
+}
+@media only screen and (min-width: 576px) {
+  #privacy-policy {
+    padding: 50px;
+  }
+}
+
+#privacy-policy h2 {
+  text-align: left;
 }
 
 * {
