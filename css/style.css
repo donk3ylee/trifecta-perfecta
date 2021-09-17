@@ -412,6 +412,14 @@ footer li {
   padding: 5px 20px;
 }
 
+.contact-form-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.contact-form-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 .contact-form-input:focus::placeholder {
   color: transparent;
 }
@@ -718,6 +726,24 @@ footer li {
   }
 }
 
+#privacy-policy h1,
+#privacy-policy h5 {
+  text-align: center;
+}
+
+#privacy-policy {
+  padding: 15px;
+}
+@media only screen and (min-width: 576px) {
+  #privacy-policy {
+    padding: 50px;
+  }
+}
+
+#privacy-policy h2 {
+  text-align: left;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05rem;
@@ -781,6 +807,8 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   flex: 0 0 14%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 100px;
   padding: 80px 40px;
@@ -994,6 +1022,4 @@ p {
 }
 #products-carousel .button:hover {
   background-color: #3f4e6f;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
