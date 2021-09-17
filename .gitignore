@@ -1,4 +1,4 @@
 # ignore tracking the sass generated style.css output and the style.css.map - Lee
 
-*.css
+style.css
 *.css.map
