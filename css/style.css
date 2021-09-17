@@ -570,6 +570,12 @@ footer li {
   width: 45%;
   height: 45%;
 }
+@-moz-document url-prefix() {
+  .images-about-us {
+    width: 120px;
+    height: 120px;
+  }
+}
 @media only screen and (min-width: 576px) {
   .images-about-us {
     width: 20vw;
