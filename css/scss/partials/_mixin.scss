@@ -10,7 +10,7 @@
     border: solid #{$borderW} #{$borderC};
     background-color: $backC;
     
-    @content
+    @content;
 }
 
 
