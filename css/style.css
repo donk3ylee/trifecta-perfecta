@@ -81,6 +81,7 @@
 
   .call-to-action {
     font-size: 20px;
+    width: 200px;
   }
 
   .hero-title,
@@ -389,12 +390,6 @@ footer li {
   text-align: left;
   padding-bottom: 75px;
 }
-#order-form label {
-  display: block;
-  color: #F78731;
-  margin: 0px 0 5px 8px;
-  text-align: left;
-}
 
 .contact-form-input {
   border: none;
@@ -418,6 +413,13 @@ footer li {
 
 .contact-form-input:focus::placeholder {
   color: transparent;
+}
+
+.order-label {
+  display: block;
+  color: #F78731;
+  margin: 0px 0 5px 8px;
+  text-align: left;
 }
 
 .Form-focused {
@@ -448,6 +450,7 @@ footer li {
 
 #GDPR-label {
   width: 200px;
+  float: right;
 }
 
 @media screen and (min-width: 576px) {
@@ -456,18 +459,22 @@ footer li {
     flex-wrap: wrap;
   }
 
-  .contact-form-input {
-    width: 230px;
+  #GDPR-label {
+    margin: 0 10px 0 8px;
   }
 
   #order-subject,
 #order-message {
-    width: 520px;
+    width: 500px;
   }
 }
 @media screen and (min-width: 768px) {
   .contact-form-input {
     width: 300px;
+  }
+
+  #GDPR-label {
+    width: 250px;
   }
 
   #order-subject,
@@ -477,12 +484,17 @@ footer li {
 }
 @media screen and (min-width: 992px) {
   .contact-form-input {
-    width: 450px;
+    width: 420px;
+  }
+
+  #GDPR-label {
+    width: 350px;
+    margin: 0 100px 0 8px;
   }
 
   #order-subject,
 #order-message {
-    width: 960px;
+    width: 900px;
   }
 }
 #hero-image-container-about-us {
