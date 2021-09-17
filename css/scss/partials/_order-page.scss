@@ -1,5 +1,15 @@
 @use '../abstracts/index' as *;
 
+// rules for the hero-image on this page copied from the main
+#hero-image--container-order {
+    height: 300px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: url("../assets/images/order-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #form-container {
     background-color: $brand-color-dark;
     padding-top: 50px;
@@ -12,16 +22,10 @@
     justify-content: center;
     flex-direction: column;
     text-align: left;
-
-    label {
-        display: block;
-        color: $orange-header;
-        margin: 0px 0 5px 8px;
-        text-align: left;
-    }
-
+    padding-bottom: 75px;
 }
 
+// Inputs styling
 .contact-form-input {
     border: none;
     border-radius: 3px;
@@ -36,7 +40,15 @@
 
 .contact-form-input:focus::placeholder {
     color: transparent;
-  }
+}
+
+// Label styling
+.order-label {
+    display: block;
+    color: $orange-header;
+    margin: 0px 0 5px 8px;
+    text-align: left;
+}
 
 // Validation showing
 .Form-focused {
@@ -53,7 +65,7 @@
 
 #order-message {
     resize: none;
-    width: 260px;
+    width: 220px;
     height: 250px;
     background-color: $brand-color-light;
     margin-left: 8px;
@@ -65,23 +77,54 @@
     height: 20px;
 }
 
-// positioning the labels
-.order-label {
-    transform: translate(-93px, 0px);
+#GDPR-label {
+    width: 200px;
+    float: right
 }
 
-#client-email-label {
-    transform: translate(-80px, 0);
+@media screen and (min-width: $break-s) {
+    #order-form {
+       flex-direction: row; 
+       flex-wrap: wrap;
+    }
+    
+    #GDPR-label {
+        margin: 0 10px 0 8px;
+    }
+
+    #order-subject,
+    #order-message {
+        width: 500px;
+    }
 }
 
-#client-telephone-label {
-    transform: translate(-60px, 0);
+@media screen and (min-width: $break-m) {
+    .contact-form-input {
+        width: 300px;
+    }
+
+    #GDPR-label {
+        width: 250px;
+    }
+
+    #order-subject,
+    #order-message {
+        width: 660px;
+    }
 }
 
-#subject-label {
-    transform: translate(-105px, 0);
-}
+@media screen and (min-width: $break-l) {
+    .contact-form-input {
+        width: 420px;
+    }
 
-#message-label {
-    transform: translate(-97px, 0);
+    #GDPR-label {
+        width: 350px;
+        margin: 0 100px 0 8px;
+    }
+
+    #order-subject,
+    #order-message {
+        width: 900px;
+    }
 }

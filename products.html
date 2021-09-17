@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Products</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="main-container">
+
+
+  <!-- Header starts here -->
+  <div id="header-container">
+    <div id="header-content">
+      <h1 id="logo"><a href="../trifecta-perfecta/index.html"> Baker's Dozen</a></h1>
+      <ul id="ul-header">
+        <li class="li-header"><a href="../trifecta-perfecta/about-us.html">About</a></li>
+        <li class="li-header"><a href="#">Products</a></li>
+        <li class="li-header"><a href="#">Testimonials</a></li>
+        <li class="li-header"><a href="../trifecta-perfecta/order.html">Order</a></li>
+      </ul>
+      <p id="phone-icon"><a href="tel:01603123987">
+        <i class="fas fa-phone fa-2x"></i></a></p>
+    </div>
+
+<!-- Extra code for the drop down hamburger menu on small screen sizes -->
+    <div id="header-small">
+      <ul>
+        <li class="li-header-small"><a href="../trifecta-perfecta/about-us.html">About</a></li>
+        <li class="li-header-small"><a href="#">Products</a></li>
+        <li class="li-header-small"><a href="#">Testimonials</a></li>
+        <li class="li-header-small"><a href="#">Order</a></li>
+      </ul>
+    </div>
+
+<!-- Hamburger menu itself -->
+    <div class="btn-menu-xs" onclick="openCloseNav()">
+      <a href="#">
+        <div class="menu-lines">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>	
+        </div>
+        <div class="menu-x">x</div>
+            <p class="menu-title">MENU</p>						
+      </a>
+    </div>
+  </div>
+
+
+<!-- Hero image for about us page -->
+  <div id="hero-image-container-products">
+    <div class="hero-image-text-area">
+      <h1 class="hero-title">Products</h1>
+      <h3 class="hero-text hero-text-about-us">Scroll down for a full range of our products</h3>
+      <div class="call-to-action"><a href="order.html">Order Now</a></div>
+    </div>
+  </div>
+
+
+<!-- Product cards start here with the container of the cards-->
+  <div class="product-cards-container">
+    <h2 class="title-category">Breads</h2>
+<!-- product-category is a container for each category of products -->
+    <div class="product-category">
+<!-- product-card is a class for each card -->
+<!-- Card-1-Breads category -->
+      <div class="product-card">
+        <h2 class="product-title">Baguette</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/bread-1.jpg" alt="bread-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£1.99</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+
+<!-- Card-2-Breads category -->
+      <div class="product-card">
+        <h2 class="product-title">Multigrain Bread</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/bread-2.jpg" alt="bread-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£4.99</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+
+<!-- Card-3-Breads category -->
+      <div class="product-card">
+        <h2 class="product-title">Pumpernickel</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/bread-3.jpg" alt="bread-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£3.99</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+    </div>
+
+<!-- Category Pastries starts here -->
+    <h2 class="title-category">Pastries</h2>
+    <div class="product-category">
+<!-- Card-1-Pastries category -->
+      <div class="product-card">
+        <h2 class="product-title">Chocolate Sprinkle Donut</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/products1.jpg" alt="donut-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£0.99</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+
+<!-- Card-2-Pastries category -->
+      <div class="product-card">
+        <h2 class="product-title">Cream Filled Donut</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/products2.jpg" alt="donut-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£0.99</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+
+<!-- Card-3-Pastries category -->
+      <div class="product-card">
+        <h2 class="product-title">Colourful Sprinkle Donut</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/products3.jpg" alt="donut-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£1.99</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+    </div>
+
+<!-- Category Cakes starts here -->
+    <h2 class="title-category">Cakes</h2>
+    <div class="product-category">
+
+<!-- Card-1-Cakes category -->
+      <div class="product-card">
+        <h2 class="product-title">Chocolate Cake</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/cake-1.jpg" alt="cake-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£99</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+
+<!-- Card-2-Cakes category -->
+      <div class="product-card">
+        <h2 class="product-title">Chiffon Cake</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/cake-2.jpg" alt="cake-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£59</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+
+<!-- Card-2-Cakes category -->
+      <div class="product-card">
+        <h2 class="product-title">Baked Flourless Cake</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/cake-3.jpg" alt="cake-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£89</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+    </div>
+    
+<!-- Category Wedding Cakes starts here -->
+    <h2 class="title-category">Wedding Cakes</h2>
+    <div class="product-category">
+
+<!-- Card-1-Wedding-Cakes category -->
+      <div class="product-card">
+        <h2 class="product-title">Lemon</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/wed-cake-1.jpg" alt="wedding-cake-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£349</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+
+<!-- Card-2-Wedding-Cakes category -->
+      <div class="product-card">
+        <h2 class="product-title">Chocolate</h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/wed-cake-2.jpg" alt="wedding-cake-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£299</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+
+<!-- Card-3-Wedding-Cakes category -->
+      <div class="product-card">
+        <h2 class="product-title">Red Velvet
+        </h2>
+        <img class="product-image" src="../trifecta-perfecta/assets/images/wed-cake-3.jpg" alt="wedding-cake-image">
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nib.</p>
+        <h3 class="product-price">£199</h3>
+        <p class="call-to-action order-btn-products"><a href="order.html">Enquire</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer starts here -->
+  <!-- Footer is divided into 3 sections/divs -->
+  <footer>
+    <div id="footer-container">
+      <div id="footer-1">
+        <h4>Address</h4>
+        <ul class="ul-footer">
+          <li>107 Gloucester Street</li>
+          <li>Norwich, Norfolk</li>
+          <li>NR2 2DY</li>
+          <li><br></li>
+          <li class="li-footer-hover">Tel: <a href="tel:01603123987">01603 123 987</a></li>
+          <li class="li-footer-hover"><a href="mailto:info@bakersdozen.co.uk">info@bakersdozen.co.uk</a></li>
+        </ul>
+        </div>
+      <div id="footer-2">
+        <h4>Opening Times</h4>
+        <ul class="ul-footer">
+        <li>Monday - Friday 8AM - 4PM</li>
+        <li>Saturday 8AM - 3PM</li>
+        <li>Closed Sunday</li>
+      </ul>
+      </div>
+      <div id="footer-3">
+        <h4>Sections</h4>
+        <ul class="ul-footer">
+          <li class="li-arrow"><a href="#"><i class="arrow right"></i>&nbsp;&nbsp;About</a></li>
+          <li class="li-arrow"><a href="#"><i class="arrow right"></i>&nbsp;&nbsp;Products</a></li>
+          <li class="li-arrow"><a href="#"><i class="arrow right"></i>&nbsp;&nbsp;Testimonials</a></li>
+          <li class="li-arrow"><a href="#"><i class="arrow right"></i>&nbsp;&nbsp;Order</a></li>
+          <li class="li-arrow"><a href="#"><i class="arrow right"></i>&nbsp;&nbsp;Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="copyright">
+        Copyright &copy; <em id="date"></em>Baker's Dozen. All rights reserved 2021 
+    </div>    
+  </footer>
+
+</div>
+<!-- JavaScript file -->
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>
