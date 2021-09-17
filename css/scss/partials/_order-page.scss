@@ -50,6 +50,21 @@
     text-align: left;
 }
 
+#order-submit {
+    width: 220px;
+    background-color: $orange-header;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: $brand-color-light;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
 // Validation showing
 .Form-focused {
     border: $orange-header solid 3px;
@@ -119,12 +134,16 @@
     }
 
     #GDPR-label {
-        width: 350px;
-        margin: 0 100px 0 8px;
+        width: 300px;
+        // margin: 0 100px 0 8px;
     }
 
     #order-subject,
     #order-message {
         width: 900px;
+    }
+
+    #order-submit {
+        margin: 0 0 0 15px;
     }
 }

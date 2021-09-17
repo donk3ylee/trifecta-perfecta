@@ -431,6 +431,21 @@ footer li {
   text-align: left;
 }
 
+#order-submit {
+  width: 220px;
+  background-color: #F78731;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 15px;
+  color: #F7F5E6;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+}
+
 .Form-focused {
   border: #F78731 solid 3px;
 }
@@ -497,13 +512,16 @@ footer li {
   }
 
   #GDPR-label {
-    width: 350px;
-    margin: 0 100px 0 8px;
+    width: 300px;
   }
 
   #order-subject,
 #order-message {
     width: 900px;
+  }
+
+  #order-submit {
+    margin: 0 0 0 15px;
   }
 }
 #hero-image-container-about-us {
