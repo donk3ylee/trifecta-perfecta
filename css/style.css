@@ -308,7 +308,7 @@ a {
   display: none;
   color: #F7F5E6;
   font-size: 33px;
-  margin-top: -1px;
+  margin-top: 1px;
   margin-left: 24px;
 }
 
@@ -322,7 +322,7 @@ a {
 .menu-title {
   font-size: 12px;
   text-align: center;
-  margin-top: -1px;
+  margin-top: -7px;
   color: #F7F5E6;
 }
 
@@ -411,6 +411,7 @@ footer li {
   color: #343B55;
   margin: 0px 10px 15px 8px;
   padding: 5px 20px;
+  font-weight: 500;
 }
 
 .contact-form-input:focus::placeholder {
@@ -470,6 +471,27 @@ footer li {
   float: right;
 }
 
+#creative-partners {
+  align-items: center;
+  text-align: center;
+}
+
+#creative-partners-list {
+  list-style-type: none;
+}
+#creative-partners-list li {
+  padding: 0 0 10px 0;
+}
+
+.partners-list {
+  color: #343B55;
+}
+
+.partners-list:hover {
+  color: #F78731;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 576px) {
   #order-form {
     flex-direction: row;
@@ -483,6 +505,10 @@ footer li {
   #order-subject,
 #order-message {
     width: 500px;
+  }
+
+  #order-submit {
+    width: 400px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -505,16 +531,13 @@ footer li {
   }
 
   #GDPR-label {
-    width: 300px;
+    width: 350px;
+    margin: 0 100px 0 8px;
   }
 
   #order-subject,
 #order-message {
     width: 900px;
-  }
-
-  #order-submit {
-    margin: 0 0 0 15px;
   }
 }
 #hero-image-container-about-us {
@@ -717,6 +740,24 @@ footer li {
     margin-top: -61px;
     margin-right: 5px;
   }
+}
+
+#privacy-policy h1,
+#privacy-policy h5 {
+  text-align: center;
+}
+
+#privacy-policy {
+  padding: 15px;
+}
+@media only screen and (min-width: 576px) {
+  #privacy-policy {
+    padding: 50px;
+  }
+}
+
+#privacy-policy h2 {
+  text-align: left;
 }
 
 * {

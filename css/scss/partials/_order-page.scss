@@ -36,6 +36,7 @@
     color: $text-colour-dark;
     margin: 0px 10px 15px 8px;
     padding: 5px 20px;
+    font-weight: 500;
 }
 
 .contact-form-input:focus::placeholder {
@@ -50,6 +51,7 @@
     text-align: left;
 }
 
+//order submission button.
 #order-submit {
     width: 220px;
     background-color: $orange-header;
@@ -65,7 +67,7 @@
     margin: 10px 0 0 0;
 }
 
-// Validation showing
+// Validation on the form
 .Form-focused {
     border: $orange-header solid 3px;
 }
@@ -87,6 +89,7 @@
     outline: none;
 }
 
+// the GDPR checkbox area
 #GDPR-check {
     width: 20px;
     height: 20px;
@@ -95,6 +98,30 @@
 #GDPR-label {
     width: 200px;
     float: right
+}
+
+// creative partners section
+
+#creative-partners {
+    align-items: center;
+    text-align: center;
+}
+
+#creative-partners-list {
+    list-style-type: none;
+
+    li {
+       padding: 0 0 10px 0; 
+    }
+}
+
+.partners-list {
+    color: $text-colour-dark;
+}
+
+.partners-list:hover {
+    color: $orange-header;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: $break-s) {
@@ -110,6 +137,10 @@
     #order-subject,
     #order-message {
         width: 500px;
+    }
+
+    #order-submit {
+        width: 400px;
     }
 }
 
@@ -134,16 +165,12 @@
     }
 
     #GDPR-label {
-        width: 300px;
-        // margin: 0 100px 0 8px;
+        width: 350px;
+        margin: 0 100px 0 8px;
     }
 
     #order-subject,
     #order-message {
         width: 900px;
-    }
-
-    #order-submit {
-        margin: 0 0 0 15px;
     }
 }
