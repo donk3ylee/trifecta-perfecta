@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Document</title>
+        <title>Order</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,7 @@
             <h1 id="logo"><a href="../trifecta-perfecta/index.html"> Baker's Dozen</a></h1>
             <ul id="ul-header">
                 <li class="li-header"><a href="../trifecta-perfecta/about-us.html">About</a></li>
-                <li class="li-header"><a href="#">Products</a></li>
+                <li class="li-header"><a href="products.html">Products</a></li>
                 <li class="li-header"><a href="#">Testimonials</a></li>
                 <li class="li-header"><a href="order.html">Order</a></li>
             </ul>
@@ -40,7 +40,7 @@
             <div id="header-small">
             <ul>
                 <li class="li-header-small"><a href="../trifecta-perfecta/about-us.html">About</a></li>
-                <li class="li-header-small"><a href="#">Products</a></li>
+                <li class="li-header-small"><a href="products.html">Products</a></li>
                 <li class="li-header-small"><a href="#">Testimonials</a></li>
                 <li class="li-header-small"><a href="order.html">Order</a></li>
             </ul>
@@ -62,10 +62,10 @@
 
         <div id="hero-image--container">
 
-            <div class="hero-image-text-area">
-            <h1 class="hero-title">Everyday Fresh</h1>
-            <h3 class="hero-text">The finest breads and pastries in the heart of Norwich.</h3>
-            <div class="call-to-action"> <a href="order.html">Order Now</a></div>
+            <div class="hero-image-text-area order-version">
+            <h1 class="hero-title">Order</h1>
+            <h3 class="hero-text">Specialty hand-crafted cakes and pastries for any occasion.</h3>
+            <div class="call-to-action"> <a href="products.html">Products</a></div>
             </div>
             
         </div>
@@ -105,13 +105,53 @@
                 </div>
 
                 <div>
-                <input type="checkbox" id="GDPR-check"> <label style="float: right;" id="GDPR-label" for="GDPR-check"> We will store and use data provided in accordance with the laws and statues such as GDPR.</label>
+                <input type="checkbox" id="GDPR-check"> <label id="GDPR-label" class="order-label" for="GDPR-check"> We will store and use data provided in accordance with the laws and statues such as GDPR.</label>
                 </div>
 
                 <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
             </form> 
 
         </div>
+
+        <!-- Footer starts here -->
+        <!-- Footer is divided into 3 sections/divs -->
+        <footer>
+            <div id="footer-container">
+            <div id="footer-1">
+                <h4>Address</h4>
+                <ul class="ul-footer">
+                <li>107 Gloucester Street</li>
+                <li>Norwich, Norfolk</li>
+                <li>NR2 2DY</li>
+                <br>
+                <li class="li-footer-hover">Tel: <a href="tel:01603123987">01603 123 987</a></li>
+                <li class="li-footer-hover"><a href="mailto:info@bakersdozen.co.uk">info@bakersdozen.co.uk</a></li>
+                </ul>
+                </div>
+            <div id="footer-2">
+                <h4>Opening Times</h4>
+                <ul class="ul-footer">
+                <li>Monday - Friday 8AM - 4PM</li>
+                <li>Saturday 8AM - 3PM</li>
+                <li>Closed Sunday</li>
+            </ul>
+            </div>
+            <div id="footer-3">
+                <h4>Sections</h4>
+                <ul class="ul-footer">
+                <li class="li-arrow"><a href="about-us.html"><i class="arrow right"></i>&nbsp;&nbsp;About</a></li>
+                <li class="li-arrow"><a href="products.html"><i class="arrow right"></i>&nbsp;&nbsp;Products</a></li>
+                <li class="li-arrow"><a href="#"><i class="arrow right"></i>&nbsp;&nbsp;Testimonials</a></li>
+                <li class="li-arrow"><a href="#"><i class="arrow right"></i>&nbsp;&nbsp;Order</a></li>
+                <li class="li-arrow"><a href="#"><i class="arrow right"></i>&nbsp;&nbsp;Privacy Policy</a></li>
+                </ul>
+            </div>
+            </div>
+            <div id="copyright">
+                Copyright &copy; <em id="date"></em>Baker's Dozen. All rights reserved 2021 
+            </div>    
+        </footer>
+
     </div>
     
     <script src="js/regex.js"></script>

@@ -13,14 +13,6 @@
     flex-direction: column;
     text-align: left;
     padding-bottom: 75px;
-
-    label {
-        display: block;
-        color: $orange-header;
-        margin: 0px 0 5px 8px;
-        text-align: left;
-    }
-
 }
 
 // Inputs styling
@@ -38,7 +30,15 @@
 
 .contact-form-input:focus::placeholder {
     color: transparent;
-  }
+}
+
+// Label styling
+.order-label {
+    display: block;
+    color: $orange-header;
+    margin: 0px 0 5px 8px;
+    text-align: left;
+}
 
 // Validation showing
 .Form-focused {
@@ -69,6 +69,7 @@
 
 #GDPR-label {
     width: 200px;
+    float: right
 }
 
 @media screen and (min-width: $break-s) {
@@ -76,20 +77,24 @@
        flex-direction: row; 
        flex-wrap: wrap;
     }
-
-    .contact-form-input {
-        width: 230px;
-    }
     
+    #GDPR-label {
+        margin: 0 10px 0 8px;
+    }
+
     #order-subject,
     #order-message {
-        width: 520px;
+        width: 500px;
     }
 }
 
 @media screen and (min-width: $break-m) {
     .contact-form-input {
         width: 300px;
+    }
+
+    #GDPR-label {
+        width: 250px;
     }
 
     #order-subject,
@@ -100,11 +105,16 @@
 
 @media screen and (min-width: $break-l) {
     .contact-form-input {
-        width: 450px;
+        width: 420px;
+    }
+
+    #GDPR-label {
+        width: 350px;
+        margin: 0 100px 0 8px;
     }
 
     #order-subject,
     #order-message {
-        width: 960px;
+        width: 900px;
     }
 }
