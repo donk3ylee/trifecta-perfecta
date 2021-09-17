@@ -377,6 +377,15 @@ footer li {
   -webkit-transform: rotate(-45deg);
 }
 
+#hero-image--container-order {
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url("../assets/images/order-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #form-container {
   background-color: #52658F;
   padding-top: 50px;

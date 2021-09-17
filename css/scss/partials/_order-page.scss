@@ -1,5 +1,15 @@
 @use '../abstracts/index' as *;
 
+// rules for the hero-image on this page copied from the main
+#hero-image--container-order {
+    height: 300px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: url("../assets/images/order-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #form-container {
     background-color: $brand-color-dark;
     padding-top: 50px;
