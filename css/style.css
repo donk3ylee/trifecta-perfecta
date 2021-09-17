@@ -412,14 +412,6 @@ footer li {
   padding: 5px 20px;
 }
 
-.contact-form-input:focus::-moz-placeholder {
-  color: transparent;
-}
-
-.contact-form-input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
 .contact-form-input:focus::placeholder {
   color: transparent;
 }
@@ -789,8 +781,6 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   flex: 0 0 14%;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   height: 100px;
   padding: 80px 40px;
@@ -907,62 +897,103 @@ p {
   width: 100%;
   background-color: #F7F5E6;
 }
-#products-carousel .owl-carousel {
-  max-width: 900px;
-  margin: 20px auto;
-  border: solid 3px green;
-}
-#products-carousel .owl-carousel .title {
+#products-carousel .title {
   text-align: center;
   margin: 20px auto 0;
+  color: #52658F;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
-#products-carousel .owl-carousel .product-1 {
-  height: 200px;
-  width: 200px;
+#products-carousel .title:hover {
+  color: #3f4e6f;
+}
+#products-carousel .owl-carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+#products-carousel .product-5, #products-carousel .product-4, #products-carousel .product-3, #products-carousel .product-2, #products-carousel .product-1 {
+  height: 250px;
+  width: 250px;
   margin: 20px auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 6px #52658F;
+  border-radius: 50%;
+}
+#products-carousel .product-5:hover, #products-carousel .product-4:hover, #products-carousel .product-3:hover, #products-carousel .product-2:hover, #products-carousel .product-1:hover {
+  border: solid 6px #3f4e6f;
+}
+#products-carousel .product-1 {
   background-image: url("../assets/images/products/breads.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: solid 6px #52658F;
-  border-radius: 50%;
 }
-#products-carousel .owl-carousel .product-2 {
-  height: 200px;
-  width: 200px;
-  margin: 20px auto;
+#products-carousel .product-2 {
   background-image: url("../assets/images/products/pastires.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: solid 6px #52658F;
-  border-radius: 50%;
 }
-#products-carousel .owl-carousel .product-3 {
-  height: 200px;
-  width: 200px;
-  margin: 20px auto;
+#products-carousel .product-3 {
   background-image: url("../assets/images/products/cakes.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: solid 6px #52658F;
-  border-radius: 50%;
 }
-#products-carousel .owl-carousel .product-4 {
-  height: 200px;
-  width: 200px;
-  margin: 20px auto;
+#products-carousel .product-4 {
+  background-image: url("../assets/images/products//speciality-cake.jpg");
+}
+#products-carousel .product-5 {
   background-image: url("../assets/images/products/wedding-cake.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: solid 6px #52658F;
-  border-radius: 50%;
 }
-#products-carousel .owl-carousel .product-5 {
-  height: 200px;
-  width: 200px;
-  margin: 20px auto;
-  background-image: url("../assets/images/products/speciality-cake.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: solid 6px #52658F;
+#products-carousel .owl-nav .owl-next, #products-carousel .owl-nav .owl-prev {
+  display: flex;
+  position: absolute;
+  opacity: 1;
+  max-height: 50px;
+  max-width: 50px;
+  height: 50px;
+  width: 50px;
+  background-color: #52658F;
   border-radius: 50%;
-}/*# sourceMappingURL=style.css.map */
+  font-size: 45px;
+  color: #F7F5E6;
+}
+#products-carousel .owl-nav .owl-next:hover, #products-carousel .owl-nav .owl-prev:hover {
+  background-color: #3f4e6f;
+}
+#products-carousel .owl-nav .owl-prev {
+  left: -60px;
+  top: 125px;
+}
+#products-carousel .owl-nav .owl-prev span {
+  position: absolute;
+  left: 17px;
+  top: -3px;
+}
+#products-carousel .owl-nav .owl-next {
+  right: -60px;
+  top: 125px;
+}
+#products-carousel .owl-nav .owl-next span {
+  position: absolute;
+  right: 17px;
+  top: -3px;
+}
+#products-carousel .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#products-carousel .button {
+  color: #F7F5E6;
+  width: 20rem;
+  height: 25px;
+  margin: 20px 0;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #52658F;
+  border-radius: 25px;
+}
+#products-carousel .button:hover {
+  background-color: #3f4e6f;
+}
+
+/*# sourceMappingURL=style.css.map */
