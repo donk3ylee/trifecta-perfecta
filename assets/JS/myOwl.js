@@ -2,7 +2,8 @@
 
 
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
+// products carousel
+  $('.product-carousel').owlCarousel({
     loop:true,
     items:3,
     margin:10,
@@ -17,43 +18,25 @@ $(document).ready(function(){
         0:{
             items:1
         },
-        650:{
+        675:{
             items:2
         },
         1000:{
             items:3
         }
     }
-})
 });
 
-// $(document).ready(function(){
-//     $(".owl-carousel").owlCarousel(
+//review carousel
+    $('.review-carousel').owlCarousel({
+        items:1,
+        loop:true,
+        dots:true,
+        autoplay:true,
+        autoplaySpeed:400,
+        autoplayHoverPause:true,
+  });
+
+});
 
 
-//       loop: true,
-//           //Basic Speeds
-//       slideSpeed : 200,
-//       paginationSpeed : 800,
-
-      
-//       //Autoplay
-//       autoPlay : false,
-//       goToFirst : true,
-//       goToFirstSpeed : 1,
-    
-//       // Navigation
-//       navigation : true,
-//       navigationText : false,
-//       pagination : false,
-//       // paginationNumbers: true,
-    
-//       // Responsive
-//       responsive: true,
-//       items : 3,
-//       itemsDesktop : [1199,3],
-//       itemsDesktopSmall : [980,2],
-//       itemsTablet: [768,2],
-//       itemsMobile : [479,1]
-//     );
-// })
