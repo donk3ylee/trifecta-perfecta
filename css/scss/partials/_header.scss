@@ -132,7 +132,7 @@
     color: $orange-header;
     margin-right: 0;
     margin-top: 0;
-    float: initial;
+    float: inherit;
 }
   @media only screen and (min-width: $break-l) {
     top: -410px;

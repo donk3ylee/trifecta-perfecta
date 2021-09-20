@@ -10,6 +10,13 @@
   background-size: cover;
 }
 
+.staff-container {
+  @media screen and (-ms-high-contrast: none) {
+    background-color: white;
+    flex-direction: column;
+}
+
+}
 
 //Styling the main story text
 .about-us-text p {
@@ -30,8 +37,12 @@
   flex-direction: column;
   align-items: center;
   @media only screen and (min-width: $break-s) {
-  flex-direction: row;
-  justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-evenly;
+  @media screen and (-ms-high-contrast: none) {
+    justify-content: space-around;
+  }
+
 }
 }
 
@@ -52,12 +63,15 @@
   border-radius: 50%;
   width: 45%;
   height: 45%;
-//Added this Firefox specific lines in order to keep the images round as Firefox does not like %
- @-moz-document url-prefix() { 
+//Added this Firefox and IE specific lines in order to keep the images round as they do not like %
+  @-moz-document url-prefix() { 
     width: 120px;
     height: 120px;
 }
-
+  @media screen and (-ms-high-contrast: none) {
+    width: 120px;
+    height: 120px;
+}
   @media only screen and (min-width: $break-s) {
     width: 20vw;
     height: 20vw;
