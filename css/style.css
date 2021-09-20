@@ -273,7 +273,7 @@
 }
 
 .fa-phone:hover {
-  background-color: #3f4e6f;
+  background-color: #202436;
 }
 
 a {
@@ -426,6 +426,14 @@ footer li {
   margin: 0px 10px 15px 8px;
   padding: 5px 20px;
   font-weight: 500;
+}
+
+.contact-form-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.contact-form-input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 .contact-form-input:focus::placeholder {
@@ -923,6 +931,8 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   flex: 0 0 14%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 100px;
   padding: 80px 40px;
@@ -1218,6 +1228,4 @@ p {
 }
 #reviewsCarousel h2 {
   padding: 0 50px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
