@@ -203,6 +203,11 @@
     display: none;
   }
 }
+@media screen and (-ms-high-contrast: none) {
+  #header-small {
+    text-align: right;
+  }
+}
 
 #header-small ul {
   list-style-type: none;
@@ -580,6 +585,7 @@ footer li {
   .staff-container {
     background-color: white;
     flex-direction: column;
+    border-top: 1px white solid;
   }
 }
 
@@ -619,6 +625,16 @@ footer li {
 .staff-images p {
   text-align: justify;
 }
+@media screen and (-ms-high-contrast: none) {
+  .staff-images p {
+    padding: 0 25px;
+  }
+}
+@media only screen and (-ms-high-contrast: none) and (min-width: 576px) {
+  .staff-images p {
+    padding: inherit;
+  }
+}
 
 .images-about-us {
   border-radius: 50%;
@@ -648,6 +664,8 @@ footer li {
     width: 15vw;
     height: 15vw;
     transition-duration: 1s;
+    max-width: 350px;
+    max-height: 350px;
   }
 }
 
@@ -723,6 +741,7 @@ footer li {
 @media screen and (-ms-high-contrast: none) {
   .product-cards-container {
     background-color: white;
+    border-top: 1px white solid;
   }
 }
 
@@ -822,6 +841,11 @@ footer li {
     padding: 50px;
   }
 }
+@media screen and (-ms-high-contrast: none) {
+  #privacy-policy {
+    background-color: white;
+  }
+}
 
 #privacy-policy h2 {
   text-align: left;
@@ -857,6 +881,13 @@ p {
   border: solid 1.7px #52658F;
   background-color: #52658F;
   margin: 10px auto 50px;
+}
+
+@media screen and (-ms-high-contrast: none) {
+  #rule-container {
+    background-color: white;
+    border: 2px white solid;
+  }
 }
 
 .clearfix {

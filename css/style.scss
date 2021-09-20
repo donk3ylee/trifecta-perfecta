@@ -41,6 +41,13 @@ p{
     margin: 10px auto 50px;  
 }
 
+#rule-container {
+    @media screen and (-ms-high-contrast: none) {
+        background-color: white;
+        border: 2px white solid;
+}
+}
+
 .clearfix{
     overflow: auto;
     &::after{
