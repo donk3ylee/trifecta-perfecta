@@ -84,6 +84,9 @@
   @media only screen and (min-width: $break-m) {
     display: none;
 }
+  @media screen and (-ms-high-contrast: none) {
+    text-align: right;
+}
 }
 
 //Some styling that could not go in the #header-small
@@ -132,7 +135,7 @@
     color: $orange-header;
     margin-right: 0;
     margin-top: 0;
-    float: initial;
+    float: inherit;
 }
   @media only screen and (min-width: $break-l) {
     top: -410px;
@@ -145,7 +148,8 @@
 
 //Added some hover effect for the phone-icon
 .fa-phone:hover {
-  background-color: darken($color: $brand-color-dark, $amount: 10%)
+  background-color: darken($color: #333a56, $amount: 10%)
+  //background-color: darken($color: $text-colour-dark, $amount: 10%)
 }
 
 //Changing the default a tag settings

@@ -10,6 +10,9 @@
   @media only screen and (min-width: $break-s) {
     padding: 50px;
 }
+  @media screen and (-ms-high-contrast: none) {
+    background-color: white;
+}
 }
 
 #privacy-policy h2 {
