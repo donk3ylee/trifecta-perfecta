@@ -51,6 +51,10 @@
     cursor: pointer;
 }
 
+.call-to-action:hover {
+    background-color: darken($orange-header, 10);
+}
+
 //Keeping the text together
 .hero-title,
 .hero-text,

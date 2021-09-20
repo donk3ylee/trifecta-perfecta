@@ -67,6 +67,10 @@
     margin: 10px 0 0 0;
 }
 
+#order-submit:hover {
+    background-color: darken($orange-header, 10);
+}
+
 // Validation on the form
 .Form-focused {
     border: $orange-header solid 3px;

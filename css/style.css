@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.call-to-action:hover {
+  background-color: #ec6c09;
+}
+
 .hero-title,
 .hero-text,
 .call-to-action {
@@ -451,6 +455,10 @@ footer li {
   color: #F7F5E6;
   cursor: pointer;
   margin: 10px 0 0 0;
+}
+
+#order-submit:hover {
+  background-color: #ec6c09;
 }
 
 .Form-focused {
