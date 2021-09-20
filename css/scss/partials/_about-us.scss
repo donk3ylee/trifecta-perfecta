@@ -52,6 +52,12 @@
   border-radius: 50%;
   width: 45%;
   height: 45%;
+//Added this Firefox specific lines in order to keep the images round as Firefox does not like %
+ @-moz-document url-prefix() { 
+    width: 120px;
+    height: 120px;
+}
+
   @media only screen and (min-width: $break-s) {
     width: 20vw;
     height: 20vw;
@@ -124,3 +130,16 @@
     height: 400px;
 }
 }
+
+
+
+
+// @media screen and (-ms-high-contrast: none) {
+//   top: 0.5rem;
+// }
+
+
+// @-moz-document url-prefix() { 
+//   .phone-icon {
+//     top: 0.5rem !important;
+// }
