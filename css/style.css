@@ -378,7 +378,12 @@ footer li {
 #copyright {
   margin-left: 20px;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  #copyright {
+    text-align: center;
+  }
 }
 
 .arrow {
