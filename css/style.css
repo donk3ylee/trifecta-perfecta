@@ -203,6 +203,11 @@
     display: none;
   }
 }
+@media screen and (-ms-high-contrast: none) {
+  #header-small {
+    text-align: right;
+  }
+}
 
 #header-small ul {
   list-style-type: none;
@@ -252,7 +257,7 @@
     color: #F78731;
     margin-right: 0;
     margin-top: 0;
-    float: initial;
+    float: inherit;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -343,6 +348,11 @@ footer {
   #footer-container {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 768px) and (-ms-high-contrast: none) {
+  #footer-container {
+    justify-content: space-around;
   }
 }
 
@@ -483,6 +493,12 @@ footer li {
   align-items: center;
   text-align: center;
 }
+@media screen and (-ms-high-contrast: none) {
+  #creative-partners {
+    border: 5px white solid;
+    background-color: white;
+  }
+}
 
 #creative-partners-list {
   list-style-type: none;
@@ -557,6 +573,14 @@ footer li {
   background-size: cover;
 }
 
+@media screen and (-ms-high-contrast: none) {
+  .staff-container {
+    background-color: white;
+    flex-direction: column;
+    border-top: 1px white solid;
+  }
+}
+
 .about-us-text p {
   padding: 0 50px;
   text-align: justify;
@@ -578,6 +602,11 @@ footer li {
     justify-content: space-evenly;
   }
 }
+@media only screen and (min-width: 576px) and (-ms-high-contrast: none) {
+  .staff-content {
+    justify-content: space-around;
+  }
+}
 
 .staff-images {
   margin: 15px;
@@ -588,6 +617,16 @@ footer li {
 .staff-images p {
   text-align: justify;
 }
+@media screen and (-ms-high-contrast: none) {
+  .staff-images p {
+    padding: 0 25px;
+  }
+}
+@media only screen and (-ms-high-contrast: none) and (min-width: 576px) {
+  .staff-images p {
+    padding: inherit;
+  }
+}
 
 .images-about-us {
   border-radius: 50%;
@@ -595,6 +634,12 @@ footer li {
   height: 45%;
 }
 @-moz-document url-prefix() {
+  .images-about-us {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (-ms-high-contrast: none) {
   .images-about-us {
     width: 120px;
     height: 120px;
@@ -611,6 +656,8 @@ footer li {
     width: 15vw;
     height: 15vw;
     transition-duration: 1s;
+    max-width: 350px;
+    max-height: 350px;
   }
 }
 
@@ -683,12 +730,24 @@ footer li {
   background-position: right;
 }
 
+@media screen and (-ms-high-contrast: none) {
+  .product-cards-container {
+    background-color: white;
+    border-top: 1px white solid;
+  }
+}
+
 .product-category {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 300px;
   margin: auto;
+}
+@media screen and (-ms-high-contrast: none) {
+  .product-category {
+    justify-content: space-around;
+  }
 }
 @media only screen and (min-width: 576px) {
   .product-category {
@@ -749,6 +808,11 @@ footer li {
   float: right;
   width: 120px;
 }
+@media screen and (-ms-high-contrast: none) {
+  .order-btn-products {
+    transform: inherit;
+  }
+}
 @media only screen and (min-width: 576px) {
   .order-btn-products {
     margin-top: -61px;
@@ -767,6 +831,11 @@ footer li {
 @media only screen and (min-width: 576px) {
   #privacy-policy {
     padding: 50px;
+  }
+}
+@media screen and (-ms-high-contrast: none) {
+  #privacy-policy {
+    background-color: white;
   }
 }
 
@@ -811,6 +880,13 @@ p {
   margin: 10px auto 50px;
 }
 
+@media screen and (-ms-high-contrast: none) {
+  #rule-container {
+    background-color: white;
+    border: 2px white solid;
+  }
+}
+
 .clearfix {
   overflow: auto;
 }
@@ -836,6 +912,11 @@ p {
   justify-content: space-around;
   width: 100%;
   text-transform: uppercase;
+}
+@media screen and (-ms-high-contrast: none) {
+  #icon-headlines {
+    background-color: white;
+  }
 }
 #icon-headlines .icon-headline-item {
   justify-content: center;
@@ -886,6 +967,11 @@ p {
 #article {
   width: 100%;
   max-width: 1200px;
+}
+@media screen and (-ms-high-contrast: none) {
+  #article {
+    background-color: white;
+  }
 }
 #article h2 {
   margin: 0 10%;
@@ -1061,6 +1147,11 @@ p {
   width: 100%;
   color: #343B55;
   padding: 50px 0;
+}
+@media screen and (-ms-high-contrast: none) {
+  #reviewsCarousel {
+    background-color: white;
+  }
 }
 #reviewsCarousel .review-carousel {
   width: 80%;

@@ -109,6 +109,10 @@
 #creative-partners {
     align-items: center;
     text-align: center;
+    @media screen and (-ms-high-contrast: none) {
+        border: 5px white solid;
+        background-color: white;
+}  
 }
 
 #creative-partners-list {
