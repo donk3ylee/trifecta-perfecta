@@ -448,6 +448,11 @@ footer li {
   text-align: left;
 }
 
+.required-mark {
+  color: white;
+  margin-left: 3px;
+}
+
 #order-submit {
   width: 220px;
   background-color: #F78731;
@@ -511,6 +516,8 @@ footer li {
 
 #creative-partners-list {
   list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 #creative-partners-list li {
   padding: 0 0 10px 0;
