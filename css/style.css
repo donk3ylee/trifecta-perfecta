@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.call-to-action:hover {
+  background-color: #ec6c09;
+}
+
 .hero-title,
 .hero-text,
 .call-to-action {
