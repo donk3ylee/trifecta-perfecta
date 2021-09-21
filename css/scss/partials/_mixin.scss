@@ -19,8 +19,12 @@
         'toast':'\f7ec',
         'cookie':'\f564',
         'cake':'\1f382',
-    );
-    @if map-has-key($awesome_icon_map,$glyph){
+        'facebook':'\f39e',
+        'twitter':'\f099',
+        'instagram':'\f16d',
+        'youtube':'\f167',
+        );
+        @if map-has-key($awesome_icon_map,$glyph){
         font-size: $size;
         line-height: normal;
         overflow: visible;
