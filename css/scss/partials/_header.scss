@@ -148,7 +148,8 @@
 
 //Added some hover effect for the phone-icon
 .fa-phone:hover {
-  background-color: darken($color: $brand-color-dark, $amount: 10%)
+  //background-color: darken($color: $brand-color-dark, $amount: 10%);
+  background-color: darken($color: #333a56, $amount: 10%);
 }
 
 //Changing the default a tag settings
@@ -172,7 +173,9 @@ a {
 }
 
 .btn-menu-xs:hover {
-	background-color: darken($color: $brand-color-dark, $amount: 10%)
+	//background-color: darken($color: $brand-color-dark, $amount: 10%);
+  background-color: darken($color: #333a56, $amount: 10%);
+  cursor: pointer;
 }
 
 // The next few properties are for the hamburger

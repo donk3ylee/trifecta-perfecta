@@ -51,6 +51,11 @@
     text-align: left;
 }
 
+.required-mark {
+    color: white;
+    margin-left: 3px;
+}
+
 //order submission button.
 #order-submit {
     width: 220px;
@@ -104,11 +109,38 @@
     float: right
 }
 
+//The error modal
+
+.error-bar {
+    display: none;
+    background-color: red;
+    border-radius: 25px;
+    padding: 0 20px;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#error-text {
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.error-show {
+    display: block;
+}
+
 // creative partners section
 
 #creative-partners {
     align-items: center;
     text-align: center;
+
+    p {
+        padding: 0 10px;
+    }
+
     @media screen and (-ms-high-contrast: none) {
         border: 5px white solid;
         background-color: white;
@@ -117,6 +149,7 @@
 
 #creative-partners-list {
     list-style-type: none;
+    padding-inline-start: 0;
 
     li {
        padding: 0 0 10px 0; 

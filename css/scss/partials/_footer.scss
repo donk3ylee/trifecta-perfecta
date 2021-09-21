@@ -44,7 +44,10 @@ footer li {
 #copyright {
   margin-left: 20px;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  @media only screen and (min-width: $break-m) {
+    text-align: center;
+}
 }
 
 //Styling for the arrows in the SECTIONS footer element

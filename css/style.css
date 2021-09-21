@@ -273,7 +273,7 @@
 }
 
 .fa-phone:hover {
-  background-color: #3f4e6f;
+  background-color: #202436;
 }
 
 a {
@@ -297,7 +297,8 @@ a {
 }
 
 .btn-menu-xs:hover {
-  background-color: #3f4e6f;
+  background-color: #202436;
+  cursor: pointer;
 }
 
 .menu-lines {
@@ -377,7 +378,12 @@ footer li {
 #copyright {
   margin-left: 20px;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  #copyright {
+    text-align: center;
+  }
 }
 
 .arrow {
@@ -428,6 +434,14 @@ footer li {
   font-weight: 500;
 }
 
+.contact-form-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.contact-form-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 .contact-form-input:focus::placeholder {
   color: transparent;
 }
@@ -437,6 +451,11 @@ footer li {
   color: #F78731;
   margin: 0px 0 5px 8px;
   text-align: left;
+}
+
+.required-mark {
+  color: white;
+  margin-left: 3px;
 }
 
 #order-submit {
@@ -489,9 +508,32 @@ footer li {
   float: right;
 }
 
+.error-bar {
+  display: none;
+  background-color: red;
+  border-radius: 25px;
+  padding: 0 20px;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#error-text {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.error-show {
+  display: block;
+}
+
 #creative-partners {
   align-items: center;
   text-align: center;
+}
+#creative-partners p {
+  padding: 0 10px;
 }
 @media screen and (-ms-high-contrast: none) {
   #creative-partners {
@@ -502,6 +544,8 @@ footer li {
 
 #creative-partners-list {
   list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 #creative-partners-list li {
   padding: 0 0 10px 0;
@@ -994,8 +1038,14 @@ p {
 #icon-headlines {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  text-transform: uppercase;
+}
+@media only screen and (min-width: 576px) {
+  #icon-headlines {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-transform: uppercase;
+  }
 }
 @media screen and (-ms-high-contrast: none) {
   #icon-headlines {
@@ -1007,25 +1057,33 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   flex: 0 0 14%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 100px;
-  padding: 80px 40px;
   color: #52658F;
   text-align: center;
+  transform: scale(0.8);
+}
+@media only screen and (min-width: 576px) {
+  #icon-headlines .icon-headline-item {
+    transform: scale(1);
+    padding: 80px 40px;
+  }
 }
 #icon-headlines .icon-headline-item .icon-headline-text {
   display: block;
 }
 @media (min-width: 0px) {
   #icon-headlines .icon-headline-item .icon-headline-text {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 600;
     padding: 5px 0 0;
   }
 }
 @media (min-width: 767px) {
   #icon-headlines .icon-headline-item .icon-headline-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     padding: 10px 0 0;
   }
@@ -1061,19 +1119,31 @@ p {
   margin: 0 10%;
 }
 #article p {
-  margin: 35px 80px;
+  margin: 20px;
+}
+@media only screen and (min-width: 576px) {
+  #article p {
+    margin: 35px 80px;
+  }
 }
 #article .circle-splash {
   position: relative;
-  padding: 65px 65px 25px;
   width: 300px;
-  height: 300px;
+  height: 220px;
 }
 @media (min-width: 0px) {
   #article .circle-splash {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transform: scale(0.6);
+  }
+}
+@media only screen and (min-width: 576px) {
+  #article .circle-splash {
+    transform: scale(1);
+    padding: 65px 65px 25px;
+    height: 300px;
   }
 }
 @media (min-width: 767px) {
@@ -1151,9 +1221,15 @@ p {
   background-size: cover;
   border: solid 6px #52658F;
   border-radius: 50%;
+  transform: scale(0.7);
 }
 #products-carousel .product-5:hover, #products-carousel .product-4:hover, #products-carousel .product-3:hover, #products-carousel .product-2:hover, #products-carousel .product-1:hover {
   border: solid 6px #3f4e6f;
+}
+@media only screen and (min-width: 576px) {
+  #products-carousel .product-5, #products-carousel .product-4, #products-carousel .product-3, #products-carousel .product-2, #products-carousel .product-1 {
+    transform: scale(1);
+  }
 }
 #products-carousel .product-1 {
   background-image: url("../assets/images/products/breads.jpg");
@@ -1187,8 +1263,14 @@ p {
   background-color: #3f4e6f;
 }
 #products-carousel .owl-nav .owl-prev {
-  left: -60px;
-  top: 125px;
+  left: 10%;
+  top: 243px;
+}
+@media only screen and (min-width: 576px) {
+  #products-carousel .owl-nav .owl-prev {
+    left: -60px;
+    top: 125px;
+  }
 }
 #products-carousel .owl-nav .owl-prev span {
   position: absolute;
@@ -1196,13 +1278,22 @@ p {
   top: -3px;
 }
 #products-carousel .owl-nav .owl-next {
-  right: -60px;
-  top: 125px;
+  right: 10%;
+  top: 243px;
+}
+@media only screen and (min-width: 576px) {
+  #products-carousel .owl-nav .owl-next {
+    right: -60px;
+    top: 125px;
+  }
 }
 #products-carousel .owl-nav .owl-next span {
   position: absolute;
   right: 17px;
   top: -3px;
+}
+#products-carousel .owl-nav .owl-item {
+  transform: scale(0.7);
 }
 #products-carousel .button-container {
   width: 100%;
@@ -1212,19 +1303,34 @@ p {
 }
 #products-carousel .button {
   color: #F7F5E6;
-  width: 20rem;
-  height: 25px;
+  width: 10rem;
+  height: 20px;
   margin: 20px 0;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   background-color: #52658F;
   border-radius: 25px;
 }
 #products-carousel .button:hover {
   background-color: #3f4e6f;
+}
+@media only screen and (min-width: 576px) {
+  #products-carousel .button {
+    font-size: 1.3rem;
+    width: 20rem;
+    height: 25px;
+  }
+}
+#products-carousel h2 {
+  margin-bottom: -35px;
+}
+@media only screen and (min-width: 576px) {
+  #products-carousel h2 {
+    margin-bottom: inherit;
+  }
 }
 
 #reviewsCarousel {
@@ -1276,7 +1382,12 @@ p {
   font-weight: 500;
 }
 #reviewsCarousel .owl-dot {
-  margin: 30px 18px;
+  margin: 1px;
+}
+@media only screen and (min-width: 576px) {
+  #reviewsCarousel .owl-dot {
+    margin: 30px 18px;
+  }
 }
 #reviewsCarousel .button-container {
   justify-content: center;
@@ -1286,13 +1397,13 @@ p {
 #reviewsCarousel .button {
   align-items: center;
   color: white;
-  width: 20rem;
-  height: 25px;
+  width: 10rem;
+  height: 20px;
   margin: 10px 0;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   background-color: #F78731;
   border-radius: 25px;
@@ -1300,8 +1411,13 @@ p {
 #reviewsCarousel .button:hover {
   background-color: #ec6c09;
 }
+@media only screen and (min-width: 576px) {
+  #reviewsCarousel .button {
+    font-size: 1.3rem;
+    width: 20rem;
+    height: 25px;
+  }
+}
 #reviewsCarousel h2 {
   padding: 0 50px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
