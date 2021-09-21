@@ -6,6 +6,7 @@ const phone = document.getElementById("order-client-telephone");
 const first = document.getElementById("order-first-name");
 const last = document.getElementById("order-last-name");
 const subject = document.getElementById("order-subject");
+const GDPR = document.getElementById("GDPR-check")
 const errorMessage = document.querySelector(".error-bar");
 // the different REGEX i used to test teh inputs
 const emptyREGEX = /^[a-zA-Z0-9_.,!"'\?]+( [a-zA-Z0-9_.,!"'\?]+)*$/;
@@ -38,7 +39,7 @@ $(inputs).focus(function() {
 
 // The form submit and clear
 document.getElementById("order-submit").addEventListener("click", function () {
- if (email.classList.contains("Form-valid") == true && message.classList.contains("Form-valid") == true && phone.classList.contains("Form-valid") == true && first.classList.contains("Form-valid") == true && last.classList.contains("Form-valid") == true && subject.classList.contains("Form-valid") == true) {
+ if (email.classList.contains("Form-valid") == true && message.classList.contains("Form-valid") == true && phone.classList.contains("Form-valid") == true && first.classList.contains("Form-valid") == true && last.classList.contains("Form-valid") == true && subject.classList.contains("Form-valid") == true && GDPR.checked == true) {
   // form would be submitted here 
   document.getElementById("order-form").reset();
   first.classList.remove("Form-valid");
@@ -48,7 +49,6 @@ document.getElementById("order-submit").addEventListener("click", function () {
   subject.classList.remove("Form-valid");
   message.classList.remove("Form-valid");
  } else {
-  // alert("Please fill the form in completely.");
   errorMessage.classList.add("error-show");
   setTimeout(function () {
     errorMessage.classList.remove("error-show")
