@@ -434,14 +434,6 @@ footer li {
   font-weight: 500;
 }
 
-.contact-form-input:focus::-moz-placeholder {
-  color: transparent;
-}
-
-.contact-form-input:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
 .contact-form-input:focus::placeholder {
   color: transparent;
 }
@@ -544,8 +536,7 @@ footer li {
 
 #creative-partners-list {
   list-style-type: none;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding-inline-start: 0;
 }
 #creative-partners-list li {
   padding: 0 0 10px 0;
@@ -892,15 +883,10 @@ footer li {
   background-color: white;
 }
 #testimonials .owl-stage-outer {
-  border: solid 3px coral;
   max-width: 80%;
   margin: 0 auto;
 }
-#testimonials .owl-stage {
-  border: solid 3px cornflowerblue;
-}
 #testimonials .owl-item {
-  border: solid 2px #343B55;
   min-height: 400px;
   height: 100%;
 }
@@ -1057,8 +1043,6 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   flex: 0 0 14%;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   height: 100px;
   color: #52658F;
@@ -1420,4 +1404,6 @@ p {
 }
 #reviewsCarousel h2 {
   padding: 0 50px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
