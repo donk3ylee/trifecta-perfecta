@@ -843,11 +843,95 @@ footer li {
   text-align: left;
 }
 
-#testimonials .testimonialsCarousel {
+#testimonials {
   width: 100%;
-  height: 100%;
-  max-height: 500px;
+  background-color: white;
 }
+#testimonials .owl-stage-outer {
+  border: solid 3px coral;
+  max-width: 80%;
+  margin: 0 auto;
+}
+#testimonials .owl-stage {
+  border: solid 3px cornflowerblue;
+}
+#testimonials .owl-item {
+  border: solid 2px #343B55;
+  min-height: 400px;
+  height: 100%;
+}
+#testimonials .owl-item .top .product-glazed-doughnuts {
+  background-image: url("../../../assets/images/testimonials/products/glazed-doughnuts.jpg");
+}
+#testimonials .owl-item .bottom .social-media-icon-yt, #testimonials .owl-item .bottom .social-media-icon-ig, #testimonials .owl-item .bottom .social-media-icon-tw, #testimonials .owl-item .bottom .social-media-icon-fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  float: left;
+  border: solid 3px black;
+  border-radius: 50%;
+  color: white;
+}
+#testimonials .owl-item .bottom .social-media-icon-yt:hover, #testimonials .owl-item .bottom .social-media-icon-ig:hover, #testimonials .owl-item .bottom .social-media-icon-tw:hover, #testimonials .owl-item .bottom .social-media-icon-fb:hover {
+  color: black;
+}
+#testimonials .owl-item .bottom .social-media-icon-fb {
+  background-color: #3b5998;
+  font-size: 30px;
+  line-height: normal;
+  overflow: visible;
+}
+#testimonials .owl-item .bottom .social-media-icon-fb::after {
+  display: flex;
+  justify-content: center;
+  font-family: FontAwesome !important;
+  content: "";
+}
+#testimonials .owl-item .bottom .social-media-icon-tw {
+  background-color: #55acee;
+  font-size: 30px;
+  line-height: normal;
+  overflow: visible;
+}
+#testimonials .owl-item .bottom .social-media-icon-tw::after {
+  display: flex;
+  justify-content: center;
+  font-family: FontAwesome !important;
+  content: "";
+}
+#testimonials .owl-item .bottom .social-media-icon-ig {
+  background-color: #BC2A8D;
+  font-size: 30px;
+  line-height: normal;
+  overflow: visible;
+}
+#testimonials .owl-item .bottom .social-media-icon-ig::after {
+  display: flex;
+  justify-content: center;
+  font-family: FontAwesome !important;
+  content: "";
+}
+#testimonials .owl-item .bottom .social-media-icon-yt {
+  background-color: #FF3333;
+  font-size: 30px;
+  line-height: normal;
+  overflow: visible;
+}
+#testimonials .owl-item .bottom .social-media-icon-yt::after {
+  display: flex;
+  justify-content: center;
+  font-family: FontAwesome !important;
+  content: "";
+}
+#testimonials .owl-item .bottom .profile-picture img {
+  width: 60px;
+  height: 60px;
+  border: solid 3px black;
+  border-radius: 50%;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05rem;
