@@ -1,16 +1,15 @@
 
 $(document).ready(function(){
     // testimonials carousel
-    $('.testimonials-carousel').owlCarousel({
+    $('.owl-carousel').owlCarousel({
+        items:3,
         loop:true,
-        autoplay:true,
-        items:2,
-        // margin:20,
-        // center:true,
-        nav:false,
         dots:true,
-        // stagePadding:0,
-        // checkVisible:false,
+        margin:30,
+        autoplay:true,
+        autoplaySpeed:400,
+        autoplayHoverPause:true,
+        // center:true,
 
         responsiveRefreshRate:100,
         responsive:{

@@ -880,84 +880,129 @@ footer li {
   text-align: left;
 }
 
-#testimonials {
+#testimonialsCarousel {
   width: 100%;
   background-color: white;
+  margin: 40px 0;
 }
-#testimonials .owl-stage-outer {
-  max-width: 80%;
+#testimonialsCarousel .owl-carousel {
+  width: 90%;
   margin: 0 auto;
 }
-#testimonials .owl-item {
+#testimonialsCarousel .item-container {
+  background-color: #F7F5E6;
+  border: solid 2px #343B55;
+  border-radius: 30px;
+  padding: 40px;
   min-height: 400px;
-  height: 100%;
+  height: auto;
 }
-#testimonials .owl-item .top .product-glazed-doughnuts {
-  background-image: url("../../../assets/images/testimonials/products/glazed-doughnuts.jpg");
+#testimonialsCarousel .item-container:hover {
+  background-color: #ebe6bf;
 }
-#testimonials .owl-item .bottom .social-media-icon-yt, #testimonials .owl-item .bottom .social-media-icon-ig, #testimonials .owl-item .bottom .social-media-icon-tw, #testimonials .owl-item .bottom .social-media-icon-fb {
+#testimonialsCarousel .top {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: black;
+  padding-bottom: 1.3rem;
+}
+#testimonialsCarousel .testimonial {
+  padding: 0 50px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+#testimonialsCarousel .testimonial .title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: black;
+}
+#testimonialsCarousel .testimonial img {
+  margin-top: 20px;
+}
+#testimonialsCarousel .bottom .social-media-icon-yt, #testimonialsCarousel .bottom .social-media-icon-ig, #testimonialsCarousel .bottom .social-media-icon-tw, #testimonialsCarousel .bottom .social-media-icon-fb {
   display: flex;
+  position: absolute;
+  bottom: 12px;
+  right: 0;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
-  float: left;
+  height: 30px;
+  width: 30px;
+  min-height: 30px;
+  min-width: 30px;
   border: solid 3px black;
   border-radius: 50%;
   color: white;
 }
-#testimonials .owl-item .bottom .social-media-icon-yt:hover, #testimonials .owl-item .bottom .social-media-icon-ig:hover, #testimonials .owl-item .bottom .social-media-icon-tw:hover, #testimonials .owl-item .bottom .social-media-icon-fb:hover {
-  color: black;
+#testimonialsCarousel .bottom .social-media-icon-yt:hover, #testimonialsCarousel .bottom .social-media-icon-ig:hover, #testimonialsCarousel .bottom .social-media-icon-tw:hover, #testimonialsCarousel .bottom .social-media-icon-fb:hover {
+  color: #F7F5E6;
 }
-#testimonials .owl-item .bottom .social-media-icon-fb {
+#testimonialsCarousel .bottom {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+#testimonialsCarousel .bottom .profile-username {
+  padding: 0 1rem;
+  text-align: left;
+  font-family: "Yellowtail", cursive;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+#testimonialsCarousel .bottom .social-media-icon-fb {
   background-color: #3b5998;
-  font-size: 30px;
+  font-size: 20px;
   line-height: normal;
   overflow: visible;
 }
-#testimonials .owl-item .bottom .social-media-icon-fb::after {
+#testimonialsCarousel .bottom .social-media-icon-fb::after {
   display: flex;
   justify-content: center;
   font-family: FontAwesome !important;
   content: "";
 }
-#testimonials .owl-item .bottom .social-media-icon-tw {
+#testimonialsCarousel .bottom .social-media-icon-tw {
   background-color: #55acee;
-  font-size: 30px;
+  font-size: 20px;
   line-height: normal;
   overflow: visible;
 }
-#testimonials .owl-item .bottom .social-media-icon-tw::after {
+#testimonialsCarousel .bottom .social-media-icon-tw::after {
   display: flex;
   justify-content: center;
   font-family: FontAwesome !important;
   content: "";
 }
-#testimonials .owl-item .bottom .social-media-icon-ig {
+#testimonialsCarousel .bottom .social-media-icon-ig {
   background-color: #BC2A8D;
-  font-size: 30px;
+  font-size: 20px;
   line-height: normal;
   overflow: visible;
 }
-#testimonials .owl-item .bottom .social-media-icon-ig::after {
+#testimonialsCarousel .bottom .social-media-icon-ig::after {
   display: flex;
   justify-content: center;
   font-family: FontAwesome !important;
   content: "";
 }
-#testimonials .owl-item .bottom .social-media-icon-yt {
+#testimonialsCarousel .bottom .social-media-icon-yt {
   background-color: #FF3333;
-  font-size: 30px;
+  font-size: 20px;
   line-height: normal;
   overflow: visible;
 }
-#testimonials .owl-item .bottom .social-media-icon-yt::after {
+#testimonialsCarousel .bottom .social-media-icon-yt::after {
   display: flex;
   justify-content: center;
   font-family: FontAwesome !important;
   content: "";
 }
-#testimonials .owl-item .bottom .profile-picture img {
+#testimonialsCarousel .bottom .profile-picture img {
   width: 60px;
   height: 60px;
   border: solid 3px black;

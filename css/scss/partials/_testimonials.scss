@@ -1,112 +1,109 @@
-// @import "../abstracts/variables";
 
-//  <div class="owl-item">
-//  <a href="" target="_blank">
-//      <div class="top">
-//          <div class="social-media-icon-fb"></div>
-//          <div class="product-glazed-doughnuts"></div>
-//      </div>
-//      <div class="testimonial">
-
-//      </div>
-//      <div class="bottom">
-//          <div class="profile-picture">
-//              <image src="" alt="Billy's Profile Picture"></image>
-//          </div>
-//          <div class="profile-username">Billy Goonside</div>
-//      </div>
-//  </a>
-// </div>
-
-#testimonials{
+#testimonialsCarousel{
     width: 100%;
     background-color: white;
-    .testimonials-carousel{
-        // border: solid 2px green;
-        // display:flex;
-        // flex-direction: column;
+    margin: 40px 0;
+    .owl-carousel{
+        width: 90%;
+        margin: 0 auto;   
     }
-    .owl-stage-outer{
-        // border:solid 3px coral;
-        // justify-content: center;
-        // align-items: center;
-        max-width:80%;
-        margin: 0 auto;
-        
+    .item-container{
+        background-color: $brand-color-light;
+        border: solid 2px $text-colour-dark;
+        border-radius: 30px;
+        padding: 40px;
+        min-height:400px;
+        height:auto;
+        &:hover{
+            background-color: darken($brand-color-light,10);
+        }
     }
-    .owl-stage{
-        // border:solid 3px cornflowerblue;
+    .top{
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: black;
+        padding-bottom: 1.3rem;
     }
-    .owl-item{
-        // display:flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // border: solid 2px $text-colour-dark;
-        // background-color:$brand-color-light;
-        // border-radius: 25px;
-        min-height: 400px;
-        height:100%;
-        .top{
-            .product-glazed-doughnuts{
-                background-image: url("../../../assets/images/testimonials/products/glazed-doughnuts.jpg");
-                // background-repeat: no-repeat;
-                // background-size: cover;
-                // width: 250px;
-                // height: auto;
+    
+    .testimonial{
+        .title{
+            text-transform: uppercase;
+            font-style:normal;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: black;
+        }
+        img{
+            margin-top: 20px;
+        }
+        padding: 0 50px;
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
+    }
+    %social-media-icon{
+        display: flex;
+        position: absolute;
+        bottom: 12px;
+        right:0;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        min-height: 30px;
+        min-width: 30px;
+        border: solid 3px black;
+        border-radius: 50%;
+        color: white;
+        &:hover{
+            color: $brand-color-light;
+        }
+    }
+    .bottom{
+        display: flex;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        .profile-username{
+            padding: 0 1rem;
+            text-align: left;
+            font-family: "Yellowtail", cursive;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .social-media-icon-fb{ //  facebook
+            @extend %social-media-icon;
+            background-color: $facebook-color;
+            @include place-awesome-icon($glyph: 'facebook', $size: 20px, $orientation: 'after'){
             }
         }
-        
-        .testimonial{
-            
-        }
-        .bottom{
-            %social-media-icon{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 50px;
-                width: 50px;
-                float: left;
-                border: solid 3px black;
-                border-radius: 50%;
-                color: white;
-                &:hover{
-                    color: black;
-                }
-            }
-            .social-media-icon-fb{ //  facebook
-                @extend %social-media-icon;
-                background-color: $facebook-color;
-                @include place-awesome-icon($glyph: 'facebook', $size: 30px, $orientation: 'after'){
-                }
-            }
-            .social-media-icon-tw{ //  twitter
-                @extend %social-media-icon;
-                background-color: $twitter-color;   
-                @include place-awesome-icon($glyph: 'twitter', $size: 30px, $orientation: 'after'){
-                    
-                }
-            }
-            .social-media-icon-ig{ //  instagram
-                @extend %social-media-icon;
-                background-color: $instagram-color;   
-                @include place-awesome-icon($glyph: 'instagram', $size: 30px, $orientation: 'after'){
-                    
-                }
-            }
-            .social-media-icon-yt{ //  youtube
-                @extend %social-media-icon;
-                background-color: $youtube-color;   
-                @include place-awesome-icon($glyph: 'youtube', $size: 30px, $orientation: 'after'){
+        .social-media-icon-tw{ //  twitter
+            @extend %social-media-icon;
+            background-color: $twitter-color;   
+            @include place-awesome-icon($glyph: 'twitter', $size: 20px, $orientation: 'after'){
                 
-                }
             }
-            .profile-picture img{
-                width: 60px;
-                height:60px;
-                border: solid 3px black;
-                border-radius: 50%;
+        }
+        .social-media-icon-ig{ //  instagram
+            @extend %social-media-icon;
+            background-color: $instagram-color;   
+            @include place-awesome-icon($glyph: 'instagram', $size: 20px, $orientation: 'after'){
+                
             }
+        }
+        .social-media-icon-yt{ //  youtube
+            @extend %social-media-icon;
+            background-color: $youtube-color;   
+            @include place-awesome-icon($glyph: 'youtube', $size: 20px, $orientation: 'after'){
+            
+            }
+        }
+        .profile-picture img{
+            width: 60px;
+            height:60px;
+            border: solid 3px black;
+            border-radius: 50%;
         }
     }
 }
