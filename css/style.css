@@ -508,9 +508,32 @@ footer li {
   float: right;
 }
 
+.error-bar {
+  display: none;
+  background-color: red;
+  border-radius: 25px;
+  padding: 0 20px;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#error-text {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.error-show {
+  display: block;
+}
+
 #creative-partners {
   align-items: center;
   text-align: center;
+}
+#creative-partners p {
+  padding: 0 10px;
 }
 @media screen and (-ms-high-contrast: none) {
   #creative-partners {

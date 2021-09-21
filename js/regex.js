@@ -6,6 +6,7 @@ const phone = document.getElementById("order-client-telephone");
 const first = document.getElementById("order-first-name");
 const last = document.getElementById("order-last-name");
 const subject = document.getElementById("order-subject");
+const errorMessage = document.querySelector(".error-bar");
 // the different REGEX i used to test teh inputs
 const emptyREGEX = /^[a-zA-Z0-9_.,!"'\?]+( [a-zA-Z0-9_.,!"'\?]+)*$/;
 const emailREGEX = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]{2,6}$/;
@@ -47,7 +48,11 @@ document.getElementById("order-submit").addEventListener("click", function () {
   subject.classList.remove("Form-valid");
   message.classList.remove("Form-valid");
  } else {
-  alert("Please fill the form in completely.");
+  // alert("Please fill the form in completely.");
+  errorMessage.classList.add("error-show");
+  setTimeout(function () {
+    errorMessage.classList.remove("error-show")
+  }, 3000)
  }
 
 }) 
