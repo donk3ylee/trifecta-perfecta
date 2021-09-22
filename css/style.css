@@ -879,6 +879,10 @@ footer li {
   text-align: left;
 }
 
+#hero-image--container {
+  background-image: url("../assets/images/testimonials/socialMedia.jpg");
+}
+
 #testimonialsCarousel {
   width: 100%;
   background-color: white;
@@ -1009,6 +1013,19 @@ footer li {
   height: 60px;
   border: solid 3px black;
   border-radius: 50%;
+}
+
+.achievement {
+  padding: 0 7%;
+}
+.achievement .title {
+  margin: 0 7%;
+}
+.achievement .logo img {
+  float: left;
+  height: 60px;
+  width: auto;
+  margin: 0 2rem 0.5rem;
 }
 
 * {

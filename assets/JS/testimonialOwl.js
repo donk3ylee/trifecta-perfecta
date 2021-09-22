@@ -16,10 +16,7 @@ $(document).ready(function(){
             0:{
                 items:1
             },
-            675:{
-                items:2
-            },
-            1000:{
+            800:{
                 items:2
             }
         }
