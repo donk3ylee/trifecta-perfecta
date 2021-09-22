@@ -5,14 +5,17 @@
     margin: 40px 0;
     .owl-carousel{
         width: 90%;
-        margin: 0 auto;   
+        margin: 40px auto;   
     }
     .item-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: $brand-color-light;
         border: solid 2px $text-colour-dark;
         border-radius: 30px;
         padding: 40px;
-        min-height:400px;
+        min-height:500px;
         height:auto;
         &:hover{
             background-color: darken($brand-color-light,10);
