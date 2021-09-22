@@ -6,12 +6,15 @@
 #testimonialsCarousel{
     width: 100%;
     background-color: white;
-    margin: 40px 0;
     .owl-carousel{
         width: 90%;
-        margin: 40px auto;   
+        margin: 40px auto 0;   
     }
     .item-container{
+        // peter item vertical spacing inside here is controlled by flex, colomn then jsutify-content space betweem
+        @include targetIEonly(){
+            display: -ms-flexbox;
+        }
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -20,7 +23,7 @@
         border-radius: 30px;
         padding: 40px;
         min-height:500px;
-        height:auto;
+        height:100%;
         &:hover{
             background-color: darken($brand-color-light,10);
         }
@@ -115,12 +118,18 @@
     }
 }
 
+.achievements{
+    background-color: #fff;
+}
+
 .achievement{
+    background-color: #fff;
     padding : 0 7%;
     .title{
         margin: 3rem 7%;
     }
     .logo{
+        // peter logo vertical alignemnt happens here
         display: flex;
         justify-content: center;
     }

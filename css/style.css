@@ -886,11 +886,10 @@ footer li {
 #testimonialsCarousel {
   width: 100%;
   background-color: white;
-  margin: 40px 0;
 }
 #testimonialsCarousel .owl-carousel {
   width: 90%;
-  margin: 40px auto;
+  margin: 40px auto 0;
 }
 #testimonialsCarousel .item-container {
   display: flex;
@@ -901,7 +900,15 @@ footer li {
   border-radius: 30px;
   padding: 40px;
   min-height: 500px;
-  height: auto;
+  height: 100%;
+}
+@media screen\0  {
+  #testimonialsCarousel .item-container {
+    display: -ms-flexbox;
+  }
+}
+#testimonialsCarousel .item-container _:-ms-fullscreen, #testimonialsCarousel .item-container :root {
+  display: -ms-flexbox;
 }
 #testimonialsCarousel .item-container:hover {
   background-color: #ebe6bf;
@@ -1022,7 +1029,12 @@ footer li {
   border-radius: 50%;
 }
 
+.achievements {
+  background-color: #fff;
+}
+
 .achievement {
+  background-color: #fff;
   padding: 0 7%;
 }
 .achievement .title {
@@ -1068,7 +1080,6 @@ p {
 .rule {
   height: 0px;
   width: 25%;
-  border: solid 1.7px #52658F;
   background-color: #52658F;
   margin: 10px auto 50px;
 }
@@ -1076,7 +1087,6 @@ p {
 @media screen and (-ms-high-contrast: none) {
   #rule-container {
     background-color: white;
-    border: 2px white solid;
   }
 }
 
@@ -1282,12 +1292,8 @@ p {
   margin: 20px auto;
   background-repeat: no-repeat;
   background-size: cover;
-  border: solid 6px #52658F;
   border-radius: 50%;
   transform: scale(0.7);
-}
-#products-carousel .product-5:hover, #products-carousel .product-4:hover, #products-carousel .product-3:hover, #products-carousel .product-2:hover, #products-carousel .product-1:hover {
-  border: solid 6px #3f4e6f;
 }
 @media only screen and (min-width: 576px) {
   #products-carousel .product-5, #products-carousel .product-4, #products-carousel .product-3, #products-carousel .product-2, #products-carousel .product-1 {

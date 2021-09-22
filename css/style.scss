@@ -37,7 +37,6 @@ p{
 .rule{
     height: 0px;
     width: 25%;
-    border: solid 1.7px $brand-color-dark;
     background-color: $brand-color-dark;
     margin: 10px auto 50px;  
 }
@@ -45,7 +44,6 @@ p{
 #rule-container {
     @media screen and (-ms-high-contrast: none) {
         background-color: white;
-        border: 2px white solid;
 }
 }
 
@@ -213,11 +211,9 @@ p{
         margin: 20px auto;
         background-repeat: no-repeat;
         background-size: cover;
-        border: solid 6px $brand-color-dark;
         border-radius: 50%;
         transform: scale(0.7);
         &:hover{
-            border: solid 6px darken($brand-color-dark,10);
         }
         @media only screen and (min-width: $break-s) {
             transform: scale(1);
