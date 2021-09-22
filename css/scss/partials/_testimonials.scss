@@ -34,6 +34,13 @@
     }
     
     .testimonial{
+        padding: 0 50px;
+        @media screen and (max-width: 450px){
+            padding: 0 5px;
+        }
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
         .title{
             text-transform: uppercase;
             font-style:normal;
@@ -44,66 +51,59 @@
         img{
             margin-top: 20px;
         }
-        padding: 0 50px;
-        font-size: 1rem;
-        font-weight: 400;
-        font-style: italic;
     }
-    %social-media-icon{
-        display: flex;
-        position: absolute;
-        bottom: 12px;
-        right:0;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        width: 30px;
-        min-height: 30px;
-        min-width: 30px;
-        border: solid 3px black;
-        border-radius: 50%;
-        color: white;
-        &:hover{
-            color: $brand-color-light;
-        }
-    }
+    
     .bottom{
         display: flex;
         position: relative;
         text-align: center;
         align-items: center;
         .profile-username{
-            padding: 0 1rem;
+            padding: 0 2.2rem 0 1rem;
             text-align: left;
             font-family: "Yellowtail", cursive;
             font-size: 1.2rem;
             font-weight: 500;
         }
-        .social-media-icon-fb{ //  facebook
-            @extend %social-media-icon;
-            background-color: $facebook-color;
-            @include place-awesome-icon($glyph: 'facebook', $size: 20px, $orientation: 'after'){
+        @media screen and(min-width: 350px){
+            %social-media-icon{
+                display: flex;
+                position: absolute;
+                bottom: 12px;
+                right:0;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                width: 30px;
+                min-height: 30px;
+                min-width: 30px;
+                border: solid 3px black;
+                border-radius: 50%;
+                color: white;
+                &:hover{
+                    color: $brand-color-light;
+                }
             }
-        }
-        .social-media-icon-tw{ //  twitter
-            @extend %social-media-icon;
-            background-color: $twitter-color;   
-            @include place-awesome-icon($glyph: 'twitter', $size: 20px, $orientation: 'after'){
-                
+            .social-media-icon-fb{ //  facebook
+                @extend %social-media-icon;
+                background-color: $facebook-color;
+                @include place-awesome-icon($glyph: 'facebook', $size: 20px, $orientation: 'after');
             }
-        }
-        .social-media-icon-ig{ //  instagram
-            @extend %social-media-icon;
-            background-color: $instagram-color;   
-            @include place-awesome-icon($glyph: 'instagram', $size: 20px, $orientation: 'after'){
-                
+            .social-media-icon-tw{ //  twitter
+                @extend %social-media-icon;
+                background-color: $twitter-color;   
+                @include place-awesome-icon($glyph: 'twitter', $size: 20px, $orientation: 'after');
             }
-        }
-        .social-media-icon-yt{ //  youtube
-            @extend %social-media-icon;
-            background-color: $youtube-color;   
-            @include place-awesome-icon($glyph: 'youtube', $size: 20px, $orientation: 'after'){
-            
+            .social-media-icon-ig{ //  instagram
+                @extend %social-media-icon;
+                background-color: $instagram-color;   
+                @include place-awesome-icon($glyph: 'instagram', $size: 20px, $orientation: 'after');
+            }
+
+            .social-media-icon-yt{ //  youtube
+                @extend %social-media-icon;
+                background-color: $youtube-color;   
+                @include place-awesome-icon($glyph: 'youtube', $size: 20px, $orientation: 'after');
             }
         }
         .profile-picture img{
@@ -118,12 +118,19 @@
 .achievement{
     padding : 0 7%;
     .title{
-        margin: 0 7%;
+        margin: 3rem 7%;
     }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
     .logo img{
-        float: left;
-        height: 60px;
-        width: auto;
-        margin: 0 2rem 0.5rem;
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 10px;
     }
 }
