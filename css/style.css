@@ -1452,12 +1452,17 @@ p {
     margin: 30px 18px;
   }
 }
-#reviewsCarousel .button-container {
+#reviewsCarousel h2 {
+  padding: 0 50px;
+}
+
+.button-container {
   justify-content: center;
   width: 100%;
   display: flex;
 }
-#reviewsCarousel .button {
+
+.button {
   align-items: center;
   color: white;
   width: 10rem;
@@ -1471,18 +1476,15 @@ p {
   background-color: #F78731;
   border-radius: 25px;
 }
-#reviewsCarousel .button:hover {
+.button:hover {
   background-color: #ec6c09;
 }
 @media only screen and (min-width: 576px) {
-  #reviewsCarousel .button {
+  .button {
     font-size: 1.3rem;
     width: 20rem;
     height: 25px;
   }
-}
-#reviewsCarousel h2 {
-  padding: 0 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
