@@ -1350,7 +1350,6 @@ footer li {
   border: solid 2px #343B55;
   border-radius: 30px;
   padding: 40px;
-  min-height: 500px;
   height: 100%;
 }
 @media screen\0  {
@@ -1360,6 +1359,11 @@ footer li {
 }
 #testimonialsCarousel .item-container _:-ms-fullscreen, #testimonialsCarousel .item-container :root {
   display: -ms-flexbox;
+}
+@supports not (-ms-high-contrast: none) {
+  #testimonialsCarousel .item-container {
+    min-height: 500px;
+  }
 }
 #testimonialsCarousel .item-container:hover {
   background-color: #ebe6bf;
