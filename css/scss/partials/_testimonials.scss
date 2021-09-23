@@ -26,6 +26,9 @@
         //     min-height: unset;
         // }
         // min-height:500px;
+        @supports not (-ms-high-contrast: none) {
+            min-height: 500px;
+         }
         height:100%;
         &:hover{
             background-color: darken($brand-color-light,10);
