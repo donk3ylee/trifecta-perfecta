@@ -1,7 +1,12 @@
 @use '../abstracts/index' as *;
 
 #hero-image--container-testimonials{
+    height: 300px;
+    overflow-y: hidden;
+    overflow-x: hidden;
     background-image: url('../assets/images/testimonials/socialMedia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #testimonialsCarousel{
