@@ -1,0 +1,155 @@
+@use '../abstracts/index' as *;
+
+// Horizontal rule <hr>.
+.rule{
+    height: 0px;
+    width: 25%;
+    background-color: $brand-color-dark;
+    margin: 10px auto 50px;  
+}
+
+#rule-container {
+    @media screen and (-ms-high-contrast: none) {
+        background-color: white;
+}
+}
+
+.clearfix{
+    overflow: auto;
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+  }
+
+#main-container{
+    justify-content: space-between;
+    align-self: center;
+    flex: 1;
+    width:100%;
+    max-width: 1200px;
+    height: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+#icon-headlines{
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    justify-content: space-around;
+    @media only screen and (min-width: $break-s) {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        text-transform: uppercase;
+}
+    @media screen and (-ms-high-contrast: none) {
+        background-color: white;
+}
+  
+    .icon-headline-item{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex: 0 0 14%;
+        width: max-content;
+        height: 100px;
+        color: $brand-color-dark;
+        text-align: center;
+        transform: scale(.8);
+        @media only screen and (min-width: $break-s) {
+            transform: scale(1);
+            padding: 80px 40px;
+}
+        .icon-headline-text{
+            display: block;
+            @include MQ('0','and-wider'){
+                font-size: .9rem;
+                font-weight: 600;
+                padding: 5px 0 0;
+            }
+            @include MQ('1','and-wider'){
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 10px 0 0;
+            }
+            @include MQ('2','and-wider'){
+                font-size: 1.1rem;
+                font-weight: 600;
+                padding: 15px 0 0;
+            }
+            @include MQ('3','and-wider'){
+                font-size: 1.3rem;
+                font-weight: 600;
+                padding: 20px 0 0;
+            }
+        }
+        .icon{
+            font-size: 50px;
+        }
+    }
+}
+
+#article{
+    width: 100%;
+    max-width: 1200px;
+    @media screen and (-ms-high-contrast: none) {
+        background-color: white; 
+  }  
+    h2{
+        margin: 0 10%;
+    }
+    p{
+        margin: 20px;
+        @media only screen and (min-width: $break-s) {
+            margin: 35px 80px;
+
+    }
+    }
+    .circle-splash{
+        position: relative;
+        @include MQ('0','and-wider'){
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transform: scale(.6);
+        }
+        @media only screen and (min-width: $break-s) {
+            transform: scale(1);
+            padding: 65px 65px 25px;
+            height: 300px;
+        }
+        @include MQ('1','and-wider'){
+            float: left;
+            margin-right: 50px;
+        }
+        width: 300px;
+        height: 220px;
+        .circle-splash-1{ // cream circle bottom stacked
+            @include build-circle($dia: 170px, $backC: $brand-color-light, $borderW: 4px, $borderC: white){
+                z-index: 1;
+                transform-origin: center center;
+                transform: translate(75px,-80px);
+            }
+        }
+        .circle-splash-2{ // blue circle 2nd stacked
+            @include build-circle($dia: 200px, $backC: $brand-color-dark, $borderW: 4px, $borderC: white){
+                z-index: 2;
+                transform-origin: center center;
+                transform: translate(80px,50px);
+            }
+        }
+        .circle-splash-3{ // image circle
+            @include build-circle($dia: 280px, $borderW: 4px, $borderC: white){
+                z-index: 3;
+                transform-origin: center center;
+                transform: translate(-30px,-25px);
+                background-image: url(../assets/images/cupcakes-640.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

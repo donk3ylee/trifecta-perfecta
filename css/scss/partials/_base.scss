@@ -1,0 +1,25 @@
+@use '../abstracts/index' as *;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+h2{
+    color:$brand-color-dark;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p{
+    color: $text-colour-dark;
+    line-height: 1.4rem;
+}

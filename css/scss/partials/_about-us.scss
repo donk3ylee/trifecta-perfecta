@@ -138,6 +138,12 @@
     align-items: initial;
     flex-direction: initial;
     justify-content: space-evenly;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+    }
 }
 }
 

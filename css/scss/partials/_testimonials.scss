@@ -1,3 +1,4 @@
+@use '../abstracts/index' as *;
 
 #hero-image--container{
     background-image: url('../assets/images/testimonials/socialMedia.jpg');
@@ -22,9 +23,6 @@
         border: solid 2px $text-colour-dark;
         border-radius: 30px;
         padding: 40px;
-        // @include targetIEonly(){
-        //     min-height: unset;
-        // }
         // min-height:500px;
         @supports not (-ms-high-contrast: none) {
             min-height: 500px;
