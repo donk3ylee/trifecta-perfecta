@@ -434,6 +434,14 @@ footer li {
   font-weight: 500;
 }
 
+.contact-form-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.contact-form-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 .contact-form-input:focus::placeholder {
   color: transparent;
 }
@@ -537,7 +545,8 @@ footer li {
 
 #creative-partners-list {
   list-style-type: none;
-  padding-inline-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 #creative-partners-list li {
   padding: 0 0 10px 0;
@@ -913,6 +922,19 @@ footer li {
 #testimonialsCarousel .item-container:hover {
   background-color: #ebe6bf;
 }
+#testimonialsCarousel .box-fix {
+  max-height: 600px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #testimonialsCarousel .box-fix .bottom {
+    transform: translate(0px, -570px);
+  }
+}
+@media screen and (-ms-high-contrast: none) and (min-width: 575px), screen and (-ms-high-contrast: active) and (min-width: 575px) {
+  #testimonialsCarousel .box-fix .bottom {
+    transform: translate(0px, -500px);
+  }
+}
 #testimonialsCarousel .top {
   text-align: center;
   font-size: 1.1rem;
@@ -1042,7 +1064,6 @@ footer li {
 }
 .achievement .logo {
   display: flex;
-  justify-content: center;
 }
 .achievement .logo img {
   height: auto;
@@ -1050,7 +1071,6 @@ footer li {
   max-width: 600px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 10px;
 }
 
 * {
@@ -1132,6 +1152,8 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   flex: 0 0 14%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 100px;
   color: #52658F;
@@ -1491,6 +1513,4 @@ p {
     width: 20rem;
     height: 25px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -28,6 +28,23 @@
             background-color: darken($brand-color-light,10);
         }
     }
+
+    .box-fix {
+     max-height: 600px;   
+    }
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .box-fix {
+            .bottom{
+                transform: translate(0px, -570px);
+
+                @media screen and (min-width: $break-xs) {
+                    transform: translate(0px, -500px);
+                }
+            }
+        }
+   }
+
     .top{
         text-align: center;
         font-size: 1.1rem;
@@ -131,7 +148,7 @@
     .logo{
         // peter logo vertical alignemnt happens here
         display: flex;
-        justify-content: center;
+        // justify-content: center;
     }
 
     .logo img{
@@ -140,6 +157,6 @@
         max-width: 600px;
         margin-right: auto;
         margin-left: auto;
-        padding: 0 10px;
+        // padding: 0 10px;
     }
 }
