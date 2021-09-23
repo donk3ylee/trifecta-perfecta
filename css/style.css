@@ -1073,6 +1073,10 @@ footer li {
   margin-left: auto;
 }
 
+.added_spacing {
+  padding: 0 20px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05rem;
