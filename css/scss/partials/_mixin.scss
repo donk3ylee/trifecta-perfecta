@@ -66,12 +66,10 @@
 
 @mixin targetIEonly{
     @media screen\0 {  // targets IE 8 9 & 10
-        // Internet Explorer doesn’t support “woff2”. so adding “eot” as a fallback.
     @content;
     }
     
     _:-ms-fullscreen, :root {  // Targets IE 11+
-        // Internet Explorer doesn’t support “woff2”. so adding “eot” as a fallback.
     @content;
     }
 }

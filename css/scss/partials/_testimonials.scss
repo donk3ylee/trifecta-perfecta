@@ -22,7 +22,10 @@
         border: solid 2px $text-colour-dark;
         border-radius: 30px;
         padding: 40px;
-        min-height:500px;
+        // @include targetIEonly(){
+        //     min-height: unset;
+        // }
+        // min-height:500px;
         height:100%;
         &:hover{
             background-color: darken($brand-color-light,10);
