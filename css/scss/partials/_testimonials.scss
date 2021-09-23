@@ -12,7 +12,6 @@
         margin: 40px auto 0;   
     }
     .item-container{
-        // peter item vertical spacing inside here is controlled by flex, colomn then jsutify-content space betweem
         @include targetIEonly(){
             display: -ms-flexbox;
         }
@@ -23,7 +22,6 @@
         border: solid 2px $text-colour-dark;
         border-radius: 30px;
         padding: 40px;
-        // min-height:500px;
         @supports not (-ms-high-contrast: none) {
             min-height: 500px;
          }
@@ -151,7 +149,6 @@
         margin: 3rem 7%;
     }
     .logo{
-        // peter logo vertical alignemnt happens here
         display: flex;
         // justify-content: center;
     }
