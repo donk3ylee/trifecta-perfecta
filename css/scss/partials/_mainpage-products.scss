@@ -1,0 +1,135 @@
+@use '../abstracts/index' as *;
+
+#products-carousel{
+    width: 100%;
+    background-color: $brand-color-light;
+    .title{
+        text-align: center;
+        margin: 20px auto 0;
+        color:$brand-color-dark;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        &:hover{
+            color: darken($brand-color-dark,10);
+        }
+    }
+    .product-carousel{
+        width: 80%;
+        margin: 0 auto;   
+    }
+    %product{
+        height:250px;
+        width: 250px;
+        margin: 20px auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        transform: scale(0.7);
+        @media only screen and (min-width: $break-s) {
+            transform: scale(1);
+        }
+    }
+    .product-1{
+        @extend %product;
+        background-image: url("../assets/images/products/breads.jpg");
+    }
+    .product-2{
+        @extend %product;
+        background-image: url("../assets/images/products/pastires.jpg");
+    }
+    .product-3{
+        @extend %product;
+        background-image: url("../assets/images/products/cakes.jpg");
+    }
+    .product-4{
+        @extend %product;
+        background-image: url("../assets/images/products//speciality-cake.jpg");
+    }
+    .product-5{
+        @extend %product;
+        background-image: url("../assets/images/products/wedding-cake.jpg");
+    }
+    .owl-nav{
+        %nav{
+            display: flex;
+            position: absolute;
+            opacity: 1;
+            max-height: 50px;
+            max-width: 50px;
+            height: 50px;
+            width: 50px;
+            background-color: $brand-color-dark;
+            border-radius: 50%;
+            font-size: 45px;
+            color: $brand-color-light;
+            &:hover{
+                background-color: darken($brand-color-dark, 10);
+            }
+        }
+        .owl-prev{
+            @extend %nav;
+                left: 10%;
+                top: 243px;
+            @media only screen and (min-width: $break-s) {
+                left: -60px;
+                top: 125px;
+            }
+        }
+        .owl-prev span{
+            position: absolute;
+            left: 17px;
+            top: -3px;
+        }   
+        .owl-next{
+            @extend %nav;
+                right: 10%;
+                top: 243px;
+            @media only screen and (min-width: $break-s) {
+                right: -60px;
+                top: 125px;
+        }
+    }
+        .owl-next span{
+            position: absolute;
+            right: 17px;
+            top: -3px;
+        }
+        .owl-item {
+            transform: scale(0.7);
+        }
+    }
+    .button-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        color: $brand-color-light;
+        width: 10rem;
+        height: 20px;
+        margin: 20px 0;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: $brand-color-dark;
+        border-radius: 25px;
+        &:hover{
+            background-color: darken($brand-color-dark, 10);
+        }
+        @media only screen and (min-width: $break-s) {
+            font-size: 1.3rem;
+            width: 20rem;
+            height:25px;
+        }
+    }
+    h2 {
+        margin-bottom: -35px;
+        @media only screen and (min-width: $break-s) {
+            margin-bottom: inherit;
+        }
+    }
+}
