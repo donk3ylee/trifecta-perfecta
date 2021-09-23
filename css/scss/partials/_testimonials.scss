@@ -11,7 +11,6 @@
         margin: 40px auto 0;   
     }
     .item-container{
-        // peter item vertical spacing inside here is controlled by flex, colomn then jsutify-content space betweem
         @include targetIEonly(){
             display: -ms-flexbox;
         }
@@ -22,11 +21,10 @@
         border: solid 2px $text-colour-dark;
         border-radius: 30px;
         padding: 40px;
-        // @include targetIEonly(){
-        //     min-height: unset;
-        // }
-        // min-height:500px;
-        height: 100%;
+        @supports not (-ms-high-contrast: none) {
+            min-height: 500px;
+         }
+        height:100%;
         &:hover{
             background-color: darken($brand-color-light,10);
         }
