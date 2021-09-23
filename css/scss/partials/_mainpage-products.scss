@@ -71,6 +71,9 @@
             @extend %nav;
                 left: 10%;
                 top: 243px;
+                @media screen and (-ms-high-contrast: none) {
+                    top: 230px;
+            }
             @media only screen and (min-width: $break-s) {
                 left: -60px;
                 top: 125px;
@@ -85,6 +88,9 @@
             @extend %nav;
                 right: 10%;
                 top: 243px;
+                @media screen and (-ms-high-contrast: none) {
+                    top: 230px;
+            }
             @media only screen and (min-width: $break-s) {
                 right: -60px;
                 top: 125px;

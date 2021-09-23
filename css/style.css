@@ -620,6 +620,11 @@ a {
   left: 10%;
   top: 243px;
 }
+@media screen and (-ms-high-contrast: none) {
+  #products-carousel .owl-nav .owl-prev {
+    top: 230px;
+  }
+}
 @media only screen and (min-width: 576px) {
   #products-carousel .owl-nav .owl-prev {
     left: -60px;
@@ -634,6 +639,11 @@ a {
 #products-carousel .owl-nav .owl-next {
   right: 10%;
   top: 243px;
+}
+@media screen and (-ms-high-contrast: none) {
+  #products-carousel .owl-nav .owl-next {
+    top: 230px;
+  }
 }
 @media only screen and (min-width: 576px) {
   #products-carousel .owl-nav .owl-next {
@@ -1197,7 +1207,7 @@ footer li {
 }
 @media only screen and (min-width: 992px) and (-ms-high-contrast: none), only screen and (min-width: 992px) and (-ms-high-contrast: active) {
   .contact-us {
-    align-items: center;
+    align-items: inherit;
     flex-direction: row;
     justify-content: space-around;
   }

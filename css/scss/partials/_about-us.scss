@@ -140,7 +140,7 @@
     justify-content: space-evenly;
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      align-items: center;
+      align-items: inherit;
       flex-direction: row;
       justify-content: space-around;
     }
